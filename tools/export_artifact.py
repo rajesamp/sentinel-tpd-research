@@ -30,7 +30,7 @@ def main():
     for run in ("frozen-001","frozen-002"):
         if build_summary(ROOT/"results"/run)["status"]!="completed":
             raise ValueError("Cannot export an incomplete scored run")
-    include=["data","evaluation","tests","vendor","reproduce.py","LICENSE",
+    include=[".gitignore","data","evaluation","tests","vendor","reproduce.py","LICENSE",
              "research/measurement-protocol.md","research/corpus-provenance.md",
              "results/frozen-001","results/frozen-002",
              "submission/template-provenance.json"]
@@ -110,11 +110,12 @@ def main():
     manifest={str(f.relative_to(destination)):sha(f.read_bytes())
               for f in sorted(destination.rglob("*")) if f.is_file()}
     (destination/"SHA256SUMS.json").write_text(json.dumps(manifest,indent=2)+"\n")
-    with ZipFile(destination.with_suffix(".zip"),"x",ZIP_DEFLATED,compresslevel=9) as archive:
+    archive_path=destination.with_name(destination.name+".zip")
+    with ZipFile(archive_path,"x",ZIP_DEFLATED,compresslevel=9) as archive:
         for file in sorted(destination.rglob("*")):
             if file.is_file():
                 archive.write(file,str(Path(destination.name)/file.relative_to(destination)))
-    print(destination.with_suffix(".zip"))
+    print(archive_path)
 
 if __name__=="__main__":
     main()

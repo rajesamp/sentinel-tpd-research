@@ -1,0 +1,53 @@
+{
+  "verified_date": "2026-10-06",
+  "freeze_commit": "b73b71c",
+  "study": "Sentinel-TPD metadata coverage and lifecycle",
+  "ci": {
+    "url": "https://github.com/rajesamp/sentinel-tpd-research/actions/runs/37565320355",
+    "conclusion": "success",
+    "jobs": [
+      "pinned-source CPython3.12",
+      "offline CPython3.11",
+      "offline CPython3.12",
+      "offline CPython3.14"
+    ]
+  },
+  "replay": {
+    "python314_cached_source": "completed; expected outcomes match; report bytes identical",
+    "python314_offline": "completed; expected authored outcomes match; report bytes identical"
+  },
+  "headlines": {
+    "source_attack_prevention": "17/27",
+    "source_benign_receipts": "20/20",
+    "challenge_attack_prevention": "4/26",
+    "challenge_benign_receipts": "37/44",
+    "source_native_applicability_attack_prevention": "16/23"
+  },
+  "pdfs": {
+    "paper": {
+      "sha256": "7f5d9f99cc996a83d656ddc1a85caa86c23d0a63e5b3c9ba697506bdaf0160ee",
+      "pages": 10,
+      "body_pages": 7,
+      "size": "A4",
+      "desktop_compile": "success",
+      "overfull_or_undefined_diagnostics": 0,
+      "remaining_diagnostics": "underfull spacing; inspected visually"
+    },
+    "paper-anonymous": {
+      "sha256": "fe1989cf91bd6e54e3455f7859ff5cae3599b4505c6d045e106fc210499256f7",
+      "pages": 10,
+      "body_pages": 7,
+      "size": "A4",
+      "desktop_compile": "success",
+      "overfull_or_undefined_diagnostics": 0,
+      "remaining_diagnostics": "underfull spacing; inspected visually"
+    }
+  },
+  "limits": [
+    "metadata/local-receipt assay, no real model attack or remote execution",
+    "visible specification-aware fixtures; no independent human labels",
+    "seven main-body pages; conference-format preparation does not guarantee novelty/acceptance",
+    "reviewer export still needs venue-approved anonymous hosting",
+    "conference submission and human declarations not performed"
+  ]
+}

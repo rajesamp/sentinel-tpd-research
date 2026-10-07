@@ -5,6 +5,13 @@ mutation. It preserves the original manuscript's patterns and workload questions
 but derives claims from the pinned code and saved observations. This is a research
 artifact and conference draft, not an accepted publication or a security guarantee.
 
+[Version 0.1.0 downloads](https://github.com/rajesamp/sentinel-tpd-research/releases/tag/v0.1.0)
+include the author and anonymous PDFs, author and reviewer archives, and file
+checksums. Read [submission preparation](submission/readiness.md) before any
+conference upload. Post-sealing validation is recorded in
+[fresh-package replay](submission/fresh-package-replay.json) and the repository's
+archive review; it is separate from the sealed archive contents.
+
 ## Reproduce
 
 Python 3.11 or newer; no package installation or model account is required.
@@ -36,7 +43,9 @@ The pipeline runs evaluation and upstream tests, verifies vendor hashes, preserv
 raw JSONL, regenerates reports byte-identically and compares deterministic outcomes
 with the saved reference when available. Failures remain in their output folder.
 Four arms separate allow-all, initial registration only, native Sentinel-TPD and
-the same scanner on each call. Source and challenge results are never pooled.
+the same scanner on each call. Final scored source and challenge results are
+separate. Preserved development-001 predates the split-qualified family-report
+fix: its family table is legacy pooled and is not used for manuscript claims.
 
 ## Scope
 

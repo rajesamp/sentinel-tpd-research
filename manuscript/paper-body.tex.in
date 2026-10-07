@@ -371,6 +371,10 @@ listed as an author and no independent human peer review is claimed.
 
 @@BIBLIOGRAPHY@@
 
+\makeatletter
+\setlength{\@fptop}{0pt}\setlength{\@fpsep}{16pt}\setlength{\@fpbot}{0pt plus 1fil}
+\setlength{\@dblfptop}{0pt}\setlength{\@dblfpsep}{16pt}\setlength{\@dblfpbot}{0pt plus 1fil}
+\makeatother
 \appendices
 \section{Original Pattern and Study Coverage}\label{app:patterns}
 @@PATTERN_TABLE@@
@@ -380,4 +384,7 @@ results. Unsupported semantic or runtime claims are retained as explicit researc
 questions and limitations rather than counted as implemented defenses.
 
 \section{Adjacent Research Boundaries}\label{app:adjacent}
+Table~\ref{tab:adjacent} preserves the adjacent literature's domain and limited
+methodological connection. It does not imply algorithm transfer or a reproduced
+head-to-head comparison.
 @@ADJACENT_TABLE@@
