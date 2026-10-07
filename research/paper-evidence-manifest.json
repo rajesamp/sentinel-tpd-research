@@ -1,0 +1,2500 @@
+{
+  "schema_version": 1,
+  "paper_revision_base": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+  "implementation_repository": "rajesamp/sentinel-tpd",
+  "evaluated_revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+  "verified_local_date": "2026-10-07",
+  "scope": "Paper component-to-public-evidence traceability; not independent semantic validation. Evidence links use immutable original study revisions. The corrected author block and index are a patch release.",
+  "materials": [
+    {
+      "id": "figure.1",
+      "kind": "figure",
+      "status": "implemented",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/scanner.py",
+          "sha256": "031cc165bc28a6337299399e33fc9d9a3b8b8be9834e1acf366d9764dae29a58"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/signals.py",
+          "sha256": "aa075d495f257a32d4adb3b3d02c50ef6a624266c3aa78a7c826d93236c71a49"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/registry.py",
+          "sha256": "235097205a0c5802f587a0add8d8ad3f3fee276fddd19be45906c092241c3e93"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/audit.py",
+          "sha256": "bb0faec8aa25af5b8e7b331ad29653567c2a0e0d7f4845770c307cb84514e54f"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/paper-body.tex.in",
+          "sha256": "be8619e461b10a256f18eedb8ff98a3939a1de81c74e96dd09031ff86419a54f"
+        }
+      ],
+      "label": "fig:architecture"
+    },
+    {
+      "id": "figure.2",
+      "kind": "figure",
+      "status": "implemented",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/scanner.py",
+          "sha256": "031cc165bc28a6337299399e33fc9d9a3b8b8be9834e1acf366d9764dae29a58"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/signals.py",
+          "sha256": "aa075d495f257a32d4adb3b3d02c50ef6a624266c3aa78a7c826d93236c71a49"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/registry.py",
+          "sha256": "235097205a0c5802f587a0add8d8ad3f3fee276fddd19be45906c092241c3e93"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/paper-body.tex.in",
+          "sha256": "be8619e461b10a256f18eedb8ff98a3939a1de81c74e96dd09031ff86419a54f"
+        }
+      ],
+      "label": "fig:decision"
+    },
+    {
+      "id": "figure.3",
+      "kind": "figure",
+      "status": "implemented",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/registry.py",
+          "sha256": "235097205a0c5802f587a0add8d8ad3f3fee276fddd19be45906c092241c3e93"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/audit.py",
+          "sha256": "bb0faec8aa25af5b8e7b331ad29653567c2a0e0d7f4845770c307cb84514e54f"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/paper-body.tex.in",
+          "sha256": "be8619e461b10a256f18eedb8ff98a3939a1de81c74e96dd09031ff86419a54f"
+        }
+      ],
+      "label": "fig:cycle"
+    },
+    {
+      "id": "figure.4",
+      "kind": "figure",
+      "status": "measured",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/records.jsonl",
+          "sha256": "4c4a2b0bfe50dce332f5277469c4969e8e171b47808c1b7028d20cb6be86c2fd"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/summary.json",
+          "sha256": "c2fa5dd731588007fc501d307c27b02325620dedf8537cccab7a65e84e57a06d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/completion.json",
+          "sha256": "03d4fe7408616f1d8e1c3e17713bafe09b2bf1b284d8c4bb7f4fa2c12987f37c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/records.jsonl",
+          "sha256": "c565fdec29d5cf2ab08facf711e6c67dd9d533530c04f467a4f54ed972152c71"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/summary.json",
+          "sha256": "5115902263054ec9f679693255ccdb7c735b216f36648835e51f6abc4aa34b7d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/completion.json",
+          "sha256": "d7ac6542f010ef15d6caf70325aa84c688929e0657013ce228efdf5b9382dd4c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "evaluation/report.py",
+          "sha256": "4724f3359bc5ee690b4ea5a014758ee529bdfd2e8dbf58b4112140fadb23232a"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/measurement-protocol.md",
+          "sha256": "df3558e0a5319e31a6af89ca7f42d6b70a7754a9f5d44e9c0d0d6de8c286a38f"
+        }
+      ],
+      "label": "fig:poisoning"
+    },
+    {
+      "id": "figure.5",
+      "kind": "figure",
+      "status": "measured",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/records.jsonl",
+          "sha256": "4c4a2b0bfe50dce332f5277469c4969e8e171b47808c1b7028d20cb6be86c2fd"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/summary.json",
+          "sha256": "c2fa5dd731588007fc501d307c27b02325620dedf8537cccab7a65e84e57a06d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/completion.json",
+          "sha256": "03d4fe7408616f1d8e1c3e17713bafe09b2bf1b284d8c4bb7f4fa2c12987f37c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/records.jsonl",
+          "sha256": "c565fdec29d5cf2ab08facf711e6c67dd9d533530c04f467a4f54ed972152c71"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/summary.json",
+          "sha256": "5115902263054ec9f679693255ccdb7c735b216f36648835e51f6abc4aa34b7d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/completion.json",
+          "sha256": "d7ac6542f010ef15d6caf70325aa84c688929e0657013ce228efdf5b9382dd4c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "evaluation/report.py",
+          "sha256": "4724f3359bc5ee690b4ea5a014758ee529bdfd2e8dbf58b4112140fadb23232a"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/measurement-protocol.md",
+          "sha256": "df3558e0a5319e31a6af89ca7f42d6b70a7754a9f5d44e9c0d0d6de8c286a38f"
+        }
+      ],
+      "label": "fig:shadowing"
+    },
+    {
+      "id": "table.1",
+      "kind": "table",
+      "status": "implemented",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/scanner.py",
+          "sha256": "031cc165bc28a6337299399e33fc9d9a3b8b8be9834e1acf366d9764dae29a58"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/signals.py",
+          "sha256": "aa075d495f257a32d4adb3b3d02c50ef6a624266c3aa78a7c826d93236c71a49"
+        }
+      ],
+      "label": "tab:rules"
+    },
+    {
+      "id": "table.2",
+      "kind": "table",
+      "status": "implemented",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/scanner.py",
+          "sha256": "031cc165bc28a6337299399e33fc9d9a3b8b8be9834e1acf366d9764dae29a58"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/signals.py",
+          "sha256": "aa075d495f257a32d4adb3b3d02c50ef6a624266c3aa78a7c826d93236c71a49"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/registry.py",
+          "sha256": "235097205a0c5802f587a0add8d8ad3f3fee276fddd19be45906c092241c3e93"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/audit.py",
+          "sha256": "bb0faec8aa25af5b8e7b331ad29653567c2a0e0d7f4845770c307cb84514e54f"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/original-coverage.md",
+          "sha256": "d542196c591c5a43ba17671db8c7943a8a8e4fb7aba974ca1e2ef53cb1c1a862"
+        }
+      ],
+      "label": "tab:architecture"
+    },
+    {
+      "id": "table.3",
+      "kind": "table",
+      "status": "implemented",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/scanner.py",
+          "sha256": "031cc165bc28a6337299399e33fc9d9a3b8b8be9834e1acf366d9764dae29a58"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/registry.py",
+          "sha256": "235097205a0c5802f587a0add8d8ad3f3fee276fddd19be45906c092241c3e93"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "data/lifecycle.json",
+          "sha256": "c77aa0effa4382d27b805f32cb9fa75c36553381af423059af3176afaff53e65"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/measurement-protocol.md",
+          "sha256": "df3558e0a5319e31a6af89ca7f42d6b70a7754a9f5d44e9c0d0d6de8c286a38f"
+        }
+      ],
+      "label": "tab:fields"
+    },
+    {
+      "id": "table.4",
+      "kind": "table",
+      "status": "context",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/original-coverage.md",
+          "sha256": "d542196c591c5a43ba17671db8c7943a8a8e4fb7aba974ca1e2ef53cb1c1a862"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/measurement-protocol.md",
+          "sha256": "df3558e0a5319e31a6af89ca7f42d6b70a7754a9f5d44e9c0d0d6de8c286a38f"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "evaluation/report.py",
+          "sha256": "4724f3359bc5ee690b4ea5a014758ee529bdfd2e8dbf58b4112140fadb23232a"
+        }
+      ],
+      "label": "tab:metrics"
+    },
+    {
+      "id": "table.5",
+      "kind": "table",
+      "status": "measured",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/records.jsonl",
+          "sha256": "4c4a2b0bfe50dce332f5277469c4969e8e171b47808c1b7028d20cb6be86c2fd"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/summary.json",
+          "sha256": "c2fa5dd731588007fc501d307c27b02325620dedf8537cccab7a65e84e57a06d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/completion.json",
+          "sha256": "03d4fe7408616f1d8e1c3e17713bafe09b2bf1b284d8c4bb7f4fa2c12987f37c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/records.jsonl",
+          "sha256": "c565fdec29d5cf2ab08facf711e6c67dd9d533530c04f467a4f54ed972152c71"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/summary.json",
+          "sha256": "5115902263054ec9f679693255ccdb7c735b216f36648835e51f6abc4aa34b7d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/completion.json",
+          "sha256": "d7ac6542f010ef15d6caf70325aa84c688929e0657013ce228efdf5b9382dd4c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "data/corpus.json",
+          "sha256": "a26ac0771ea329ec2f7aaf265336afbe318a67e39aef99d97ee8af3ff38dc128"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "data/source-manifest.json",
+          "sha256": "e7a0ff35222a5639584c6acdbec492ceb5762a199b098c905a00a2387b0b5f74"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/corpus-provenance.md",
+          "sha256": "a10ec8d56f984cf0b881ce062dfd83dda1b20a545673c18892fc853709f0dcb7"
+        }
+      ],
+      "label": "tab:unique"
+    },
+    {
+      "id": "table.6",
+      "kind": "table",
+      "status": "measured",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/records.jsonl",
+          "sha256": "4c4a2b0bfe50dce332f5277469c4969e8e171b47808c1b7028d20cb6be86c2fd"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/summary.json",
+          "sha256": "c2fa5dd731588007fc501d307c27b02325620dedf8537cccab7a65e84e57a06d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/completion.json",
+          "sha256": "03d4fe7408616f1d8e1c3e17713bafe09b2bf1b284d8c4bb7f4fa2c12987f37c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/records.jsonl",
+          "sha256": "c565fdec29d5cf2ab08facf711e6c67dd9d533530c04f467a4f54ed972152c71"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/summary.json",
+          "sha256": "5115902263054ec9f679693255ccdb7c735b216f36648835e51f6abc4aa34b7d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/completion.json",
+          "sha256": "d7ac6542f010ef15d6caf70325aa84c688929e0657013ce228efdf5b9382dd4c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "evaluation/run.py",
+          "sha256": "3216b63ae2af2f6323a024f2deedaa28686a68be99315c4d3f6cd2e9a31c89ff"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/measurement-protocol.md",
+          "sha256": "df3558e0a5319e31a6af89ca7f42d6b70a7754a9f5d44e9c0d0d6de8c286a38f"
+        }
+      ],
+      "label": "tab:workloads"
+    },
+    {
+      "id": "table.7",
+      "kind": "table",
+      "status": "measured",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/records.jsonl",
+          "sha256": "4c4a2b0bfe50dce332f5277469c4969e8e171b47808c1b7028d20cb6be86c2fd"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/summary.json",
+          "sha256": "c2fa5dd731588007fc501d307c27b02325620dedf8537cccab7a65e84e57a06d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/completion.json",
+          "sha256": "03d4fe7408616f1d8e1c3e17713bafe09b2bf1b284d8c4bb7f4fa2c12987f37c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/records.jsonl",
+          "sha256": "c565fdec29d5cf2ab08facf711e6c67dd9d533530c04f467a4f54ed972152c71"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/summary.json",
+          "sha256": "5115902263054ec9f679693255ccdb7c735b216f36648835e51f6abc4aa34b7d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/completion.json",
+          "sha256": "d7ac6542f010ef15d6caf70325aa84c688929e0657013ce228efdf5b9382dd4c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "data/lifecycle.json",
+          "sha256": "c77aa0effa4382d27b805f32cb9fa75c36553381af423059af3176afaff53e65"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "evaluation/methods.py",
+          "sha256": "b5849b895c39916ad32db9ea6f9486ff045e2e0d9ea94929becf5141e7620903"
+        }
+      ],
+      "label": "tab:lifecycle"
+    },
+    {
+      "id": "table.8",
+      "kind": "table",
+      "status": "measured",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/records.jsonl",
+          "sha256": "4c4a2b0bfe50dce332f5277469c4969e8e171b47808c1b7028d20cb6be86c2fd"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/summary.json",
+          "sha256": "c2fa5dd731588007fc501d307c27b02325620dedf8537cccab7a65e84e57a06d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/completion.json",
+          "sha256": "03d4fe7408616f1d8e1c3e17713bafe09b2bf1b284d8c4bb7f4fa2c12987f37c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/records.jsonl",
+          "sha256": "c565fdec29d5cf2ab08facf711e6c67dd9d533530c04f467a4f54ed972152c71"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/summary.json",
+          "sha256": "5115902263054ec9f679693255ccdb7c735b216f36648835e51f6abc4aa34b7d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/completion.json",
+          "sha256": "d7ac6542f010ef15d6caf70325aa84c688929e0657013ce228efdf5b9382dd4c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "evaluation/run.py",
+          "sha256": "3216b63ae2af2f6323a024f2deedaa28686a68be99315c4d3f6cd2e9a31c89ff"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/metadata.json",
+          "sha256": "8014968bb2ad668f491edca1f28cf1450cbb32f109e8bab9ad8559264b0ac6aa"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/metadata.json",
+          "sha256": "fdf20fdef37a1fcf565ff67ea01426b4b5f641e1c5dce3ec07036ea3edad43e8"
+        }
+      ],
+      "label": "tab:cost"
+    },
+    {
+      "id": "table.9",
+      "kind": "table",
+      "status": "context",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/original-coverage.md",
+          "sha256": "d542196c591c5a43ba17671db8c7943a8a8e4fb7aba974ca1e2ef53cb1c1a862"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "data/source-manifest.json",
+          "sha256": "e7a0ff35222a5639584c6acdbec492ceb5762a199b098c905a00a2387b0b5f74"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "data/corpus.json",
+          "sha256": "a26ac0771ea329ec2f7aaf265336afbe318a67e39aef99d97ee8af3ff38dc128"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/corpus-provenance.md",
+          "sha256": "a10ec8d56f984cf0b881ce062dfd83dda1b20a545673c18892fc853709f0dcb7"
+        }
+      ],
+      "label": "tab:patterns"
+    },
+    {
+      "id": "table.10",
+      "kind": "table",
+      "status": "context",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/references.bib",
+          "sha256": "5676de6e29a20f0bbb77d26a244f46bac39a5621163e2d7ac578d93a948860e8"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/reference-audit.md",
+          "sha256": "98e0e466dd3012ab1799f3a7c11f1293c069961d896d4f5f63418d578752d642"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/sources.json",
+          "sha256": "684e4d19dd78093da5e19ad9454d5c4729e949ca1424ae5b0291c7282b6534ea"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/original-coverage.md",
+          "sha256": "d542196c591c5a43ba17671db8c7943a8a8e4fb7aba974ca1e2ef53cb1c1a862"
+        }
+      ],
+      "label": "tab:adjacent"
+    },
+    {
+      "id": "manuscript.equation.1",
+      "kind": "equation",
+      "status": "implemented",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/scanner.py",
+          "sha256": "031cc165bc28a6337299399e33fc9d9a3b8b8be9834e1acf366d9764dae29a58"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/signals.py",
+          "sha256": "aa075d495f257a32d4adb3b3d02c50ef6a624266c3aa78a7c826d93236c71a49"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/registry.py",
+          "sha256": "235097205a0c5802f587a0add8d8ad3f3fee276fddd19be45906c092241c3e93"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/paper-body.tex.in",
+          "sha256": "be8619e461b10a256f18eedb8ff98a3939a1de81c74e96dd09031ff86419a54f"
+        }
+      ]
+    },
+    {
+      "id": "manuscript.equation.2",
+      "kind": "equation",
+      "status": "implemented",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/scanner.py",
+          "sha256": "031cc165bc28a6337299399e33fc9d9a3b8b8be9834e1acf366d9764dae29a58"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/signals.py",
+          "sha256": "aa075d495f257a32d4adb3b3d02c50ef6a624266c3aa78a7c826d93236c71a49"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/registry.py",
+          "sha256": "235097205a0c5802f587a0add8d8ad3f3fee276fddd19be45906c092241c3e93"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/paper-body.tex.in",
+          "sha256": "be8619e461b10a256f18eedb8ff98a3939a1de81c74e96dd09031ff86419a54f"
+        }
+      ]
+    },
+    {
+      "id": "manuscript.equation.3",
+      "kind": "equation",
+      "status": "implemented",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/scanner.py",
+          "sha256": "031cc165bc28a6337299399e33fc9d9a3b8b8be9834e1acf366d9764dae29a58"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/signals.py",
+          "sha256": "aa075d495f257a32d4adb3b3d02c50ef6a624266c3aa78a7c826d93236c71a49"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/registry.py",
+          "sha256": "235097205a0c5802f587a0add8d8ad3f3fee276fddd19be45906c092241c3e93"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/paper-body.tex.in",
+          "sha256": "be8619e461b10a256f18eedb8ff98a3939a1de81c74e96dd09031ff86419a54f"
+        }
+      ]
+    },
+    {
+      "id": "manuscript.equation.4",
+      "kind": "equation",
+      "status": "implemented",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/scanner.py",
+          "sha256": "031cc165bc28a6337299399e33fc9d9a3b8b8be9834e1acf366d9764dae29a58"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/signals.py",
+          "sha256": "aa075d495f257a32d4adb3b3d02c50ef6a624266c3aa78a7c826d93236c71a49"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/registry.py",
+          "sha256": "235097205a0c5802f587a0add8d8ad3f3fee276fddd19be45906c092241c3e93"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/paper-body.tex.in",
+          "sha256": "be8619e461b10a256f18eedb8ff98a3939a1de81c74e96dd09031ff86419a54f"
+        }
+      ]
+    },
+    {
+      "id": "manuscript.equation.5",
+      "kind": "equation",
+      "status": "context",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "evaluation/report.py",
+          "sha256": "4724f3359bc5ee690b4ea5a014758ee529bdfd2e8dbf58b4112140fadb23232a"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/measurement-protocol.md",
+          "sha256": "df3558e0a5319e31a6af89ca7f42d6b70a7754a9f5d44e9c0d0d6de8c286a38f"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/paper-body.tex.in",
+          "sha256": "be8619e461b10a256f18eedb8ff98a3939a1de81c74e96dd09031ff86419a54f"
+        }
+      ]
+    },
+    {
+      "id": "manuscript.equation.6",
+      "kind": "equation",
+      "status": "context",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "evaluation/report.py",
+          "sha256": "4724f3359bc5ee690b4ea5a014758ee529bdfd2e8dbf58b4112140fadb23232a"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/measurement-protocol.md",
+          "sha256": "df3558e0a5319e31a6af89ca7f42d6b70a7754a9f5d44e9c0d0d6de8c286a38f"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/paper-body.tex.in",
+          "sha256": "be8619e461b10a256f18eedb8ff98a3939a1de81c74e96dd09031ff86419a54f"
+        }
+      ]
+    },
+    {
+      "id": "manuscript.equation.7",
+      "kind": "equation",
+      "status": "context",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "evaluation/report.py",
+          "sha256": "4724f3359bc5ee690b4ea5a014758ee529bdfd2e8dbf58b4112140fadb23232a"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/measurement-protocol.md",
+          "sha256": "df3558e0a5319e31a6af89ca7f42d6b70a7754a9f5d44e9c0d0d6de8c286a38f"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/paper-body.tex.in",
+          "sha256": "be8619e461b10a256f18eedb8ff98a3939a1de81c74e96dd09031ff86419a54f"
+        }
+      ]
+    },
+    {
+      "id": "manuscript.equation.8",
+      "kind": "equation",
+      "status": "proposal",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/original-coverage.md",
+          "sha256": "d542196c591c5a43ba17671db8c7943a8a8e4fb7aba974ca1e2ef53cb1c1a862"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/paper-body.tex.in",
+          "sha256": "be8619e461b10a256f18eedb8ff98a3939a1de81c74e96dd09031ff86419a54f"
+        }
+      ],
+      "label": "eq:proposal-metadata"
+    },
+    {
+      "id": "manuscript.equation.9",
+      "kind": "equation",
+      "status": "proposal",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/original-coverage.md",
+          "sha256": "d542196c591c5a43ba17671db8c7943a8a8e4fb7aba974ca1e2ef53cb1c1a862"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/paper-body.tex.in",
+          "sha256": "be8619e461b10a256f18eedb8ff98a3939a1de81c74e96dd09031ff86419a54f"
+        }
+      ],
+      "label": "eq:proposal-poison"
+    },
+    {
+      "id": "manuscript.equation.10",
+      "kind": "equation",
+      "status": "proposal",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/original-coverage.md",
+          "sha256": "d542196c591c5a43ba17671db8c7943a8a8e4fb7aba974ca1e2ef53cb1c1a862"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/paper-body.tex.in",
+          "sha256": "be8619e461b10a256f18eedb8ff98a3939a1de81c74e96dd09031ff86419a54f"
+        }
+      ],
+      "label": "eq:proposal-shadow"
+    },
+    {
+      "id": "manuscript.equation.11",
+      "kind": "equation",
+      "status": "proposal",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/original-coverage.md",
+          "sha256": "d542196c591c5a43ba17671db8c7943a8a8e4fb7aba974ca1e2ef53cb1c1a862"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/paper-body.tex.in",
+          "sha256": "be8619e461b10a256f18eedb8ff98a3939a1de81c74e96dd09031ff86419a54f"
+        }
+      ],
+      "label": "eq:proposal-combined"
+    },
+    {
+      "id": "section.1",
+      "kind": "section",
+      "status": "context",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/references.bib",
+          "sha256": "5676de6e29a20f0bbb77d26a244f46bac39a5621163e2d7ac578d93a948860e8"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/reference-audit.md",
+          "sha256": "98e0e466dd3012ab1799f3a7c11f1293c069961d896d4f5f63418d578752d642"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/sources.json",
+          "sha256": "684e4d19dd78093da5e19ad9454d5c4729e949ca1424ae5b0291c7282b6534ea"
+        }
+      ],
+      "title": "Model Context Protocol Security and Threat Landscape",
+      "level": "section"
+    },
+    {
+      "id": "section.2",
+      "kind": "section",
+      "status": "context",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/references.bib",
+          "sha256": "5676de6e29a20f0bbb77d26a244f46bac39a5621163e2d7ac578d93a948860e8"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/reference-audit.md",
+          "sha256": "98e0e466dd3012ab1799f3a7c11f1293c069961d896d4f5f63418d578752d642"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/sources.json",
+          "sha256": "684e4d19dd78093da5e19ad9454d5c4729e949ca1424ae5b0291c7282b6534ea"
+        }
+      ],
+      "title": "Research questions and contributions",
+      "level": "subsection"
+    },
+    {
+      "id": "section.3",
+      "kind": "section",
+      "status": "context",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/references.bib",
+          "sha256": "5676de6e29a20f0bbb77d26a244f46bac39a5621163e2d7ac578d93a948860e8"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/reference-audit.md",
+          "sha256": "98e0e466dd3012ab1799f3a7c11f1293c069961d896d4f5f63418d578752d642"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/sources.json",
+          "sha256": "684e4d19dd78093da5e19ad9454d5c4729e949ca1424ae5b0291c7282b6534ea"
+        }
+      ],
+      "title": "Existing Security Approaches for Model Context Protocol",
+      "level": "section"
+    },
+    {
+      "id": "section.4",
+      "kind": "section",
+      "status": "context",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/references.bib",
+          "sha256": "5676de6e29a20f0bbb77d26a244f46bac39a5621163e2d7ac578d93a948860e8"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/reference-audit.md",
+          "sha256": "98e0e466dd3012ab1799f3a7c11f1293c069961d896d4f5f63418d578752d642"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/sources.json",
+          "sha256": "684e4d19dd78093da5e19ad9454d5c4729e949ca1424ae5b0291c7282b6534ea"
+        }
+      ],
+      "title": "Direct MCP and agent-security studies",
+      "level": "subsection"
+    },
+    {
+      "id": "section.5",
+      "kind": "section",
+      "status": "context",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/references.bib",
+          "sha256": "5676de6e29a20f0bbb77d26a244f46bac39a5621163e2d7ac578d93a948860e8"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/reference-audit.md",
+          "sha256": "98e0e466dd3012ab1799f3a7c11f1293c069961d896d4f5f63418d578752d642"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/sources.json",
+          "sha256": "684e4d19dd78093da5e19ad9454d5c4729e949ca1424ae5b0291c7282b6534ea"
+        }
+      ],
+      "title": "Adjacent studies retained with explicit boundaries",
+      "level": "subsection"
+    },
+    {
+      "id": "section.6",
+      "kind": "section",
+      "status": "implemented",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/scanner.py",
+          "sha256": "031cc165bc28a6337299399e33fc9d9a3b8b8be9834e1acf366d9764dae29a58"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/signals.py",
+          "sha256": "aa075d495f257a32d4adb3b3d02c50ef6a624266c3aa78a7c826d93236c71a49"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/registry.py",
+          "sha256": "235097205a0c5802f587a0add8d8ad3f3fee276fddd19be45906c092241c3e93"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/audit.py",
+          "sha256": "bb0faec8aa25af5b8e7b331ad29653567c2a0e0d7f4845770c307cb84514e54f"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/paper-body.tex.in",
+          "sha256": "be8619e461b10a256f18eedb8ff98a3939a1de81c74e96dd09031ff86419a54f"
+        }
+      ],
+      "title": "Runtime Threat Detection and Security Architecture",
+      "level": "section"
+    },
+    {
+      "id": "section.7",
+      "kind": "section",
+      "status": "implemented",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/scanner.py",
+          "sha256": "031cc165bc28a6337299399e33fc9d9a3b8b8be9834e1acf366d9764dae29a58"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/signals.py",
+          "sha256": "aa075d495f257a32d4adb3b3d02c50ef6a624266c3aa78a7c826d93236c71a49"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/registry.py",
+          "sha256": "235097205a0c5802f587a0add8d8ad3f3fee276fddd19be45906c092241c3e93"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/audit.py",
+          "sha256": "bb0faec8aa25af5b8e7b331ad29653567c2a0e0d7f4845770c307cb84514e54f"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/paper-body.tex.in",
+          "sha256": "be8619e461b10a256f18eedb8ff98a3939a1de81c74e96dd09031ff86419a54f"
+        }
+      ],
+      "title": "Threat model and supported observations",
+      "level": "subsection"
+    },
+    {
+      "id": "section.8",
+      "kind": "section",
+      "status": "implemented",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/scanner.py",
+          "sha256": "031cc165bc28a6337299399e33fc9d9a3b8b8be9834e1acf366d9764dae29a58"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/signals.py",
+          "sha256": "aa075d495f257a32d4adb3b3d02c50ef6a624266c3aa78a7c826d93236c71a49"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/registry.py",
+          "sha256": "235097205a0c5802f587a0add8d8ad3f3fee276fddd19be45906c092241c3e93"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/audit.py",
+          "sha256": "bb0faec8aa25af5b8e7b331ad29653567c2a0e0d7f4845770c307cb84514e54f"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/paper-body.tex.in",
+          "sha256": "be8619e461b10a256f18eedb8ff98a3939a1de81c74e96dd09031ff86419a54f"
+        }
+      ],
+      "title": "Metadata analysis and poisoning risk",
+      "level": "subsection"
+    },
+    {
+      "id": "section.9",
+      "kind": "section",
+      "status": "implemented",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/scanner.py",
+          "sha256": "031cc165bc28a6337299399e33fc9d9a3b8b8be9834e1acf366d9764dae29a58"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/signals.py",
+          "sha256": "aa075d495f257a32d4adb3b3d02c50ef6a624266c3aa78a7c826d93236c71a49"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/registry.py",
+          "sha256": "235097205a0c5802f587a0add8d8ad3f3fee276fddd19be45906c092241c3e93"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/audit.py",
+          "sha256": "bb0faec8aa25af5b8e7b331ad29653567c2a0e0d7f4845770c307cb84514e54f"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/paper-body.tex.in",
+          "sha256": "be8619e461b10a256f18eedb8ff98a3939a1de81c74e96dd09031ff86419a54f"
+        }
+      ],
+      "title": "Shadowing, identity and scope",
+      "level": "subsection"
+    },
+    {
+      "id": "section.10",
+      "kind": "section",
+      "status": "implemented",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/scanner.py",
+          "sha256": "031cc165bc28a6337299399e33fc9d9a3b8b8be9834e1acf366d9764dae29a58"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/signals.py",
+          "sha256": "aa075d495f257a32d4adb3b3d02c50ef6a624266c3aa78a7c826d93236c71a49"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/registry.py",
+          "sha256": "235097205a0c5802f587a0add8d8ad3f3fee276fddd19be45906c092241c3e93"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "sentinel_tpd/audit.py",
+          "sha256": "bb0faec8aa25af5b8e7b331ad29653567c2a0e0d7f4845770c307cb84514e54f"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/paper-body.tex.in",
+          "sha256": "be8619e461b10a256f18eedb8ff98a3939a1de81c74e96dd09031ff86419a54f"
+        }
+      ],
+      "title": "Call-time monitoring, policy and quarantine",
+      "level": "subsection"
+    },
+    {
+      "id": "section.11",
+      "kind": "section",
+      "status": "measured",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/records.jsonl",
+          "sha256": "4c4a2b0bfe50dce332f5277469c4969e8e171b47808c1b7028d20cb6be86c2fd"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/summary.json",
+          "sha256": "c2fa5dd731588007fc501d307c27b02325620dedf8537cccab7a65e84e57a06d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/completion.json",
+          "sha256": "03d4fe7408616f1d8e1c3e17713bafe09b2bf1b284d8c4bb7f4fa2c12987f37c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/records.jsonl",
+          "sha256": "c565fdec29d5cf2ab08facf711e6c67dd9d533530c04f467a4f54ed972152c71"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/summary.json",
+          "sha256": "5115902263054ec9f679693255ccdb7c735b216f36648835e51f6abc4aa34b7d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/completion.json",
+          "sha256": "d7ac6542f010ef15d6caf70325aa84c688929e0657013ce228efdf5b9382dd4c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/measurement-protocol.md",
+          "sha256": "df3558e0a5319e31a6af89ca7f42d6b70a7754a9f5d44e9c0d0d6de8c286a38f"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/paper-body.tex.in",
+          "sha256": "be8619e461b10a256f18eedb8ff98a3939a1de81c74e96dd09031ff86419a54f"
+        }
+      ],
+      "title": "Security Evaluation and Performance Analysis",
+      "level": "section"
+    },
+    {
+      "id": "section.12",
+      "kind": "section",
+      "status": "measured",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/records.jsonl",
+          "sha256": "4c4a2b0bfe50dce332f5277469c4969e8e171b47808c1b7028d20cb6be86c2fd"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/summary.json",
+          "sha256": "c2fa5dd731588007fc501d307c27b02325620dedf8537cccab7a65e84e57a06d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/completion.json",
+          "sha256": "03d4fe7408616f1d8e1c3e17713bafe09b2bf1b284d8c4bb7f4fa2c12987f37c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/records.jsonl",
+          "sha256": "c565fdec29d5cf2ab08facf711e6c67dd9d533530c04f467a4f54ed972152c71"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/summary.json",
+          "sha256": "5115902263054ec9f679693255ccdb7c735b216f36648835e51f6abc4aa34b7d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/completion.json",
+          "sha256": "d7ac6542f010ef15d6caf70325aa84c688929e0657013ce228efdf5b9382dd4c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/measurement-protocol.md",
+          "sha256": "df3558e0a5319e31a6af89ca7f42d6b70a7754a9f5d44e9c0d0d6de8c286a38f"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/paper-body.tex.in",
+          "sha256": "be8619e461b10a256f18eedb8ff98a3939a1de81c74e96dd09031ff86419a54f"
+        }
+      ],
+      "title": "Inputs, provenance and experimental units",
+      "level": "subsection"
+    },
+    {
+      "id": "section.13",
+      "kind": "section",
+      "status": "measured",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/records.jsonl",
+          "sha256": "4c4a2b0bfe50dce332f5277469c4969e8e171b47808c1b7028d20cb6be86c2fd"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/summary.json",
+          "sha256": "c2fa5dd731588007fc501d307c27b02325620dedf8537cccab7a65e84e57a06d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/completion.json",
+          "sha256": "03d4fe7408616f1d8e1c3e17713bafe09b2bf1b284d8c4bb7f4fa2c12987f37c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/records.jsonl",
+          "sha256": "c565fdec29d5cf2ab08facf711e6c67dd9d533530c04f467a4f54ed972152c71"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/summary.json",
+          "sha256": "5115902263054ec9f679693255ccdb7c735b216f36648835e51f6abc4aa34b7d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/completion.json",
+          "sha256": "d7ac6542f010ef15d6caf70325aa84c688929e0657013ce228efdf5b9382dd4c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/measurement-protocol.md",
+          "sha256": "df3558e0a5319e31a6af89ca7f42d6b70a7754a9f5d44e9c0d0d6de8c286a38f"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/paper-body.tex.in",
+          "sha256": "be8619e461b10a256f18eedb8ff98a3939a1de81c74e96dd09031ff86419a54f"
+        }
+      ],
+      "title": "Comparison arms and observed enqueues",
+      "level": "subsection"
+    },
+    {
+      "id": "section.14",
+      "kind": "section",
+      "status": "measured",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/records.jsonl",
+          "sha256": "4c4a2b0bfe50dce332f5277469c4969e8e171b47808c1b7028d20cb6be86c2fd"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/summary.json",
+          "sha256": "c2fa5dd731588007fc501d307c27b02325620dedf8537cccab7a65e84e57a06d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/completion.json",
+          "sha256": "03d4fe7408616f1d8e1c3e17713bafe09b2bf1b284d8c4bb7f4fa2c12987f37c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/records.jsonl",
+          "sha256": "c565fdec29d5cf2ab08facf711e6c67dd9d533530c04f467a4f54ed972152c71"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/summary.json",
+          "sha256": "5115902263054ec9f679693255ccdb7c735b216f36648835e51f6abc4aa34b7d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/completion.json",
+          "sha256": "d7ac6542f010ef15d6caf70325aa84c688929e0657013ce228efdf5b9382dd4c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/measurement-protocol.md",
+          "sha256": "df3558e0a5319e31a6af89ca7f42d6b70a7754a9f5d44e9c0d0d6de8c286a38f"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/paper-body.tex.in",
+          "sha256": "be8619e461b10a256f18eedb8ff98a3939a1de81c74e96dd09031ff86419a54f"
+        }
+      ],
+      "title": "Metrics and five workload levels",
+      "level": "subsection"
+    },
+    {
+      "id": "section.15",
+      "kind": "section",
+      "status": "measured",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/records.jsonl",
+          "sha256": "4c4a2b0bfe50dce332f5277469c4969e8e171b47808c1b7028d20cb6be86c2fd"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/summary.json",
+          "sha256": "c2fa5dd731588007fc501d307c27b02325620dedf8537cccab7a65e84e57a06d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/completion.json",
+          "sha256": "03d4fe7408616f1d8e1c3e17713bafe09b2bf1b284d8c4bb7f4fa2c12987f37c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/records.jsonl",
+          "sha256": "c565fdec29d5cf2ab08facf711e6c67dd9d533530c04f467a4f54ed972152c71"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/summary.json",
+          "sha256": "5115902263054ec9f679693255ccdb7c735b216f36648835e51f6abc4aa34b7d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/completion.json",
+          "sha256": "d7ac6542f010ef15d6caf70325aa84c688929e0657013ce228efdf5b9382dd4c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/measurement-protocol.md",
+          "sha256": "df3558e0a5319e31a6af89ca7f42d6b70a7754a9f5d44e9c0d0d6de8c286a38f"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/paper-body.tex.in",
+          "sha256": "be8619e461b10a256f18eedb8ff98a3939a1de81c74e96dd09031ff86419a54f"
+        }
+      ],
+      "title": "Decision timing and allocation boundary",
+      "level": "subsection"
+    },
+    {
+      "id": "section.16",
+      "kind": "section",
+      "status": "measured",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/records.jsonl",
+          "sha256": "4c4a2b0bfe50dce332f5277469c4969e8e171b47808c1b7028d20cb6be86c2fd"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/summary.json",
+          "sha256": "c2fa5dd731588007fc501d307c27b02325620dedf8537cccab7a65e84e57a06d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/completion.json",
+          "sha256": "03d4fe7408616f1d8e1c3e17713bafe09b2bf1b284d8c4bb7f4fa2c12987f37c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/records.jsonl",
+          "sha256": "c565fdec29d5cf2ab08facf711e6c67dd9d533530c04f467a4f54ed972152c71"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/summary.json",
+          "sha256": "5115902263054ec9f679693255ccdb7c735b216f36648835e51f6abc4aa34b7d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/completion.json",
+          "sha256": "d7ac6542f010ef15d6caf70325aa84c688929e0657013ce228efdf5b9382dd4c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/measurement-protocol.md",
+          "sha256": "df3558e0a5319e31a6af89ca7f42d6b70a7754a9f5d44e9c0d0d6de8c286a38f"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/paper-body.tex.in",
+          "sha256": "be8619e461b10a256f18eedb8ff98a3939a1de81c74e96dd09031ff86419a54f"
+        }
+      ],
+      "title": "Unique-case detection, prevention and benign controls",
+      "level": "subsection"
+    },
+    {
+      "id": "section.17",
+      "kind": "section",
+      "status": "measured",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/records.jsonl",
+          "sha256": "4c4a2b0bfe50dce332f5277469c4969e8e171b47808c1b7028d20cb6be86c2fd"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/summary.json",
+          "sha256": "c2fa5dd731588007fc501d307c27b02325620dedf8537cccab7a65e84e57a06d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/completion.json",
+          "sha256": "03d4fe7408616f1d8e1c3e17713bafe09b2bf1b284d8c4bb7f4fa2c12987f37c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/records.jsonl",
+          "sha256": "c565fdec29d5cf2ab08facf711e6c67dd9d533530c04f467a4f54ed972152c71"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/summary.json",
+          "sha256": "5115902263054ec9f679693255ccdb7c735b216f36648835e51f6abc4aa34b7d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/completion.json",
+          "sha256": "d7ac6542f010ef15d6caf70325aa84c688929e0657013ce228efdf5b9382dd4c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/measurement-protocol.md",
+          "sha256": "df3558e0a5319e31a6af89ca7f42d6b70a7754a9f5d44e9c0d0d6de8c286a38f"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/paper-body.tex.in",
+          "sha256": "be8619e461b10a256f18eedb8ff98a3939a1de81c74e96dd09031ff86419a54f"
+        }
+      ],
+      "title": "Repeated workload levels",
+      "level": "subsection"
+    },
+    {
+      "id": "section.18",
+      "kind": "section",
+      "status": "measured",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/records.jsonl",
+          "sha256": "4c4a2b0bfe50dce332f5277469c4969e8e171b47808c1b7028d20cb6be86c2fd"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/summary.json",
+          "sha256": "c2fa5dd731588007fc501d307c27b02325620dedf8537cccab7a65e84e57a06d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/completion.json",
+          "sha256": "03d4fe7408616f1d8e1c3e17713bafe09b2bf1b284d8c4bb7f4fa2c12987f37c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/records.jsonl",
+          "sha256": "c565fdec29d5cf2ab08facf711e6c67dd9d533530c04f467a4f54ed972152c71"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/summary.json",
+          "sha256": "5115902263054ec9f679693255ccdb7c735b216f36648835e51f6abc4aa34b7d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/completion.json",
+          "sha256": "d7ac6542f010ef15d6caf70325aa84c688929e0657013ce228efdf5b9382dd4c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/measurement-protocol.md",
+          "sha256": "df3558e0a5319e31a6af89ca7f42d6b70a7754a9f5d44e9c0d0d6de8c286a38f"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/paper-body.tex.in",
+          "sha256": "be8619e461b10a256f18eedb8ff98a3939a1de81c74e96dd09031ff86419a54f"
+        }
+      ],
+      "title": "Lifecycle effects and field boundaries",
+      "level": "subsection"
+    },
+    {
+      "id": "section.19",
+      "kind": "section",
+      "status": "measured",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/records.jsonl",
+          "sha256": "4c4a2b0bfe50dce332f5277469c4969e8e171b47808c1b7028d20cb6be86c2fd"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/summary.json",
+          "sha256": "c2fa5dd731588007fc501d307c27b02325620dedf8537cccab7a65e84e57a06d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/completion.json",
+          "sha256": "03d4fe7408616f1d8e1c3e17713bafe09b2bf1b284d8c4bb7f4fa2c12987f37c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/records.jsonl",
+          "sha256": "c565fdec29d5cf2ab08facf711e6c67dd9d533530c04f467a4f54ed972152c71"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/summary.json",
+          "sha256": "5115902263054ec9f679693255ccdb7c735b216f36648835e51f6abc4aa34b7d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/completion.json",
+          "sha256": "d7ac6542f010ef15d6caf70325aa84c688929e0657013ce228efdf5b9382dd4c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/measurement-protocol.md",
+          "sha256": "df3558e0a5319e31a6af89ca7f42d6b70a7754a9f5d44e9c0d0d6de8c286a38f"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/paper-body.tex.in",
+          "sha256": "be8619e461b10a256f18eedb8ff98a3939a1de81c74e96dd09031ff86419a54f"
+        }
+      ],
+      "title": "Paired time and allocation cost",
+      "level": "subsection"
+    },
+    {
+      "id": "section.20",
+      "kind": "section",
+      "status": "measured",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/records.jsonl",
+          "sha256": "4c4a2b0bfe50dce332f5277469c4969e8e171b47808c1b7028d20cb6be86c2fd"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/summary.json",
+          "sha256": "c2fa5dd731588007fc501d307c27b02325620dedf8537cccab7a65e84e57a06d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/completion.json",
+          "sha256": "03d4fe7408616f1d8e1c3e17713bafe09b2bf1b284d8c4bb7f4fa2c12987f37c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/records.jsonl",
+          "sha256": "c565fdec29d5cf2ab08facf711e6c67dd9d533530c04f467a4f54ed972152c71"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/summary.json",
+          "sha256": "5115902263054ec9f679693255ccdb7c735b216f36648835e51f6abc4aa34b7d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/completion.json",
+          "sha256": "d7ac6542f010ef15d6caf70325aa84c688929e0657013ce228efdf5b9382dd4c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/measurement-protocol.md",
+          "sha256": "df3558e0a5319e31a6af89ca7f42d6b70a7754a9f5d44e9c0d0d6de8c286a38f"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/paper-body.tex.in",
+          "sha256": "be8619e461b10a256f18eedb8ff98a3939a1de81c74e96dd09031ff86419a54f"
+        }
+      ],
+      "title": "Interpretation and preservation of the original studies",
+      "level": "subsection"
+    },
+    {
+      "id": "section.21",
+      "kind": "section",
+      "status": "measured",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/records.jsonl",
+          "sha256": "4c4a2b0bfe50dce332f5277469c4969e8e171b47808c1b7028d20cb6be86c2fd"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/summary.json",
+          "sha256": "c2fa5dd731588007fc501d307c27b02325620dedf8537cccab7a65e84e57a06d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/completion.json",
+          "sha256": "03d4fe7408616f1d8e1c3e17713bafe09b2bf1b284d8c4bb7f4fa2c12987f37c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/records.jsonl",
+          "sha256": "c565fdec29d5cf2ab08facf711e6c67dd9d533530c04f467a4f54ed972152c71"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/summary.json",
+          "sha256": "5115902263054ec9f679693255ccdb7c735b216f36648835e51f6abc4aa34b7d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/completion.json",
+          "sha256": "d7ac6542f010ef15d6caf70325aa84c688929e0657013ce228efdf5b9382dd4c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/measurement-protocol.md",
+          "sha256": "df3558e0a5319e31a6af89ca7f42d6b70a7754a9f5d44e9c0d0d6de8c286a38f"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/paper-body.tex.in",
+          "sha256": "be8619e461b10a256f18eedb8ff98a3939a1de81c74e96dd09031ff86419a54f"
+        }
+      ],
+      "title": "Limitations and threats to validity",
+      "level": "subsection"
+    },
+    {
+      "id": "section.22",
+      "kind": "section",
+      "status": "measured",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/records.jsonl",
+          "sha256": "4c4a2b0bfe50dce332f5277469c4969e8e171b47808c1b7028d20cb6be86c2fd"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/summary.json",
+          "sha256": "c2fa5dd731588007fc501d307c27b02325620dedf8537cccab7a65e84e57a06d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/completion.json",
+          "sha256": "03d4fe7408616f1d8e1c3e17713bafe09b2bf1b284d8c4bb7f4fa2c12987f37c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/records.jsonl",
+          "sha256": "c565fdec29d5cf2ab08facf711e6c67dd9d533530c04f467a4f54ed972152c71"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/summary.json",
+          "sha256": "5115902263054ec9f679693255ccdb7c735b216f36648835e51f6abc4aa34b7d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/completion.json",
+          "sha256": "d7ac6542f010ef15d6caf70325aa84c688929e0657013ce228efdf5b9382dd4c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/measurement-protocol.md",
+          "sha256": "df3558e0a5319e31a6af89ca7f42d6b70a7754a9f5d44e9c0d0d6de8c286a38f"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/paper-body.tex.in",
+          "sha256": "be8619e461b10a256f18eedb8ff98a3939a1de81c74e96dd09031ff86419a54f"
+        }
+      ],
+      "title": "Ethics, harm and data availability",
+      "level": "subsection"
+    },
+    {
+      "id": "section.23",
+      "kind": "section",
+      "status": "measured",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/records.jsonl",
+          "sha256": "4c4a2b0bfe50dce332f5277469c4969e8e171b47808c1b7028d20cb6be86c2fd"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/summary.json",
+          "sha256": "c2fa5dd731588007fc501d307c27b02325620dedf8537cccab7a65e84e57a06d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/completion.json",
+          "sha256": "03d4fe7408616f1d8e1c3e17713bafe09b2bf1b284d8c4bb7f4fa2c12987f37c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/records.jsonl",
+          "sha256": "c565fdec29d5cf2ab08facf711e6c67dd9d533530c04f467a4f54ed972152c71"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/summary.json",
+          "sha256": "5115902263054ec9f679693255ccdb7c735b216f36648835e51f6abc4aa34b7d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/completion.json",
+          "sha256": "d7ac6542f010ef15d6caf70325aa84c688929e0657013ce228efdf5b9382dd4c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/measurement-protocol.md",
+          "sha256": "df3558e0a5319e31a6af89ca7f42d6b70a7754a9f5d44e9c0d0d6de8c286a38f"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/paper-body.tex.in",
+          "sha256": "be8619e461b10a256f18eedb8ff98a3939a1de81c74e96dd09031ff86419a54f"
+        }
+      ],
+      "title": "Conclusion",
+      "level": "section"
+    },
+    {
+      "id": "section.24",
+      "kind": "section",
+      "status": "context",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/paper-body.tex.in",
+          "sha256": "be8619e461b10a256f18eedb8ff98a3939a1de81c74e96dd09031ff86419a54f"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "submission/claims-ledger.md",
+          "sha256": "082619f215fc4f84cd14e507e1b335aa5dfb0e24068841218f352186ec179c5a"
+        }
+      ],
+      "title": "Acknowledgments and AI Assistance",
+      "level": "section"
+    },
+    {
+      "id": "section.25",
+      "kind": "section",
+      "status": "context",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/original-coverage.md",
+          "sha256": "d542196c591c5a43ba17671db8c7943a8a8e4fb7aba974ca1e2ef53cb1c1a862"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "data/source-manifest.json",
+          "sha256": "e7a0ff35222a5639584c6acdbec492ceb5762a199b098c905a00a2387b0b5f74"
+        }
+      ],
+      "title": "Original Pattern and Study Coverage",
+      "level": "section"
+    },
+    {
+      "id": "section.26",
+      "kind": "section",
+      "status": "context",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "manuscript/references.bib",
+          "sha256": "5676de6e29a20f0bbb77d26a244f46bac39a5621163e2d7ac578d93a948860e8"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/reference-audit.md",
+          "sha256": "98e0e466dd3012ab1799f3a7c11f1293c069961d896d4f5f63418d578752d642"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/sources.json",
+          "sha256": "684e4d19dd78093da5e19ad9454d5c4729e949ca1424ae5b0291c7282b6534ea"
+        }
+      ],
+      "title": "Adjacent Research Boundaries",
+      "level": "section"
+    },
+    {
+      "id": "section.27",
+      "kind": "section",
+      "status": "proposal",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/original-coverage.md",
+          "sha256": "d542196c591c5a43ba17671db8c7943a8a8e4fb7aba974ca1e2ef53cb1c1a862"
+        }
+      ],
+      "title": "Original Formal Expressions: Unimplemented Proposal",
+      "level": "section"
+    },
+    {
+      "id": "study.inputs",
+      "kind": "study",
+      "status": "measured",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "data/corpus.json",
+          "sha256": "a26ac0771ea329ec2f7aaf265336afbe318a67e39aef99d97ee8af3ff38dc128"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "data/source-manifest.json",
+          "sha256": "e7a0ff35222a5639584c6acdbec492ceb5762a199b098c905a00a2387b0b5f74"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "data/fetch_source.py",
+          "sha256": "27a2626f71b5ca5dc16e9a8878c749b355a8f5fac4ed37570b35aa9b28fede43"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "data/build_challenges.py",
+          "sha256": "01b8e5466a8fd1a1e58144a17bda573868a97715a5c143f7df3a6c70695becd8"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/corpus-provenance.md",
+          "sha256": "a10ec8d56f984cf0b881ce062dfd83dda1b20a545673c18892fc853709f0dcb7"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/corpus-acquisition.json",
+          "sha256": "057b554e9327bf167b983066962cf10129fcede63e1f3cb2a92546d950372b6a"
+        }
+      ],
+      "title": "47 source + 70 authored templates; projection and licensing boundaries"
+    },
+    {
+      "id": "study.lifecycle",
+      "kind": "study",
+      "status": "measured",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "data/lifecycle.json",
+          "sha256": "c77aa0effa4382d27b805f32cb9fa75c36553381af423059af3176afaff53e65"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "evaluation/methods.py",
+          "sha256": "b5849b895c39916ad32db9ea6f9486ff045e2e0d9ea94929becf5141e7620903"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/records.jsonl",
+          "sha256": "4c4a2b0bfe50dce332f5277469c4969e8e171b47808c1b7028d20cb6be86c2fd"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/summary.json",
+          "sha256": "c2fa5dd731588007fc501d307c27b02325620dedf8537cccab7a65e84e57a06d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/completion.json",
+          "sha256": "03d4fe7408616f1d8e1c3e17713bafe09b2bf1b284d8c4bb7f4fa2c12987f37c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/records.jsonl",
+          "sha256": "c565fdec29d5cf2ab08facf711e6c67dd9d533530c04f467a4f54ed972152c71"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/summary.json",
+          "sha256": "5115902263054ec9f679693255ccdb7c735b216f36648835e51f6abc4aa34b7d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/completion.json",
+          "sha256": "d7ac6542f010ef15d6caf70325aa84c688929e0657013ce228efdf5b9382dd4c"
+        }
+      ],
+      "title": "15 lifecycle traces"
+    },
+    {
+      "id": "study.sessions",
+      "kind": "study",
+      "status": "measured",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/measurement-protocol.md",
+          "sha256": "df3558e0a5319e31a6af89ca7f42d6b70a7754a9f5d44e9c0d0d6de8c286a38f"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "evaluation/run.py",
+          "sha256": "3216b63ae2af2f6323a024f2deedaa28686a68be99315c4d3f6cd2e9a31c89ff"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/metadata.json",
+          "sha256": "8014968bb2ad668f491edca1f28cf1450cbb32f109e8bab9ad8559264b0ac6aa"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/metadata.json",
+          "sha256": "fdf20fdef37a1fcf565ff67ea01426b4b5f641e1c5dce3ec07036ea3edad43e8"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/records.jsonl",
+          "sha256": "4c4a2b0bfe50dce332f5277469c4969e8e171b47808c1b7028d20cb6be86c2fd"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/summary.json",
+          "sha256": "c2fa5dd731588007fc501d307c27b02325620dedf8537cccab7a65e84e57a06d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-001/completion.json",
+          "sha256": "03d4fe7408616f1d8e1c3e17713bafe09b2bf1b284d8c4bb7f4fa2c12987f37c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/records.jsonl",
+          "sha256": "c565fdec29d5cf2ab08facf711e6c67dd9d533530c04f467a4f54ed972152c71"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/summary.json",
+          "sha256": "5115902263054ec9f679693255ccdb7c735b216f36648835e51f6abc4aa34b7d"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "results/frozen-002/completion.json",
+          "sha256": "d7ac6542f010ef15d6caf70325aa84c688929e0657013ce228efdf5b9382dd4c"
+        }
+      ],
+      "title": "Two measured process sessions; five workload sizes"
+    },
+    {
+      "id": "study.original",
+      "kind": "study",
+      "status": "context",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "research/original-coverage.md",
+          "sha256": "d542196c591c5a43ba17671db8c7943a8a8e4fb7aba974ca1e2ef53cb1c1a862"
+        }
+      ],
+      "title": "Original questions preserved; old numerical claims unverified"
+    },
+    {
+      "id": "study.reproduction",
+      "kind": "study",
+      "status": "measured",
+      "evidence": [
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "reproduce.py",
+          "sha256": "5a940b21c2b239fcbea3a5b103c837544ee57a6a550cd8250c94f52d22a76061"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "data/expected-outcomes.json",
+          "sha256": "06b052fdd466c54f0354c4db7f728c0a31341546d3607838f34ac8f1b03e6f5c"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "tests/test_evaluation.py",
+          "sha256": "cc75f15d44dcb593ed19ccfa66f5242102a6551adecaf8ea781ebbf362cf797b"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd",
+          "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+          "path": "tests/test_sentinel_tpd.py",
+          "sha256": "d145e66d0476b1ebe194be7e42c2144197f99264a848a3844b34daa1a5f8b50b"
+        },
+        {
+          "repository": "rajesamp/sentinel-tpd-research",
+          "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+          "path": "data/fetch_source.py",
+          "sha256": "27a2626f71b5ca5dc16e9a8878c749b355a8f5fac4ed37570b35aa9b28fede43"
+        }
+      ],
+      "title": "Executable evaluation, acquisition, tests and expected outcomes"
+    }
+  ],
+  "references": [
+    {
+      "key": "orig1",
+      "primary_url": "https://cybersciencelab.com/publications/mcp-scanner-detecting-security-risks-in-model-context-protocol-systems/",
+      "bibliography_path": "manuscript/references.bib",
+      "audit_path": "research/reference-audit.md"
+    },
+    {
+      "key": "orig2",
+      "primary_url": "https://www.mdpi.com/2078-2489/17/1/54",
+      "bibliography_path": "manuscript/references.bib",
+      "audit_path": "research/reference-audit.md"
+    },
+    {
+      "key": "orig3",
+      "primary_url": "https://arxiv.org/abs/2508.12538v2",
+      "bibliography_path": "manuscript/references.bib",
+      "audit_path": "research/reference-audit.md"
+    },
+    {
+      "key": "orig4",
+      "primary_url": "https://arxiv.org/abs/2512.15163v2",
+      "bibliography_path": "manuscript/references.bib",
+      "audit_path": "research/reference-audit.md"
+    },
+    {
+      "key": "orig5",
+      "primary_url": "https://arxiv.org/abs/2603.22489",
+      "bibliography_path": "manuscript/references.bib",
+      "audit_path": "research/reference-audit.md"
+    },
+    {
+      "key": "orig6",
+      "primary_url": "https://arxiv.org/abs/2512.08290",
+      "bibliography_path": "manuscript/references.bib",
+      "audit_path": "research/reference-audit.md"
+    },
+    {
+      "key": "orig7",
+      "primary_url": "https://dl.acm.org/doi/10.1145/3774904.3792400",
+      "bibliography_path": "manuscript/references.bib",
+      "audit_path": "research/reference-audit.md"
+    },
+    {
+      "key": "orig8",
+      "primary_url": "https://ojs.aaai.org/index.php/AAAI/article/view/40895",
+      "bibliography_path": "manuscript/references.bib",
+      "audit_path": "research/reference-audit.md"
+    },
+    {
+      "key": "orig9",
+      "primary_url": "https://arxiv.org/abs/2509.21011",
+      "bibliography_path": "manuscript/references.bib",
+      "audit_path": "research/reference-audit.md"
+    },
+    {
+      "key": "orig10",
+      "primary_url": "https://papers.nips.cc/paper_files/paper/2024/hash/6a2e30664b9647f97d7b9275358d083c-Abstract-Conference.html",
+      "bibliography_path": "manuscript/references.bib",
+      "audit_path": "research/reference-audit.md"
+    },
+    {
+      "key": "orig11",
+      "primary_url": "https://research.aber.ac.uk/en/publications/shadow-ai-cyber-security-implications-opportunities-and-challenge/",
+      "bibliography_path": "manuscript/references.bib",
+      "audit_path": "research/reference-audit.md"
+    },
+    {
+      "key": "orig12",
+      "primary_url": "https://sarajumohanty.github.io/Mohanty_Curriculum-Vitae.pdf",
+      "bibliography_path": "manuscript/references.bib",
+      "audit_path": "research/reference-audit.md"
+    },
+    {
+      "key": "orig13",
+      "primary_url": "https://injoit.org/index.php/j1/article/download/2423/2053",
+      "bibliography_path": "manuscript/references.bib",
+      "audit_path": "research/reference-audit.md"
+    },
+    {
+      "key": "orig14",
+      "primary_url": "https://arxiv.org/abs/2501.09025",
+      "bibliography_path": "manuscript/references.bib",
+      "audit_path": "research/reference-audit.md"
+    },
+    {
+      "key": "orig15",
+      "primary_url": "https://arxiv.org/abs/2501.14008",
+      "bibliography_path": "manuscript/references.bib",
+      "audit_path": "research/reference-audit.md"
+    },
+    {
+      "key": "orig16",
+      "primary_url": "https://robust-6g.eu/wp-content/uploads/2025/12/SHERPA_Explainable_Robust_Algorithms_for_Privacy-Preserved_Federated_Learning_in_Future_Networks_to_Defend_Against_Data_Poisoning_Attacks.pdf",
+      "bibliography_path": "manuscript/references.bib",
+      "audit_path": "research/reference-audit.md"
+    },
+    {
+      "key": "orig17",
+      "primary_url": "https://arxiv.org/abs/2405.16707",
+      "bibliography_path": "manuscript/references.bib",
+      "audit_path": "research/reference-audit.md"
+    },
+    {
+      "key": "orig18",
+      "primary_url": "https://zhangmm.net/publication/oakland24-tudoor/",
+      "bibliography_path": "manuscript/references.bib",
+      "audit_path": "research/reference-audit.md"
+    },
+    {
+      "key": "orig19",
+      "primary_url": "https://oaklandsok.github.io/papers/haq2024.pdf",
+      "bibliography_path": "manuscript/references.bib",
+      "audit_path": "research/reference-audit.md"
+    },
+    {
+      "key": "orig20",
+      "primary_url": "https://panimalar.ac.in/assets/pdf/cse/research/journal/CSE-Journal-24-25.pdf",
+      "bibliography_path": "manuscript/references.bib",
+      "audit_path": "research/reference-audit.md"
+    },
+    {
+      "key": "fuzzd",
+      "primary_url": "https://github.com/ksek87/fuzzd/tree/f739e120cd7dc253fead2a1f13668f9535e4d8a5",
+      "bibliography_path": "manuscript/references.bib",
+      "audit_path": "research/reference-audit.md"
+    },
+    {
+      "key": "fuzzdpoison",
+      "primary_url": "https://github.com/ksek87/fuzzd/tree/f739e120cd7dc253fead2a1f13668f9535e4d8a5/corpus/tool_poisoning",
+      "bibliography_path": "manuscript/references.bib",
+      "audit_path": "research/reference-audit.md"
+    },
+    {
+      "key": "fuzzdshadow",
+      "primary_url": "https://github.com/ksek87/fuzzd/tree/f739e120cd7dc253fead2a1f13668f9535e4d8a5/corpus/tool_shadowing",
+      "bibliography_path": "manuscript/references.bib",
+      "audit_path": "research/reference-audit.md"
+    },
+    {
+      "key": "mcptoxrepo",
+      "primary_url": "https://github.com/zhiqiangwang4/MCPTox-Benchmark",
+      "bibliography_path": "manuscript/references.bib",
+      "audit_path": "research/reference-audit.md"
+    },
+    {
+      "key": "mcpguard",
+      "primary_url": "https://aclanthology.org/2026.findings-acl.240/",
+      "bibliography_path": "manuscript/references.bib",
+      "audit_path": "research/reference-audit.md"
+    },
+    {
+      "key": "mcpshield",
+      "primary_url": "https://arxiv.org/abs/2602.14281v3",
+      "bibliography_path": "manuscript/references.bib",
+      "audit_path": "research/reference-audit.md"
+    },
+    {
+      "key": "dispatchartifact",
+      "primary_url": "https://github.com/rajesamp/sentinel-dispatch-conformance/releases/tag/v0.1.0",
+      "bibliography_path": "manuscript/references.bib",
+      "audit_path": "research/reference-audit.md"
+    },
+    {
+      "key": "sentineltpd",
+      "primary_url": "https://github.com/rajesamp/sentinel-tpd/tree/5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+      "bibliography_path": "manuscript/references.bib",
+      "audit_path": "research/reference-audit.md"
+    },
+    {
+      "key": "mcp2025tools",
+      "primary_url": "https://modelcontextprotocol.io/specification/2025-11-25/server/tools",
+      "bibliography_path": "manuscript/references.bib",
+      "audit_path": "research/reference-audit.md"
+    },
+    {
+      "key": "mcp2026tools",
+      "primary_url": "https://modelcontextprotocol.io/specification/2026-07-28/server/tools",
+      "bibliography_path": "manuscript/references.bib",
+      "audit_path": "research/reference-audit.md"
+    },
+    {
+      "key": "semanticattacks",
+      "primary_url": "https://arxiv.org/abs/2512.06556v2",
+      "bibliography_path": "manuscript/references.bib",
+      "audit_path": "research/reference-audit.md"
+    },
+    {
+      "key": "etdi",
+      "primary_url": "https://arxiv.org/abs/2506.01333v1",
+      "bibliography_path": "manuscript/references.bib",
+      "audit_path": "research/reference-audit.md"
+    },
+    {
+      "key": "hcp",
+      "primary_url": "https://arxiv.org/abs/2606.29073v1",
+      "bibliography_path": "manuscript/references.bib",
+      "audit_path": "research/reference-audit.md"
+    },
+    {
+      "key": "attested",
+      "primary_url": "https://arxiv.org/abs/2605.24248v1",
+      "bibliography_path": "manuscript/references.bib",
+      "audit_path": "research/reference-audit.md"
+    }
+  ],
+  "limits": [
+    "External source payloads are excluded; verified acquisition pins are public.",
+    "The original uploaded PDF is not redistributed; its pattern/numerical/reference crosswalk is public.",
+    "Weighted equations are unimplemented proposals.",
+    "Citing third-party work does not implement or reproduce its algorithm."
+  ]
+}

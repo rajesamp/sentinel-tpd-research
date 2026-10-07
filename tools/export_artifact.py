@@ -49,6 +49,9 @@ def main():
             if not file.is_file() or excluded(file.relative_to(ROOT)):
                 continue
             relative=file.relative_to(ROOT)
+            if anon and relative == Path("tests/test_traceability.py"):
+                # Author-side publication maintenance is separate from scored tests.
+                continue
             if relative in copied:
                 continue
             if file.suffix==".log" and "results" not in relative.parts:

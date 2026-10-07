@@ -1,0 +1,498 @@
+{
+  "evaluated_revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+  "evidence": [
+    {
+      "github_url": "https://github.com/rajesamp/sentinel-tpd/blob/5ce5d56e57a0acd092435fca5d89b78d0b39ee7b/sentinel_tpd/audit.py",
+      "path": "sentinel_tpd/audit.py",
+      "repository": "rajesamp/sentinel-tpd",
+      "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+      "sha256": "bb0faec8aa25af5b8e7b331ad29653567c2a0e0d7f4845770c307cb84514e54f"
+    },
+    {
+      "github_url": "https://github.com/rajesamp/sentinel-tpd/blob/5ce5d56e57a0acd092435fca5d89b78d0b39ee7b/sentinel_tpd/registry.py",
+      "path": "sentinel_tpd/registry.py",
+      "repository": "rajesamp/sentinel-tpd",
+      "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+      "sha256": "235097205a0c5802f587a0add8d8ad3f3fee276fddd19be45906c092241c3e93"
+    },
+    {
+      "github_url": "https://github.com/rajesamp/sentinel-tpd/blob/5ce5d56e57a0acd092435fca5d89b78d0b39ee7b/sentinel_tpd/scanner.py",
+      "path": "sentinel_tpd/scanner.py",
+      "repository": "rajesamp/sentinel-tpd",
+      "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+      "sha256": "031cc165bc28a6337299399e33fc9d9a3b8b8be9834e1acf366d9764dae29a58"
+    },
+    {
+      "github_url": "https://github.com/rajesamp/sentinel-tpd/blob/5ce5d56e57a0acd092435fca5d89b78d0b39ee7b/sentinel_tpd/signals.py",
+      "path": "sentinel_tpd/signals.py",
+      "repository": "rajesamp/sentinel-tpd",
+      "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+      "sha256": "aa075d495f257a32d4adb3b3d02c50ef6a624266c3aa78a7c826d93236c71a49"
+    },
+    {
+      "github_url": "https://github.com/rajesamp/sentinel-tpd/blob/5ce5d56e57a0acd092435fca5d89b78d0b39ee7b/tests/test_sentinel_tpd.py",
+      "path": "tests/test_sentinel_tpd.py",
+      "repository": "rajesamp/sentinel-tpd",
+      "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+      "sha256": "d145e66d0476b1ebe194be7e42c2144197f99264a848a3844b34daa1a5f8b50b"
+    },
+    {
+      "github_url": "https://github.com/rajesamp/sentinel-tpd-research/blob/d62ccf1707713b31829a1a480c54fb789ec75c15/data/build_challenges.py",
+      "path": "data/build_challenges.py",
+      "repository": "rajesamp/sentinel-tpd-research",
+      "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+      "sha256": "01b8e5466a8fd1a1e58144a17bda573868a97715a5c143f7df3a6c70695becd8"
+    },
+    {
+      "github_url": "https://github.com/rajesamp/sentinel-tpd-research/blob/d62ccf1707713b31829a1a480c54fb789ec75c15/data/corpus.json",
+      "path": "data/corpus.json",
+      "repository": "rajesamp/sentinel-tpd-research",
+      "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+      "sha256": "a26ac0771ea329ec2f7aaf265336afbe318a67e39aef99d97ee8af3ff38dc128"
+    },
+    {
+      "github_url": "https://github.com/rajesamp/sentinel-tpd-research/blob/d62ccf1707713b31829a1a480c54fb789ec75c15/data/expected-outcomes.json",
+      "path": "data/expected-outcomes.json",
+      "repository": "rajesamp/sentinel-tpd-research",
+      "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+      "sha256": "06b052fdd466c54f0354c4db7f728c0a31341546d3607838f34ac8f1b03e6f5c"
+    },
+    {
+      "github_url": "https://github.com/rajesamp/sentinel-tpd-research/blob/d62ccf1707713b31829a1a480c54fb789ec75c15/data/fetch_source.py",
+      "path": "data/fetch_source.py",
+      "repository": "rajesamp/sentinel-tpd-research",
+      "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+      "sha256": "27a2626f71b5ca5dc16e9a8878c749b355a8f5fac4ed37570b35aa9b28fede43"
+    },
+    {
+      "github_url": "https://github.com/rajesamp/sentinel-tpd-research/blob/d62ccf1707713b31829a1a480c54fb789ec75c15/data/lifecycle.json",
+      "path": "data/lifecycle.json",
+      "repository": "rajesamp/sentinel-tpd-research",
+      "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+      "sha256": "c77aa0effa4382d27b805f32cb9fa75c36553381af423059af3176afaff53e65"
+    },
+    {
+      "github_url": "https://github.com/rajesamp/sentinel-tpd-research/blob/d62ccf1707713b31829a1a480c54fb789ec75c15/data/source-manifest.json",
+      "path": "data/source-manifest.json",
+      "repository": "rajesamp/sentinel-tpd-research",
+      "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+      "sha256": "e7a0ff35222a5639584c6acdbec492ceb5762a199b098c905a00a2387b0b5f74"
+    },
+    {
+      "github_url": "https://github.com/rajesamp/sentinel-tpd-research/blob/d62ccf1707713b31829a1a480c54fb789ec75c15/evaluation/methods.py",
+      "path": "evaluation/methods.py",
+      "repository": "rajesamp/sentinel-tpd-research",
+      "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+      "sha256": "b5849b895c39916ad32db9ea6f9486ff045e2e0d9ea94929becf5141e7620903"
+    },
+    {
+      "github_url": "https://github.com/rajesamp/sentinel-tpd-research/blob/d62ccf1707713b31829a1a480c54fb789ec75c15/evaluation/report.py",
+      "path": "evaluation/report.py",
+      "repository": "rajesamp/sentinel-tpd-research",
+      "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+      "sha256": "4724f3359bc5ee690b4ea5a014758ee529bdfd2e8dbf58b4112140fadb23232a"
+    },
+    {
+      "github_url": "https://github.com/rajesamp/sentinel-tpd-research/blob/d62ccf1707713b31829a1a480c54fb789ec75c15/evaluation/run.py",
+      "path": "evaluation/run.py",
+      "repository": "rajesamp/sentinel-tpd-research",
+      "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+      "sha256": "3216b63ae2af2f6323a024f2deedaa28686a68be99315c4d3f6cd2e9a31c89ff"
+    },
+    {
+      "github_url": "https://github.com/rajesamp/sentinel-tpd-research/blob/d62ccf1707713b31829a1a480c54fb789ec75c15/manuscript/paper-body.tex.in",
+      "path": "manuscript/paper-body.tex.in",
+      "repository": "rajesamp/sentinel-tpd-research",
+      "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+      "sha256": "be8619e461b10a256f18eedb8ff98a3939a1de81c74e96dd09031ff86419a54f"
+    },
+    {
+      "github_url": "https://github.com/rajesamp/sentinel-tpd-research/blob/d62ccf1707713b31829a1a480c54fb789ec75c15/manuscript/references.bib",
+      "path": "manuscript/references.bib",
+      "repository": "rajesamp/sentinel-tpd-research",
+      "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+      "sha256": "5676de6e29a20f0bbb77d26a244f46bac39a5621163e2d7ac578d93a948860e8"
+    },
+    {
+      "github_url": "https://github.com/rajesamp/sentinel-tpd-research/blob/d62ccf1707713b31829a1a480c54fb789ec75c15/reproduce.py",
+      "path": "reproduce.py",
+      "repository": "rajesamp/sentinel-tpd-research",
+      "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+      "sha256": "5a940b21c2b239fcbea3a5b103c837544ee57a6a550cd8250c94f52d22a76061"
+    },
+    {
+      "github_url": "https://github.com/rajesamp/sentinel-tpd-research/blob/d62ccf1707713b31829a1a480c54fb789ec75c15/research/corpus-acquisition.json",
+      "path": "research/corpus-acquisition.json",
+      "repository": "rajesamp/sentinel-tpd-research",
+      "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+      "sha256": "057b554e9327bf167b983066962cf10129fcede63e1f3cb2a92546d950372b6a"
+    },
+    {
+      "github_url": "https://github.com/rajesamp/sentinel-tpd-research/blob/d62ccf1707713b31829a1a480c54fb789ec75c15/research/corpus-provenance.md",
+      "path": "research/corpus-provenance.md",
+      "repository": "rajesamp/sentinel-tpd-research",
+      "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+      "sha256": "a10ec8d56f984cf0b881ce062dfd83dda1b20a545673c18892fc853709f0dcb7"
+    },
+    {
+      "github_url": "https://github.com/rajesamp/sentinel-tpd-research/blob/d62ccf1707713b31829a1a480c54fb789ec75c15/research/measurement-protocol.md",
+      "path": "research/measurement-protocol.md",
+      "repository": "rajesamp/sentinel-tpd-research",
+      "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+      "sha256": "df3558e0a5319e31a6af89ca7f42d6b70a7754a9f5d44e9c0d0d6de8c286a38f"
+    },
+    {
+      "github_url": "https://github.com/rajesamp/sentinel-tpd-research/blob/d62ccf1707713b31829a1a480c54fb789ec75c15/research/original-coverage.md",
+      "path": "research/original-coverage.md",
+      "repository": "rajesamp/sentinel-tpd-research",
+      "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+      "sha256": "d542196c591c5a43ba17671db8c7943a8a8e4fb7aba974ca1e2ef53cb1c1a862"
+    },
+    {
+      "github_url": "https://github.com/rajesamp/sentinel-tpd-research/blob/d62ccf1707713b31829a1a480c54fb789ec75c15/research/reference-audit.md",
+      "path": "research/reference-audit.md",
+      "repository": "rajesamp/sentinel-tpd-research",
+      "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+      "sha256": "98e0e466dd3012ab1799f3a7c11f1293c069961d896d4f5f63418d578752d642"
+    },
+    {
+      "github_url": "https://github.com/rajesamp/sentinel-tpd-research/blob/d62ccf1707713b31829a1a480c54fb789ec75c15/research/sources.json",
+      "path": "research/sources.json",
+      "repository": "rajesamp/sentinel-tpd-research",
+      "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+      "sha256": "684e4d19dd78093da5e19ad9454d5c4729e949ca1424ae5b0291c7282b6534ea"
+    },
+    {
+      "github_url": "https://github.com/rajesamp/sentinel-tpd-research/blob/d62ccf1707713b31829a1a480c54fb789ec75c15/results/frozen-001/completion.json",
+      "path": "results/frozen-001/completion.json",
+      "repository": "rajesamp/sentinel-tpd-research",
+      "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+      "sha256": "03d4fe7408616f1d8e1c3e17713bafe09b2bf1b284d8c4bb7f4fa2c12987f37c"
+    },
+    {
+      "github_url": "https://github.com/rajesamp/sentinel-tpd-research/blob/d62ccf1707713b31829a1a480c54fb789ec75c15/results/frozen-001/metadata.json",
+      "path": "results/frozen-001/metadata.json",
+      "repository": "rajesamp/sentinel-tpd-research",
+      "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+      "sha256": "8014968bb2ad668f491edca1f28cf1450cbb32f109e8bab9ad8559264b0ac6aa"
+    },
+    {
+      "github_url": "https://github.com/rajesamp/sentinel-tpd-research/blob/d62ccf1707713b31829a1a480c54fb789ec75c15/results/frozen-001/records.jsonl",
+      "path": "results/frozen-001/records.jsonl",
+      "repository": "rajesamp/sentinel-tpd-research",
+      "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+      "sha256": "4c4a2b0bfe50dce332f5277469c4969e8e171b47808c1b7028d20cb6be86c2fd"
+    },
+    {
+      "github_url": "https://github.com/rajesamp/sentinel-tpd-research/blob/d62ccf1707713b31829a1a480c54fb789ec75c15/results/frozen-001/summary.json",
+      "path": "results/frozen-001/summary.json",
+      "repository": "rajesamp/sentinel-tpd-research",
+      "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+      "sha256": "c2fa5dd731588007fc501d307c27b02325620dedf8537cccab7a65e84e57a06d"
+    },
+    {
+      "github_url": "https://github.com/rajesamp/sentinel-tpd-research/blob/d62ccf1707713b31829a1a480c54fb789ec75c15/results/frozen-002/completion.json",
+      "path": "results/frozen-002/completion.json",
+      "repository": "rajesamp/sentinel-tpd-research",
+      "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+      "sha256": "d7ac6542f010ef15d6caf70325aa84c688929e0657013ce228efdf5b9382dd4c"
+    },
+    {
+      "github_url": "https://github.com/rajesamp/sentinel-tpd-research/blob/d62ccf1707713b31829a1a480c54fb789ec75c15/results/frozen-002/metadata.json",
+      "path": "results/frozen-002/metadata.json",
+      "repository": "rajesamp/sentinel-tpd-research",
+      "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+      "sha256": "fdf20fdef37a1fcf565ff67ea01426b4b5f641e1c5dce3ec07036ea3edad43e8"
+    },
+    {
+      "github_url": "https://github.com/rajesamp/sentinel-tpd-research/blob/d62ccf1707713b31829a1a480c54fb789ec75c15/results/frozen-002/records.jsonl",
+      "path": "results/frozen-002/records.jsonl",
+      "repository": "rajesamp/sentinel-tpd-research",
+      "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+      "sha256": "c565fdec29d5cf2ab08facf711e6c67dd9d533530c04f467a4f54ed972152c71"
+    },
+    {
+      "github_url": "https://github.com/rajesamp/sentinel-tpd-research/blob/d62ccf1707713b31829a1a480c54fb789ec75c15/results/frozen-002/summary.json",
+      "path": "results/frozen-002/summary.json",
+      "repository": "rajesamp/sentinel-tpd-research",
+      "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+      "sha256": "5115902263054ec9f679693255ccdb7c735b216f36648835e51f6abc4aa34b7d"
+    },
+    {
+      "github_url": "https://github.com/rajesamp/sentinel-tpd-research/blob/d62ccf1707713b31829a1a480c54fb789ec75c15/submission/claims-ledger.md",
+      "path": "submission/claims-ledger.md",
+      "repository": "rajesamp/sentinel-tpd-research",
+      "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+      "sha256": "082619f215fc4f84cd14e507e1b335aa5dfb0e24068841218f352186ec179c5a"
+    },
+    {
+      "github_url": "https://github.com/rajesamp/sentinel-tpd-research/blob/d62ccf1707713b31829a1a480c54fb789ec75c15/tests/test_evaluation.py",
+      "path": "tests/test_evaluation.py",
+      "repository": "rajesamp/sentinel-tpd-research",
+      "revision": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+      "sha256": "cc75f15d44dcb593ed19ccfa66f5242102a6551adecaf8ea781ebbf362cf797b"
+    }
+  ],
+  "frozen_runs": [
+    {
+      "code_files_verified": 18,
+      "excluded_inputs": [
+        {
+          "expected_file_sha256": "41438f7a9960bae5a3dd8709a27c57df955328ac3d8f689b3f73d2e5ffdab3e1",
+          "path": "data/corpus-combined.local.json",
+          "reason": "external source bytes require acquisition replay",
+          "verified": false
+        }
+      ],
+      "metadata_sha256": "8014968bb2ad668f491edca1f28cf1450cbb32f109e8bab9ad8559264b0ac6aa",
+      "public_inputs_verified": 1,
+      "raw_records_verified": 4728,
+      "run": "frozen-001",
+      "vendor_files_verified": 12
+    },
+    {
+      "code_files_verified": 18,
+      "excluded_inputs": [
+        {
+          "expected_file_sha256": "41438f7a9960bae5a3dd8709a27c57df955328ac3d8f689b3f73d2e5ffdab3e1",
+          "path": "data/corpus-combined.local.json",
+          "reason": "external source bytes require acquisition replay",
+          "verified": false
+        }
+      ],
+      "metadata_sha256": "fdf20fdef37a1fcf565ff67ea01426b4b5f641e1c5dce3ec07036ea3edad43e8",
+      "public_inputs_verified": 1,
+      "raw_records_verified": 4728,
+      "run": "frozen-002",
+      "vendor_files_verified": 12
+    }
+  ],
+  "implementation_repository": "rajesamp/sentinel-tpd",
+  "inventory": {
+    "bibliography": [
+      "attested",
+      "dispatchartifact",
+      "etdi",
+      "fuzzd",
+      "fuzzdpoison",
+      "fuzzdshadow",
+      "hcp",
+      "mcp2025tools",
+      "mcp2026tools",
+      "mcpguard",
+      "mcpshield",
+      "mcptoxrepo",
+      "orig1",
+      "orig10",
+      "orig11",
+      "orig12",
+      "orig13",
+      "orig14",
+      "orig15",
+      "orig16",
+      "orig17",
+      "orig18",
+      "orig19",
+      "orig2",
+      "orig20",
+      "orig3",
+      "orig4",
+      "orig5",
+      "orig6",
+      "orig7",
+      "orig8",
+      "orig9",
+      "semanticattacks",
+      "sentineltpd"
+    ],
+    "equation": [
+      {
+        "id": "manuscript.equation.1",
+        "label": null
+      },
+      {
+        "id": "manuscript.equation.2",
+        "label": null
+      },
+      {
+        "id": "manuscript.equation.3",
+        "label": null
+      },
+      {
+        "id": "manuscript.equation.4",
+        "label": null
+      },
+      {
+        "id": "manuscript.equation.5",
+        "label": null
+      },
+      {
+        "id": "manuscript.equation.6",
+        "label": null
+      },
+      {
+        "id": "manuscript.equation.7",
+        "label": null
+      },
+      {
+        "id": "manuscript.equation.8",
+        "label": "eq:proposal-metadata"
+      },
+      {
+        "id": "manuscript.equation.9",
+        "label": "eq:proposal-poison"
+      },
+      {
+        "id": "manuscript.equation.10",
+        "label": "eq:proposal-shadow"
+      },
+      {
+        "id": "manuscript.equation.11",
+        "label": "eq:proposal-combined"
+      }
+    ],
+    "figure": [
+      "fig:architecture",
+      "fig:decision",
+      "fig:cycle",
+      "fig:poisoning",
+      "fig:shadowing"
+    ],
+    "section": [
+      {
+        "level": "section",
+        "title": "Model Context Protocol Security and Threat Landscape"
+      },
+      {
+        "level": "subsection",
+        "title": "Research questions and contributions"
+      },
+      {
+        "level": "section",
+        "title": "Existing Security Approaches for Model Context Protocol"
+      },
+      {
+        "level": "subsection",
+        "title": "Direct MCP and agent-security studies"
+      },
+      {
+        "level": "subsection",
+        "title": "Adjacent studies retained with explicit boundaries"
+      },
+      {
+        "level": "section",
+        "title": "Runtime Threat Detection and Security Architecture"
+      },
+      {
+        "level": "subsection",
+        "title": "Threat model and supported observations"
+      },
+      {
+        "level": "subsection",
+        "title": "Metadata analysis and poisoning risk"
+      },
+      {
+        "level": "subsection",
+        "title": "Shadowing, identity and scope"
+      },
+      {
+        "level": "subsection",
+        "title": "Call-time monitoring, policy and quarantine"
+      },
+      {
+        "level": "section",
+        "title": "Security Evaluation and Performance Analysis"
+      },
+      {
+        "level": "subsection",
+        "title": "Inputs, provenance and experimental units"
+      },
+      {
+        "level": "subsection",
+        "title": "Comparison arms and observed enqueues"
+      },
+      {
+        "level": "subsection",
+        "title": "Metrics and five workload levels"
+      },
+      {
+        "level": "subsection",
+        "title": "Decision timing and allocation boundary"
+      },
+      {
+        "level": "subsection",
+        "title": "Unique-case detection, prevention and benign controls"
+      },
+      {
+        "level": "subsection",
+        "title": "Repeated workload levels"
+      },
+      {
+        "level": "subsection",
+        "title": "Lifecycle effects and field boundaries"
+      },
+      {
+        "level": "subsection",
+        "title": "Paired time and allocation cost"
+      },
+      {
+        "level": "subsection",
+        "title": "Interpretation and preservation of the original studies"
+      },
+      {
+        "level": "subsection",
+        "title": "Limitations and threats to validity"
+      },
+      {
+        "level": "subsection",
+        "title": "Ethics, harm and data availability"
+      },
+      {
+        "level": "section",
+        "title": "Conclusion"
+      },
+      {
+        "level": "section",
+        "title": "Acknowledgments and AI Assistance"
+      },
+      {
+        "level": "section",
+        "title": "Original Pattern and Study Coverage"
+      },
+      {
+        "level": "section",
+        "title": "Adjacent Research Boundaries"
+      },
+      {
+        "level": "section",
+        "title": "Original Formal Expressions: Unimplemented Proposal"
+      }
+    ],
+    "table": [
+      "tab:rules",
+      "tab:architecture",
+      "tab:fields",
+      "tab:metrics",
+      "tab:unique",
+      "tab:workloads",
+      "tab:lifecycle",
+      "tab:cost",
+      "tab:patterns",
+      "tab:adjacent"
+    ]
+  },
+  "limits": [
+    "Local evidence bytes and mappings verified; remote GitHub existence and revision contents require separate live verification.",
+    "External source bytes require acquisition replay; excluded local corpus inputs are not verified by this audit.",
+    "Traceability does not establish semantic claim validity, independent replication, or peer review."
+  ],
+  "manifest_sha256": "2f32114e33200af5f1ffec6df58eb7e3824219df4fc261abab52719daf832396",
+  "materials_verified": 58,
+  "offline": true,
+  "paper_revision_base": "d62ccf1707713b31829a1a480c54fb789ec75c15",
+  "paper_sha256": "72b3c9b2a41b024f8fbf55aef8932684c5052b3f527063043f763a8067f05ea1",
+  "references_verified": 34,
+  "repository_distinction_verified": true,
+  "schema_version": 1,
+  "status": "passed"
+}

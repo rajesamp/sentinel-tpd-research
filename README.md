@@ -5,12 +5,38 @@ mutation. It preserves the original manuscript's patterns and workload questions
 but derives claims from the pinned code and saved observations. This is a research
 artifact and conference draft, not an accepted publication or a security guarantee.
 
-[Version 0.1.0 downloads](https://github.com/rajesamp/sentinel-tpd-research/releases/tag/v0.1.0)
+[Version 0.1.1 downloads](https://github.com/rajesamp/sentinel-tpd-research/releases/tag/v0.1.1)
 include the author and anonymous PDFs, author and reviewer archives, and file
 checksums. Read [submission preparation](submission/readiness.md) before any
 conference upload. Post-sealing validation is recorded in
 [fresh-package replay](submission/fresh-package-replay.json) and the repository's
 archive review; it is separate from the sealed archive contents.
+
+## Implementation and paper evidence
+
+The implementation repository is
+[rajesamp/sentinel-tpd](https://github.com/rajesamp/sentinel-tpd).
+This [rajesamp/sentinel-tpd-research](https://github.com/rajesamp/sentinel-tpd-research)
+repository contains the paper, assay, fixtures, references and recorded evidence.
+They serve different roles. The live implementation was verified on 2026-10-07
+at the paper's exact evaluated revision
+`5ce5d56e57a0acd092435fca5d89b78d0b39ee7b`: all 12 recorded files matched before
+the documentation update. The research update changes documentation and paper
+attribution, not the measured runtime modules or frozen observations.
+
+Start with the [paper-to-evidence index](research/paper-evidence-index.md), covering
+every figure, table, equation, section and all 34 bibliography keys. Its
+[machine-readable manifest](research/paper-evidence-manifest.json) records exact
+GitHub revisions, paths and file hashes. Third-party studies are attributed and
+linked; their algorithms are not claimed as implemented here. External corpus
+payloads are acquired by verified pins and are not redistributed.
+
+Run `python3 tools/audit_traceability.py --output /tmp/new-traceability.json`
+to check coverage, evidence hashes and the frozen scored dependencies. See
+[upstream alignment](research/upstream-alignment.json) for the live-revision
+check. A later implementation change requires a new recorded comparison and,
+when behavior changes, new experiments; it must not silently replace this paper's
+immutable baseline. Version 0.1.0 remains available with its original bytes.
 
 ## Reproduce
 

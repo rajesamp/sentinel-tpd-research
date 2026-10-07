@@ -21,7 +21,7 @@ from reproduce import deterministic_view
 
 METHODS = ("allow_all", "registration_only", "sentinel_tpd", "rescan_each_call")
 ALIASES = dict(zip(METHODS, ("A", "R", "S", "C")))
-RELEASE = "https://github.com/rajesamp/sentinel-tpd-research/releases/tag/v0.1.0"
+RELEASE = "https://github.com/rajesamp/sentinel-tpd-research/releases/tag/v0.1.1"
 SIZES = (100, 150, 200, 250, 300)
 
 
@@ -445,7 +445,7 @@ def build(primary, secondary):
     for anonymous in (False, True):
         values = dict(replacements)
         values["AUTHOR"] = (r"\author{}" if anonymous else
-            r"\author{\IEEEauthorblockN{Rajeshkumar Sampathrajan}\IEEEauthorblockA{Independent Researcher}}")
+            r"\author{\IEEEauthorblockN{Rajeshkumar Sampathrajan}\IEEEauthorblockA{\href{https://github.com/rajesamp/sentinel-tpd}{rajesamp/sentinel-tpd}\quad Independent Researcher}}")
         values["AVAILABILITY"] = (r"The anonymous supplementary artifact contains frozen records, provenance, source acquisition instructions, the authored corpus, tests and deterministic report generation."
             if anonymous else r"The versioned research artifact is available at \url{" + RELEASE + "}.")
         values["AVAILABILITY"] += (r" Both frozen process sessions, exact workload composition and all raw time/allocation samples are retained. "

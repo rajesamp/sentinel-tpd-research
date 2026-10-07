@@ -1,0 +1,38 @@
+{
+  "version": "0.1.1",
+  "verified_local_date": "2026-10-07",
+  "scope": "Author attribution, GitHub traceability and upstream documentation alignment patch; no new scientific measurements.",
+  "upstream_main": "c9926b6783646afa55dfee909ceb4660404349f1",
+  "baseline": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+  "upstream_ci_url": "https://github.com/rajesamp/sentinel-tpd/actions/runs/37618638117",
+  "upstream_ci_status": "success",
+  "upstream_original_tests": 17,
+  "traceability_tests": 9,
+  "traceability_materials": 58,
+  "figures": 5,
+  "tables": 10,
+  "equation_rows": 11,
+  "section_subsection_headings": 27,
+  "bibliography_keys": 34,
+  "published_blob_links_verified": 403,
+  "line_targets_verified": 304,
+  "pdfs": {
+    "author": {
+      "sha256": "f0fc933354e4d09c6410c46f06d0bf442538b7a0b257ad9c4fd1dc99b0e8b228",
+      "pages": 10,
+      "body_pages": 7,
+      "native_compile": "success",
+      "final_pages_visually_reviewed": 10
+    },
+    "anonymous": {
+      "sha256": "fe1989cf91bd6e54e3455f7859ff5cae3599b4505c6d045e106fc210499256f7",
+      "unchanged_from_v0_1_0": true
+    }
+  },
+  "records_unchanged": true,
+  "anonymous_maintenance_test_omission": "tests/test_traceability.py is author-side publication maintenance; all scored dependencies and original tests remain unchanged in reviewer view.",
+  "limits": [
+    "Traceability is not independent human validation or new scientific scoring.",
+    "Fresh patch ZIP replay and final upload checks happen after sealing and are recorded separately."
+  ]
+}
