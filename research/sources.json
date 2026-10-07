@@ -1,0 +1,1130 @@
+{
+  "review_date": "2026-10-06",
+  "scope": "Targeted preservation and primary-source audit of the original Sentinel-TPD manuscript's 24 references, 12 named poisoning patterns, three shadowing patterns, architecture and metrics; additional closest MCP defenses. Not an exhaustive systematic review.",
+  "metadata_policy": "Cite the specific inspected version. Preprint identifiers do not establish peer-reviewed publication. Omit unverified pagination and publisher DOI rather than silently combine versions. No third-party defense implementation was run. Adjacent work supplies methodological context, not tested methods or direct efficacy comparisons.",
+  "original_extracted_text": {
+    "path": "/private/tmp/runtime-paper-coverage-20261006.txt",
+    "sha256": "67b01e9bdd1583430c193639ea6ab19448dd4d3a9fa6bf6190de55ac9bb11e8e",
+    "scientific_manuscript_pages": "4–9",
+    "front_matter": "Pages 1–3 are similarity-report material, not scientific validation."
+  },
+  "sources": [
+    {
+      "old_number": 1,
+      "id": "orig1",
+      "title": "MCP-Scanner: Detecting Security Risks in Model Context Protocol Systems",
+      "authors": [
+        "Parya Abadeh",
+        "Martin Lochner",
+        "Taha Ansari",
+        "Fattane Zarrinkalam"
+      ],
+      "year": 2026,
+      "status": "published workshop paper",
+      "role": "direct MCP metadata-risk analysis",
+      "primary_urls": [
+        "https://cybersciencelab.com/publications/mcp-scanner-detecting-security-risks-in-model-context-protocol-systems/"
+      ],
+      "read_scope": "Author-laboratory publication record and abstract; publisher link unavailable.",
+      "metadata_audit": "Existence, title, authors, venue and year verified. Original pages 41–48 not independently verified and omitted.",
+      "bib_type": "inproceedings",
+      "bib_fields": {
+        "booktitle": "Proceedings of the ACM/IEEE 7th International Workshop on Engineering and Cybersecurity of Critical Systems"
+      }
+    },
+    {
+      "old_number": 2,
+      "id": "orig2",
+      "title": "Prompt Injection Attacks in Large Language Models and AI Agent Systems: A Comprehensive Review of Vulnerabilities, Attack Vectors, and Defense Mechanisms",
+      "authors": [
+        "Saidakhror Gulyamov",
+        "Said Gulyamov",
+        "Andrey Rodionov",
+        "Rustam Khursanov",
+        "Kambariddin Mekhmonov",
+        "Djakhongir Babaev",
+        "Akmaljon Rakhimjonov"
+      ],
+      "year": 2026,
+      "status": "published journal review",
+      "role": "direct contextual review",
+      "primary_urls": [
+        "https://www.mdpi.com/2078-2489/17/1/54",
+        "https://www.mdpi.com/journal/information/special_issues/WSP5B171O4",
+        "https://www.kiut.uz/media/research/articles/files/information-17-00054-with-cover.pdf"
+      ],
+      "read_scope": "Publisher-index metadata and institution-hosted paper cover; direct article returned HTTP 429.",
+      "metadata_audit": "Use Information 17(1), article 54, not the original pp. 1–30. Full review methods and PALADIN assertions were not independently audited.",
+      "bib_type": "article",
+      "bib_fields": {
+        "journal": "Information",
+        "volume": "17",
+        "number": "1",
+        "pages": "54",
+        "doi": "10.3390/info17010054"
+      }
+    },
+    {
+      "old_number": 3,
+      "id": "orig3",
+      "title": "MCPXKIT: The Unified Toolkit for Analyzing Model Context Protocol Security",
+      "authors": [
+        "Yongjian Guo",
+        "Puzhuo Liu",
+        "Wanlun Ma",
+        "Zehang Deng",
+        "Xiaogang Zhu",
+        "Peng Di",
+        "Xi Xiao",
+        "Sheng Wen"
+      ],
+      "year": 2026,
+      "status": "preprint v2; arXiv record reports TDSC acceptance",
+      "role": "direct MCP attack toolkit",
+      "primary_urls": [
+        "https://arxiv.org/abs/2508.12538v2"
+      ],
+      "read_scope": "Versioned arXiv metadata, abstract and publication comment.",
+      "metadata_audit": "Cite inspected v2 (2026-05-25). Original IEEE volume 23(5), 9796–9811 not verified; arXiv lists related DOI 10.1109/TDSC.2026.3695553 but it is not used as a verified final-volume citation.",
+      "bib_type": "misc",
+      "bib_fields": {
+        "eprint": "2508.12538",
+        "archivePrefix": "arXiv",
+        "doi": "10.48550/arXiv.2508.12538",
+        "note": "Version v2, May 25, 2026; arXiv record reports acceptance in IEEE TDSC"
+      }
+    },
+    {
+      "old_number": 4,
+      "id": "orig4",
+      "title": "MCP-SafetyBench: A Benchmark for Safety Evaluation of Large Language Models with Real-World MCP Servers",
+      "authors": [
+        "Xuanjun Zong",
+        "Zhiqi Shen",
+        "Lei Wang",
+        "Yunshi Lan",
+        "Chao Yang"
+      ],
+      "year": 2026,
+      "status": "published ICLR paper",
+      "role": "direct MCP agent safety benchmark",
+      "primary_urls": [
+        "https://arxiv.org/abs/2512.15163v2",
+        "https://openreview.net/forum?id=7XYjeL46co",
+        "https://openreview.net/pdf/6d1513d78971fc16ec2e414687bf126bf5f05a95.pdf"
+      ],
+      "read_scope": "arXiv record and ICLR-labelled paper PDF; OpenReview forum challenged automated browser.",
+      "metadata_audit": "Original reference omits Chao Yang. Use five authors and no invented ICLR pagination. An earlier search-extracted PDF spelling differs; current arXiv and later paper use Xuanjun.",
+      "bib_type": "inproceedings",
+      "bib_fields": {
+        "booktitle": "International Conference on Learning Representations"
+      }
+    },
+    {
+      "old_number": 5,
+      "id": "orig5",
+      "title": "Model Context Protocol Threat Modeling and Analyzing Vulnerabilities to Prompt Injection with Tool Poisoning",
+      "authors": [
+        "Charoes Huang",
+        "Xin Huang",
+        "Ngoc Phu Tran",
+        "Amin Milani Fard"
+      ],
+      "year": 2026,
+      "status": "preprint; related journal record located",
+      "role": "direct MCP threat analysis",
+      "primary_urls": [
+        "https://arxiv.org/abs/2603.22489",
+        "https://www.mdpi.com/2624-800X/6/3/84",
+        "https://github.com/nyit-vancouver/mcp-security"
+      ],
+      "read_scope": "arXiv metadata; publisher-index title and authors' repository journal record.",
+      "metadata_audit": "Cite verified preprint wording 'Analyzing'. Journal title uses 'Analysis' and article 84, not pp. 1–40. Individual MDPI page returned 429, so journal details are not silently mixed into preprint.",
+      "bib_type": "misc",
+      "bib_fields": {
+        "eprint": "2603.22489",
+        "archivePrefix": "arXiv",
+        "doi": "10.48550/arXiv.2603.22489",
+        "note": "Preprint, March 23, 2026"
+      }
+    },
+    {
+      "old_number": 6,
+      "id": "orig6",
+      "title": "Systematization of Knowledge: Security and Safety in the Model Context Protocol Ecosystem",
+      "authors": [
+        "Shiva Gaire",
+        "Srijan Gyawali",
+        "Saroj Mishra",
+        "Suman Niroula",
+        "Dilip Thakur",
+        "Umesh Yadav"
+      ],
+      "year": 2025,
+      "status": "preprint; 2026 proceedings chapter also located",
+      "role": "direct MCP survey",
+      "primary_urls": [
+        "https://arxiv.org/abs/2512.08290",
+        "https://link.springer.com/book/10.1007/978-3-032-32726-0?page=2"
+      ],
+      "read_scope": "arXiv metadata and publisher book contents.",
+      "metadata_audit": "Cite inspected 2025 preprint. Publisher contents independently confirms 2026 Intelligent Systems and Applications chapter, pp. 494–517; chapter DOI not verified.",
+      "bib_type": "misc",
+      "bib_fields": {
+        "eprint": "2512.08290",
+        "archivePrefix": "arXiv",
+        "doi": "10.48550/arXiv.2512.08290",
+        "note": "Preprint, December 9, 2025; related 2026 proceedings chapter listed by Springer"
+      }
+    },
+    {
+      "old_number": 7,
+      "id": "orig7",
+      "title": "Beyond Detection: Autonomous Anomaly Remediation for MCP Against Tool Poisoning Attacks",
+      "authors": [
+        "Zhiqiang Wang",
+        "Guanquan Shi",
+        "Yanting Wang",
+        "Yichao Gao",
+        "Hongsen Lang",
+        "Yunhao Yao",
+        "Haohua Du",
+        "Xiang-Yang Li"
+      ],
+      "year": 2026,
+      "status": "published WWW conference paper",
+      "role": "direct MCP remediation",
+      "primary_urls": [
+        "https://dl.acm.org/doi/10.1145/3774904.3792400",
+        "https://publications.hse.ru/pubs/share/direct/1152301113.pdf"
+      ],
+      "read_scope": "Primary proceedings contents hosted by an academic institution; publisher returned 403.",
+      "metadata_audit": "Title, author list, 2974–2982 and DOI confirmed in proceedings contents. Full methods not inspected; do not endorse original rollback/attention mechanism descriptions as verified.",
+      "bib_type": "inproceedings",
+      "bib_fields": {
+        "booktitle": "Proceedings of the ACM Web Conference 2026",
+        "pages": "2974--2982",
+        "doi": "10.1145/3774904.3792400"
+      }
+    },
+    {
+      "old_number": 8,
+      "id": "orig8",
+      "title": "MCPTox: A Benchmark for Tool Poisoning on Real-World MCP Servers",
+      "authors": [
+        "Zhiqiang Wang",
+        "Yichao Gao",
+        "Yanting Wang",
+        "Suyuan Liu",
+        "Haifeng Sun",
+        "Haoran Cheng",
+        "Guanquan Shi",
+        "Haohua Du",
+        "Xiangyang Li"
+      ],
+      "year": 2026,
+      "status": "published AAAI conference paper",
+      "role": "direct MCP tool-poisoning benchmark",
+      "primary_urls": [
+        "https://ojs.aaai.org/index.php/AAAI/article/view/40895",
+        "https://arxiv.org/abs/2508.14925"
+      ],
+      "read_scope": "Primary AAAI record and abstract plus earlier arXiv record.",
+      "metadata_audit": "Published title omits the preprint's word 'Attack'. AAAI reports 1,348 malicious test cases, 353 tools, 45 servers; older arXiv abstract reports 1,312. Neither establishes the original manuscript's 485 'attack definitions'.",
+      "bib_type": "article",
+      "bib_fields": {
+        "journal": "Proceedings of the AAAI Conference on Artificial Intelligence",
+        "volume": "40",
+        "number": "42",
+        "pages": "35811--35819",
+        "doi": "10.1609/aaai.v40i42.40895"
+      }
+    },
+    {
+      "old_number": 9,
+      "id": "orig9",
+      "title": "Automatic Red Teaming LLM-based Agents with Model Context Protocol Tools",
+      "authors": [
+        "Ping He",
+        "Changjiang Li",
+        "Binbin Zhao",
+        "Tianyu Du",
+        "Shouling Ji"
+      ],
+      "year": 2025,
+      "status": "preprint; author-hosted manuscript reports TIFS acceptance May 1, 2026",
+      "role": "direct MCP automated adversarial testing",
+      "primary_urls": [
+        "https://arxiv.org/abs/2509.21011",
+        "https://nesa.zju.edu.cn/download/auto_20260505_T-IFS-23770_CameraReady.pdf"
+      ],
+      "read_scope": "arXiv metadata and author-hosted camera-ready first-page acceptance history.",
+      "metadata_audit": "Cite 2025 preprint without original unverified vol. 21, pp. 5165–5180. Full attack-generation method not audited.",
+      "bib_type": "misc",
+      "bib_fields": {
+        "eprint": "2509.21011",
+        "archivePrefix": "arXiv",
+        "doi": "10.48550/arXiv.2509.21011",
+        "note": "Preprint, September 25, 2025; author-hosted manuscript reports TIFS acceptance in 2026"
+      }
+    },
+    {
+      "old_number": 10,
+      "id": "orig10",
+      "title": "Shadowcast: Stealthy Data Poisoning Attacks Against Vision-Language Models",
+      "authors": [
+        "Yuancheng Xu",
+        "Jiarui Yao",
+        "Manli Shu",
+        "Yanchao Sun",
+        "Zichu Wu",
+        "Ning Yu",
+        "Tom Goldstein",
+        "Furong Huang"
+      ],
+      "year": 2024,
+      "status": "published NeurIPS conference paper",
+      "role": "adjacent: training-data poisoning, not MCP tool shadowing",
+      "primary_urls": [
+        "https://papers.nips.cc/paper_files/paper/2024/hash/6a2e30664b9647f97d7b9275358d083c-Abstract-Conference.html",
+        "https://proceedings.neurips.cc/paper_files/paper/2024/file/6a2e30664b9647f97d7b9275358d083c-Paper-Conference.pdf"
+      ],
+      "read_scope": "Official proceedings record and paper.",
+      "metadata_audit": "Existence, title, authors, volume and year verified. Original pagination not independently verified and omitted. No claim that this study implemented Shadowcast attacks.",
+      "bib_type": "inproceedings",
+      "bib_fields": {
+        "booktitle": "Advances in Neural Information Processing Systems",
+        "volume": "37",
+        "doi": "10.52202/079017-1841"
+      }
+    },
+    {
+      "old_number": 11,
+      "id": "orig11",
+      "title": "Shadow AI: Cyber Security Implications, Opportunities and Challenges in the Unseen Frontier",
+      "authors": [
+        "Deepak Puthal",
+        "Amit Kumar Mishra",
+        "Saraju P. Mohanty",
+        "Antonella Longo",
+        "Chan Yeob Yeun"
+      ],
+      "year": 2025,
+      "status": "published journal paper",
+      "role": "adjacent: unsanctioned-AI governance, not MCP tool shadowing",
+      "primary_urls": [
+        "https://research.aber.ac.uk/en/publications/shadow-ai-cyber-security-implications-opportunities-and-challenge/",
+        "https://doi.org/10.1007/s42979-025-03962-x"
+      ],
+      "read_scope": "Author institution's publication record.",
+      "metadata_audit": "Use SN Computer Science 6(5), article 405 rather than original pp. 1–10. Term 'Shadow AI' does not denote name squatting or capability override.",
+      "bib_type": "article",
+      "bib_fields": {
+        "journal": "SN Computer Science",
+        "volume": "6",
+        "number": "5",
+        "pages": "405",
+        "doi": "10.1007/s42979-025-03962-x"
+      }
+    },
+    {
+      "old_number": 12,
+      "id": "orig12",
+      "title": "Shadow AI and the Expanding Attack Surface: Risks, Threats, and Countermeasures",
+      "authors": [
+        "D. Puthal",
+        "N. K. Ray",
+        "S. P. Mohanty"
+      ],
+      "year": 2025,
+      "status": "conference paper listed in author publication record",
+      "role": "adjacent: unsanctioned-AI governance",
+      "primary_urls": [
+        "https://sarajumohanty.github.io/Mohanty_Curriculum-Vitae.pdf",
+        "https://ieeexplore.ieee.org/document/11400389"
+      ],
+      "read_scope": "Author CV confirms title, initials, OCIT and year; IEEE page did not expose bibliographic fields.",
+      "metadata_audit": "Original pp. 1–6 and secondary index pp. 973–978 conflict; omit pages and unverified DOI. Full methods not inspected.",
+      "bib_type": "inproceedings",
+      "bib_fields": {
+        "booktitle": "OITS International Conference on Information Technology (OCIT)"
+      }
+    },
+    {
+      "old_number": 13,
+      "id": "orig13",
+      "title": "Prompt Injection Attacks on Agentic Coding Assistants: A Systematic Analysis of Vulnerabilities in Skills, Tools, and Protocol Ecosystems",
+      "authors": [
+        "Narek Maloyan",
+        "Dmitry Namiot"
+      ],
+      "year": 2026,
+      "status": "published journal paper with arXiv preprint",
+      "role": "direct adjacent agent ecosystem review",
+      "primary_urls": [
+        "https://injoit.org/index.php/j1/article/download/2423/2053",
+        "https://arxiv.org/abs/2601.17548"
+      ],
+      "read_scope": "Journal PDF first page and arXiv record.",
+      "metadata_audit": "Journal 14(2), year, title and authors confirmed. Original ending page 10 not independently verified; omit pagination.",
+      "bib_type": "article",
+      "bib_fields": {
+        "journal": "International Journal of Open Information Technologies",
+        "volume": "14",
+        "number": "2"
+      }
+    },
+    {
+      "old_number": 14,
+      "id": "orig14",
+      "title": "Cyber Shadows: Neutralizing Security Threats with AI and Targeted Policy Measures",
+      "authors": [
+        "Marc Schmitt",
+        "Pantelis Koutroumpis"
+      ],
+      "year": 2025,
+      "status": "preprint; author institution confirms 2025 IEEE TAI publication",
+      "role": "adjacent: AI security and policy",
+      "primary_urls": [
+        "https://arxiv.org/abs/2501.09025",
+        "https://www.cs.ox.ac.uk/publications/publication16602-abstract.html"
+      ],
+      "read_scope": "arXiv metadata and author-institution publication record.",
+      "metadata_audit": "Use verified preprint; institutional pp. 1–9 differ from original final pagination 1697–1705, so do not combine fields across versions.",
+      "bib_type": "misc",
+      "bib_fields": {
+        "eprint": "2501.09025",
+        "archivePrefix": "arXiv",
+        "doi": "10.48550/arXiv.2501.09025",
+        "note": "Preprint; related IEEE TAI publication listed by the authors' institution"
+      }
+    },
+    {
+      "old_number": 15,
+      "id": "orig15",
+      "title": "WAFBOOSTER: Automatic Boosting of WAF Security Against Mutated Malicious Payloads",
+      "authors": [
+        "Cong Wu",
+        "Jing Chen",
+        "Simeng Zhu",
+        "Wenqi Feng",
+        "Ruiying Du",
+        "Yang Xiang"
+      ],
+      "year": 2025,
+      "status": "preprint; journal-version metadata not fully verified",
+      "role": "adjacent: mutated-input testing and WAF rules",
+      "primary_urls": [
+        "https://arxiv.org/abs/2501.14008"
+      ],
+      "read_scope": "arXiv metadata and abstract.",
+      "metadata_audit": "Verified preprint has six authors; original journal citation has seven including K. He. This is an unresolved version difference, not proof the journal author list is wrong. Cite preprint without mixing final journal fields.",
+      "bib_type": "misc",
+      "bib_fields": {
+        "eprint": "2501.14008",
+        "archivePrefix": "arXiv",
+        "doi": "10.48550/arXiv.2501.14008",
+        "note": "Preprint, January 23, 2025; author list is for the inspected preprint version"
+      }
+    },
+    {
+      "old_number": 16,
+      "id": "orig16",
+      "title": "SHERPA: Explainable Robust Algorithms for Privacy-Preserved Federated Learning in Future Networks to Defend Against Data Poisoning Attacks",
+      "authors": [
+        "Chamara Sandeepa",
+        "Bartlomiej Siniarski",
+        "Shen Wang",
+        "Madhusanka Liyanage"
+      ],
+      "year": 2024,
+      "status": "published IEEE S&P conference paper",
+      "role": "adjacent: federated-learning poisoning defense",
+      "primary_urls": [
+        "https://robust-6g.eu/wp-content/uploads/2025/12/SHERPA_Explainable_Robust_Algorithms_for_Privacy-Preserved_Federated_Learning_in_Future_Networks_to_Defend_Against_Data_Poisoning_Attacks.pdf"
+      ],
+      "read_scope": "Primary research-project paper PDF first page and method overview.",
+      "metadata_audit": "Publication and authors verified. PDF shows inconsistent extracted DOI/footer fragments, so no DOI is promoted without another primary confirmation. Original ending page 4790 not checked; omitted.",
+      "bib_type": "inproceedings",
+      "bib_fields": {
+        "booktitle": "IEEE Symposium on Security and Privacy (SP)"
+      }
+    },
+    {
+      "old_number": 17,
+      "id": "orig17",
+      "title": "Visualizing the Shadows: Unveiling Data Poisoning Behaviors in Federated Learning",
+      "authors": [
+        "Xueqing Zhang",
+        "Junkai Zhang",
+        "Ka-Ho Chow",
+        "Juntao Chen",
+        "Ying Mao",
+        "Mohamed Rahouti",
+        "Xiang Li",
+        "Yuchen Liu",
+        "Wenqi Wei"
+      ],
+      "year": 2024,
+      "status": "preprint demo paper; author CV confirms ICDCS 2024 demo",
+      "role": "adjacent: visualization of federated-learning poisoning",
+      "primary_urls": [
+        "https://arxiv.org/abs/2405.16707",
+        "https://nicelab.us/CV/Yuchen_Liu_CV.pdf"
+      ],
+      "read_scope": "arXiv metadata and author CV.",
+      "metadata_audit": "Cite verified preprint and identify demo genre; published title may add 'Demo:'. Original 1431–1434 and publisher DOI not independently verified.",
+      "bib_type": "misc",
+      "bib_fields": {
+        "eprint": "2405.16707",
+        "archivePrefix": "arXiv",
+        "doi": "10.48550/arXiv.2405.16707",
+        "note": "Demo paper preprint; related ICDCS 2024 demo listed by an author"
+      }
+    },
+    {
+      "old_number": 18,
+      "id": "orig18",
+      "title": "TuDoor Attack: Systematically Exploring and Exploiting Logic Vulnerabilities in DNS Response Pre-processing with Malformed Packets",
+      "authors": [
+        "Xiang Li",
+        "Wei Xu",
+        "Baojun Liu",
+        "Mingming Zhang",
+        "Zhou Li",
+        "Jia Zhang",
+        "Deliang Chang",
+        "Xiaofeng Zheng",
+        "Chuhan Wang",
+        "Jianjun Chen",
+        "Haixin Duan",
+        "Qi Li"
+      ],
+      "year": 2024,
+      "status": "published IEEE S&P conference paper",
+      "role": "adjacent: state-machine and protocol logic testing",
+      "primary_urls": [
+        "https://zhangmm.net/publication/oakland24-tudoor/",
+        "https://www.ndss-symposium.org/wp-content/uploads/ndss26-poster-39.pdf"
+      ],
+      "read_scope": "Author publication page; later primary poster lists the original paper's authors.",
+      "metadata_audit": "Original reference omits Qi Li. Do not add the later poster's additional author to the original paper. Original page range and DOI not independently verified; omitted.",
+      "bib_type": "inproceedings",
+      "bib_fields": {
+        "booktitle": "IEEE Symposium on Security and Privacy (SP)"
+      }
+    },
+    {
+      "old_number": 19,
+      "id": "orig19",
+      "title": "SoK: A Comprehensive Analysis and Evaluation of Docker Container Attack and Defense Mechanisms",
+      "authors": [
+        "Md Sadun Haq",
+        "Thien Duc Nguyen",
+        "Ali Şaman Tosun",
+        "Franziska Vollmer",
+        "Turgay Korkmaz",
+        "Ahmad-Reza Sadeghi"
+      ],
+      "year": 2024,
+      "status": "published IEEE S&P conference paper",
+      "role": "adjacent: container attack/defense taxonomy",
+      "primary_urls": [
+        "https://oaklandsok.github.io/papers/haq2024.pdf",
+        "https://www.ieee-security.org/TC/SP2024/program-papers.html"
+      ],
+      "read_scope": "Primary paper PDF and official conference programme.",
+      "metadata_audit": "DOI confirmed in paper. Do not claim Sentinel-TPD implements containers/process isolation. Original ending page 4590 not independently verified; omitted.",
+      "bib_type": "inproceedings",
+      "bib_fields": {
+        "booktitle": "IEEE Symposium on Security and Privacy (SP)",
+        "doi": "10.1109/SP54263.2024.00182"
+      }
+    },
+    {
+      "old_number": 20,
+      "id": "orig20",
+      "title": "Defending Data Poisoning Attack through Watermarked Friendly Noise Luminosity Activated Dense Layered UNet for Classification of Lung Disease",
+      "authors": [
+        "M. Shyamala Devi",
+        "S. Priya"
+      ],
+      "year": 2024,
+      "status": "journal paper listed in authors' institutional research record",
+      "role": "adjacent: medical-image training-data poisoning",
+      "primary_urls": [
+        "https://panimalar.ac.in/assets/pdf/cse/research/journal/CSE-Journal-24-25.pdf",
+        "https://ieeexplore.ieee.org/document/10786226"
+      ],
+      "read_scope": "Institutional journal record confirms title, names, IEEE Access volume 12 and year; publisher metadata not independently obtained.",
+      "metadata_audit": "Keep author form S. Priya. Original pages 185078–185102 and secondary DOI 10.1109/ACCESS.2024.3513485 remain unverified and omitted. No evidence this study applied the medical-image defense.",
+      "bib_type": "article",
+      "bib_fields": {
+        "journal": "IEEE Access",
+        "volume": "12"
+      }
+    },
+    {
+      "old_number": 21,
+      "id": "fuzzd",
+      "title": "fuzzd",
+      "authors": [
+        "ksek87"
+      ],
+      "status": "software/data repository",
+      "role": "pinned evaluation-source provenance",
+      "primary_urls": [
+        "https://github.com/ksek87/fuzzd/tree/f739e120cd7dc253fead2a1f13668f9535e4d8a5"
+      ],
+      "read_scope": "Pinned Git tree and file hashes independently checked by corpus specialist; source-manifest.json records every evaluated file.",
+      "metadata_audit": "Source repository; package MIT declaration and README statement exist, but no license text or corpus-specific license found at pin.",
+      "bib_type": "misc",
+      "bib_fields": {
+        "howpublished": "Software and data repository",
+        "note": "Revision f739e120cd7dc253fead2a1f13668f9535e4d8a5; accessed October 6, 2026"
+      },
+      "revision": "f739e120cd7dc253fead2a1f13668f9535e4d8a5"
+    },
+    {
+      "old_number": 22,
+      "id": "fuzzdpoison",
+      "title": "fuzzd tool-poisoning corpus",
+      "authors": [
+        "ksek87"
+      ],
+      "status": "software/data repository",
+      "role": "pinned evaluation-source provenance",
+      "primary_urls": [
+        "https://github.com/ksek87/fuzzd/tree/f739e120cd7dc253fead2a1f13668f9535e4d8a5/corpus/tool_poisoning"
+      ],
+      "read_scope": "Pinned Git tree and file hashes independently checked by corpus specialist; source-manifest.json records every evaluated file.",
+      "metadata_audit": "TPA-001 through TPA-024: 24 records, 15 source poisoning labels. Original named twelve are TPA-013 through TPA-024.",
+      "bib_type": "misc",
+      "bib_fields": {
+        "howpublished": "Software and data repository",
+        "note": "Revision f739e120cd7dc253fead2a1f13668f9535e4d8a5; accessed October 6, 2026"
+      },
+      "revision": "f739e120cd7dc253fead2a1f13668f9535e4d8a5"
+    },
+    {
+      "old_number": 23,
+      "id": "fuzzdshadow",
+      "title": "fuzzd tool-shadowing corpus",
+      "authors": [
+        "ksek87"
+      ],
+      "status": "software/data repository",
+      "role": "pinned evaluation-source provenance",
+      "primary_urls": [
+        "https://github.com/ksek87/fuzzd/tree/f739e120cd7dc253fead2a1f13668f9535e4d8a5/corpus/tool_shadowing"
+      ],
+      "read_scope": "Pinned Git tree and file hashes independently checked by corpus specialist; source-manifest.json records every evaluated file.",
+      "metadata_audit": "TS-001 through TS-003: name squatting, capability override, typosquatting.",
+      "bib_type": "misc",
+      "bib_fields": {
+        "howpublished": "Software and data repository",
+        "note": "Revision f739e120cd7dc253fead2a1f13668f9535e4d8a5; accessed October 6, 2026"
+      },
+      "revision": "f739e120cd7dc253fead2a1f13668f9535e4d8a5"
+    },
+    {
+      "old_number": 24,
+      "id": "mcptoxrepo",
+      "title": "MCPTox-Benchmark",
+      "authors": [
+        "zhiqiangwang4"
+      ],
+      "status": "software/data repository",
+      "role": "related benchmark repository; not evaluated",
+      "primary_urls": [
+        "https://github.com/zhiqiangwang4/MCPTox-Benchmark"
+      ],
+      "read_scope": "GitHub landing page inspected.",
+      "metadata_audit": "Repository identity verified; no pinned corpus download or count reproduction. Context only, not an evaluated data source in this study.",
+      "bib_type": "misc",
+      "bib_fields": {
+        "howpublished": "Software and data repository",
+        "note": "Accessed October 6, 2026; repository not used as an evaluated corpus"
+      }
+    },
+    {
+      "id": "mcpguard",
+      "title": "MCP-Guard: A Multi-Stage Defense-in-Depth Framework for Securing Model Context Protocol in Agentic AI",
+      "authors": [
+        "Wenpeng Xing",
+        "Zhonghao Qi",
+        "Yupeng Qin",
+        "Yilin Li",
+        "Caini Chang",
+        "Jiahui Yu",
+        "Changting Lin",
+        "Zhenzhen Xie",
+        "Meng Han"
+      ],
+      "year": 2026,
+      "status": "published Findings ACL paper",
+      "role": "closest direct defense; static rules plus semantic cascade",
+      "primary_urls": [
+        "https://aclanthology.org/2026.findings-acl.240/",
+        "https://aclanthology.org/2026.findings-acl.240.pdf"
+      ],
+      "read_scope": "Official metadata and PDF section 3 overview, section 3.1 static detectors and beginning of 3.2 semantic detector. No implementation execution.",
+      "metadata_audit": "Published title, nine authors, year, pages and DOI verified. Avoid confusing similarly named repositories. Prior static screening undermines novelty of regex detection itself.",
+      "bib_type": "inproceedings",
+      "bib_fields": {
+        "booktitle": "Findings of the Association for Computational Linguistics: ACL 2026",
+        "pages": "4877--4889",
+        "doi": "10.18653/v1/2026.findings-acl.240"
+      }
+    },
+    {
+      "id": "mcpshield",
+      "title": "MCPShield: A Security Cognition Layer for Adaptive Trust Calibration in Model Context Protocol Agents",
+      "authors": [
+        "Zhenhong Zhou",
+        "Yuanhe Zhang",
+        "Hongwei Cai",
+        "Moayad Aloqaily",
+        "Ouns Bouachir",
+        "Linsey Pang",
+        "Prakhar Mehrotra",
+        "Kun Wang",
+        "Qingsong Wen"
+      ],
+      "year": 2026,
+      "status": "preprint v3",
+      "role": "closest direct behavioral probing and trust-calibration defense",
+      "primary_urls": [
+        "https://arxiv.org/abs/2602.14281v3",
+        "https://arxiv.org/html/2602.14281v3"
+      ],
+      "read_scope": "Metadata and methods sections 4.1–4.3 plus beginning of 4.4. No implementation execution.",
+      "metadata_audit": "Version v3 dated February 24, 2026. Tool hosting/side-effect observation assumptions differ from local descriptor scanning. Distinct from later uppercase MCPSHIELD (arXiv:2604.05969).",
+      "bib_type": "misc",
+      "bib_fields": {
+        "eprint": "2602.14281",
+        "archivePrefix": "arXiv",
+        "doi": "10.48550/arXiv.2602.14281",
+        "note": "Version v3, February 24, 2026; preprint"
+      }
+    },
+    {
+      "id": "dispatchartifact",
+      "title": "Sentinel Dispatch Conformance: Reproducible Lifecycle Experiments",
+      "authors": [
+        "Rajeshkumar Sampathrajan"
+      ],
+      "year": 2026,
+      "status": "author software artifact release, not a proceedings publication",
+      "role": "separate prior author artifact; preserve scope distinction",
+      "primary_urls": [
+        "https://github.com/rajesamp/sentinel-dispatch-conformance/releases/tag/v0.1.0",
+        "https://github.com/rajesamp/sentinel-dispatch-conformance/tree/e874731f83c31ac0718f70c3c228dd9077928f99"
+      ],
+      "read_scope": "Exact public release URL, CFF title, author and code pin supplied by coordinating agent after its publishing verification.",
+      "metadata_audit": "Do not label as peer-reviewed publication; release v0.1.0, code e874731f83c31ac0718f70c3c228dd9077928f99.",
+      "bib_type": "misc",
+      "bib_fields": {
+        "howpublished": "Software artifact, version 0.1.0",
+        "note": "Revision e874731f83c31ac0718f70c3c228dd9077928f99; accessed October 6, 2026"
+      }
+    },
+    {
+      "title": "sentinel-tpd",
+      "authors": [
+        "Rajeshkumar Sampathrajan"
+      ],
+      "url": "https://github.com/rajesamp/sentinel-tpd",
+      "read_url": "https://github.com/rajesamp/sentinel-tpd/blob/5ce5d56e57a0acd092435fca5d89b78d0b39ee7b/README.md",
+      "git_blob_sha1": "da7910764f3503fa14418e0089052e459ed3d583",
+      "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+      "status": "public software repository",
+      "coverage": "README inspected via GitHub connector",
+      "limits": "Pinned README matches local vendor manifest; implementation evaluation belongs to experimental task",
+      "prior_source_id": "R1",
+      "id": "sentineltpd",
+      "imported_from": "../sentinel-binding-research/research/sources.json",
+      "primary_urls": [
+        "https://github.com/rajesamp/sentinel-tpd/tree/5ce5d56e57a0acd092435fca5d89b78d0b39ee7b"
+      ],
+      "metadata_audit": "Previously verified primary record; see imported read-scope fields.",
+      "role": "Pinned subject implementation"
+    },
+    {
+      "title": "Model Context Protocol: Tools",
+      "url": "https://modelcontextprotocol.io/specification/2025-11-25/server/tools",
+      "version": "2025-11-25",
+      "status": "official historical specification page",
+      "coverage": "tools protocol and naming context inspected",
+      "relevance": "Version comparison and reproducibility boundary",
+      "limits": "Do not combine this version's message model with newer caching rules without declaring an extension",
+      "prior_source_id": "P2",
+      "id": "mcp2025tools",
+      "imported_from": "../sentinel-binding-research/research/sources.json",
+      "primary_urls": [
+        "https://modelcontextprotocol.io/specification/2025-11-25/server/tools"
+      ],
+      "metadata_audit": "Previously verified primary record; see imported read-scope fields.",
+      "role": "Versioned protocol definition"
+    },
+    {
+      "title": "Model Context Protocol: Tools",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/server/tools",
+      "version": "2026-07-28",
+      "status": "official specification page",
+      "coverage": "listing, calling, notifications and naming rules inspected",
+      "relevance": "Server-scoped identity and disambiguation are explicit prior guidance",
+      "limits": "Protocol text does not establish any client's implementation behavior",
+      "prior_source_id": "P1",
+      "id": "mcp2026tools",
+      "imported_from": "../sentinel-binding-research/research/sources.json",
+      "primary_urls": [
+        "https://modelcontextprotocol.io/specification/2026-07-28/server/tools"
+      ],
+      "metadata_audit": "Previously verified primary record; see imported read-scope fields.",
+      "role": "Versioned protocol definition"
+    },
+    {
+      "title": "Semantic Attacks on Tool-Augmented LLMs: Securing the Model Context Protocol Against Descriptor-Level Manipulation",
+      "authors": [
+        "Saeid Jamshidi",
+        "Arghavan Moradi Dakhel",
+        "Kawser Wazed Nafi",
+        "Foutse Khomh"
+      ],
+      "url": "https://arxiv.org/abs/2512.06556v2",
+      "full_text_url": "https://arxiv.org/html/2512.06556v2",
+      "version": "v2",
+      "version_date": "2026-05-21",
+      "status": "preprint",
+      "coverage": "principal defense/evaluation/validity sections inspected",
+      "sections_checked": [
+        "IV",
+        "IV-I",
+        "V",
+        "VII"
+      ],
+      "relevance": "Descriptor-level threats and layered integrity/runtime defenses",
+      "limits": "v1 title differs; no production vulnerability or reproduction established",
+      "arxiv_id": "2512.06556",
+      "doi": "10.48550/arXiv.2512.06556",
+      "doi_url": "https://doi.org/10.48550/arXiv.2512.06556",
+      "metadata_verification": "Versioned arXiv landing record checked in follow-up; DOI is arXiv-issued, not a publisher DOI",
+      "prior_source_id": "S6",
+      "id": "semanticattacks",
+      "imported_from": "../sentinel-binding-research/research/sources.json",
+      "primary_urls": [
+        "https://arxiv.org/abs/2512.06556v2",
+        "https://arxiv.org/html/2512.06556v2"
+      ],
+      "metadata_audit": "Versioned arXiv landing record checked in follow-up; DOI is arXiv-issued, not a publisher DOI",
+      "role": "Direct related mechanism; not executed as a comparator"
+    },
+    {
+      "title": "ETDI: Mitigating Tool Squatting and Rug Pull Attacks in Model Context Protocol (MCP) by using OAuth-Enhanced Tool Definitions and Policy-Based Access Control",
+      "authors": [
+        "Manish Bhatt",
+        "Vineeth Sai Narajala",
+        "Idan Habler"
+      ],
+      "url": "https://arxiv.org/abs/2506.01333v1",
+      "full_text_url": "https://arxiv.org/html/2506.01333v1",
+      "version": "v1",
+      "version_date": "2025-06-02",
+      "status": "preprint",
+      "coverage": "principal method inspected",
+      "sections_checked": [
+        "IV-A",
+        "IV-B",
+        "IV-D"
+      ],
+      "relevance": "Signed/versioned descriptors, verification before model exposure, renewed approval, runtime policy",
+      "limits": "No implementation execution; refresh race behavior not established",
+      "arxiv_id": "2506.01333",
+      "doi": "10.48550/arXiv.2506.01333",
+      "doi_url": "https://doi.org/10.48550/arXiv.2506.01333",
+      "metadata_verification": "Versioned arXiv landing record checked in follow-up; DOI is arXiv-issued, not a publisher DOI",
+      "prior_source_id": "S1",
+      "id": "etdi",
+      "imported_from": "../sentinel-binding-research/research/sources.json",
+      "primary_urls": [
+        "https://arxiv.org/abs/2506.01333v1",
+        "https://arxiv.org/html/2506.01333v1"
+      ],
+      "metadata_audit": "Versioned arXiv landing record checked in follow-up; DOI is arXiv-issued, not a publisher DOI",
+      "role": "Direct related mechanism; not executed as a comparator"
+    },
+    {
+      "title": "From Tool Connection to Execution Control: Benchmarking Security Invariants in MCP-Style Agent Runtimes",
+      "authors": [
+        "Ting Liu"
+      ],
+      "url": "https://arxiv.org/abs/2606.29073v1",
+      "full_text_url": "https://arxiv.org/html/2606.29073v1",
+      "repository_url": "https://github.com/SymbolicLight-AGI/handle-capability-protocol",
+      "version": "v1",
+      "version_date": "2026-06-27",
+      "status": "preprint",
+      "coverage": "principal method, case table, evaluation and limits inspected; repository opened",
+      "sections_checked": [
+        "invariant definitions",
+        "Table 3",
+        "baseline and ablation descriptions",
+        "9"
+      ],
+      "relevance": "Closest overlap in reference-runtime/invariant-benchmark contribution shape",
+      "limits": "Repository not executed; listed-case noncoverage is not exhaustive absence proof",
+      "arxiv_id": "2606.29073",
+      "doi": "10.48550/arXiv.2606.29073",
+      "doi_url": "https://doi.org/10.48550/arXiv.2606.29073",
+      "metadata_verification": "Versioned arXiv landing record checked in follow-up; DOI is arXiv-issued, not a publisher DOI",
+      "prior_source_id": "S3",
+      "id": "hcp",
+      "imported_from": "../sentinel-binding-research/research/sources.json",
+      "primary_urls": [
+        "https://arxiv.org/abs/2606.29073v1",
+        "https://arxiv.org/html/2606.29073v1"
+      ],
+      "metadata_audit": "Versioned arXiv landing record checked in follow-up; DOI is arXiv-issued, not a publisher DOI",
+      "role": "Direct related mechanism; not executed as a comparator"
+    },
+    {
+      "title": "Attested Tool-Server Admission: A Security Extension to the Model Context Protocol",
+      "authors": [
+        "Alfredo Metere"
+      ],
+      "url": "https://arxiv.org/abs/2605.24248v1",
+      "version_date": "2026-05-22",
+      "status": "preprint",
+      "coverage": "Full relevant admission method, harness methodology, results and limitations inspected",
+      "relevance": "Endpoint identity, per-server tool allowlist, dispatch revalidation, network-write-observing harness, benign positives",
+      "limits": "No code execution; no complete-request/catalog-ABA comparison established",
+      "arxiv_id": "2605.24248",
+      "doi": "10.48550/arXiv.2605.24248",
+      "doi_url": "https://doi.org/10.48550/arXiv.2605.24248",
+      "metadata_verification": "Versioned arXiv landing record checked in follow-up; DOI is arXiv-issued, not a publisher DOI",
+      "version": "v1",
+      "full_text_url": "https://arxiv.org/html/2605.24248v1",
+      "sections_checked": [
+        "3",
+        "4",
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5",
+        "6",
+        "7.1",
+        "7.2",
+        "7.3"
+      ],
+      "prior_source_id": "L1",
+      "id": "attested",
+      "imported_from": "../sentinel-binding-research/research/sources.json",
+      "primary_urls": [
+        "https://arxiv.org/abs/2605.24248v1",
+        "https://arxiv.org/html/2605.24248v1"
+      ],
+      "metadata_audit": "Versioned arXiv landing record checked in follow-up; DOI is arXiv-issued, not a publisher DOI",
+      "role": "Direct related mechanism; not executed as a comparator"
+    }
+  ],
+  "search_log": [
+    {
+      "pass": 0,
+      "search_queries": [],
+      "note": "Initial targeted discovery result is retained in session evidence, but exact first-call query arguments were not preserved in the available orchestration store. Sources 1–4 record the exact primary URLs. Subsequent saved batches below preserve actual query arguments; continuation-page read scope is recorded per source."
+    },
+    {
+      "pass": 1,
+      "search_queries": [
+        "\"Model Context Protocol Threat Modeling\" Huang",
+        "\"Systematization of Knowledge\" \"Gaire\" \"Model Context\"",
+        "\"Beyond Detection: Autonomous Anomaly Remediation\"",
+        "\"MCPTox\" Wang Gao Wang"
+      ],
+      "direct_urls": [],
+      "continuation_reads": 0
+    },
+    {
+      "pass": 2,
+      "search_queries": [
+        "\"Automatic Red Teaming LLM-based Agents\" \"Model Context\"",
+        "\"ShadowCast: Stealthy Data Poisoning\" neurips",
+        "\"Shadow AI: Cyber security implications\" Puthal",
+        "\"Shadow AI and the Expanding Attack Surface\""
+      ],
+      "direct_urls": [],
+      "continuation_reads": 0
+    },
+    {
+      "pass": 3,
+      "search_queries": [
+        "\"Prompt injection attacks on agentic coding assistants\" Maloyan Namiot",
+        "\"Cyber Shadows\" Schmitt Koutroumpis",
+        "\"WAFBooster\" Wu Chen Zhu Feng He Du Xiang",
+        "\"SHERPA\" Sandeepa Siniarski Wang Liyanage 2024"
+      ],
+      "direct_urls": [],
+      "continuation_reads": 0
+    },
+    {
+      "pass": 4,
+      "search_queries": [
+        "\"Visualizing the shadows\" \"Zhang\" federated",
+        "\"TuDoor\" \"2024\" paper",
+        "\"SoK: A Comprehensive Analysis and Evaluation of Docker\"",
+        "\"Defending data poisoning attack\" \"watermarked\""
+      ],
+      "direct_urls": [],
+      "continuation_reads": 0
+    },
+    {
+      "pass": 5,
+      "search_queries": [
+        "\"MCP-Guard\" security paper",
+        "\"MCPShield\" paper",
+        "\"Beyond Detection\" \"Tool Poisoning\" arxiv",
+        "\"MCPXKIT\" site:arxiv.org"
+      ],
+      "direct_urls": [
+        "https://github.com/ksek87/fuzzd",
+        "https://github.com/zhiqiangwang4/MCPTox-Benchmark"
+      ],
+      "continuation_reads": 0
+    },
+    {
+      "pass": 6,
+      "search_queries": [
+        "\"Shadow AI and the Expanding Attack Surface\" site:*.edu",
+        "\"WAFBooster\" \"10.1109\"",
+        "\"SoK: A Comprehensive Analysis\" \"Docker\" site:*.edu",
+        "\"Defending Data Poisoning Attack\" site:ieeexplore.ieee.org"
+      ],
+      "direct_urls": [
+        "https://www.ieee-security.org/TC/SP2024/program-papers.html",
+        "https://aclanthology.org/2026.findings-acl.240.bib",
+        "https://arxiv.org/html/2602.14281v3"
+      ],
+      "continuation_reads": 0
+    },
+    {
+      "pass": 7,
+      "search_queries": [
+        "\"Shadow AI and the Expanding Attack Surface\" Puthal Ray Mohanty",
+        "\"SoK\" \"Docker Container\" \"Haq\" pdf",
+        "\"SHERPA\" \"Sandeepa\" \"10.1109\"",
+        "\"Defending Data Poisoning\" \"Devi\" \"Priya\" ieee"
+      ],
+      "direct_urls": [],
+      "continuation_reads": 3
+    },
+    {
+      "pass": 8,
+      "search_queries": [
+        "\"MCPTox\" site:ojs.aaai.org",
+        "\"WAFBooster\" site:researchbank.swinburne.edu.au",
+        "\"MCP-SafetyBench\" site:openreview.net/forum"
+      ],
+      "direct_urls": [
+        "https://www.mdpi.com/2078-2489/17/1/54/pdf",
+        "https://www.mdpi.com/2624-800X/6/3/84/pdf",
+        "https://arxiv.org/abs/2512.08290",
+        "https://arxiv.org/abs/2405.16707"
+      ],
+      "continuation_reads": 1
+    },
+    {
+      "pass": 9,
+      "search_queries": [],
+      "direct_urls": [
+        "https://cybersciencelab.com/publications/mcp-scanner-detecting-security-risks-in-model-context-protocol-systems/",
+        "https://www.mdpi.com/2078-2489/17/1/54",
+        "https://arxiv.org/abs/2508.12538",
+        "https://arxiv.org/abs/2512.15163",
+        "https://www.mdpi.com/2624-800X/6/3/84",
+        "https://dl.acm.org/doi/10.1145/3774904.3792400"
+      ],
+      "continuation_reads": 0
+    },
+    {
+      "pass": 10,
+      "search_queries": [],
+      "direct_urls": [
+        "https://aclanthology.org/2026.findings-acl.240/",
+        "https://arxiv.org/abs/2602.14281",
+        "https://arxiv.org/html/2602.14281v1",
+        "https://arxiv.org/abs/2508.14925",
+        "https://arxiv.org/abs/2501.14008",
+        "https://arxiv.org/abs/2509.21011",
+        "https://ieeexplore.ieee.org/document/11400389"
+      ],
+      "continuation_reads": 0
+    },
+    {
+      "pass": 11,
+      "search_queries": [],
+      "direct_urls": [
+        "https://api.crossref.org/works/10.1109/OCIT66168.2025.11400389",
+        "https://api.crossref.org/works/10.1109/TDSC.2024.3429271",
+        "https://api.crossref.org/works/10.1109/ACCESS.2024.3513485",
+        "https://api.crossref.org/works/10.1145/3774904.3792400",
+        "https://api.crossref.org/works/10.3390/info17010054",
+        "https://api.crossref.org/works/10.3390/jcp6030084"
+      ],
+      "continuation_reads": 3
+    },
+    {
+      "pass": 12,
+      "search_queries": [],
+      "direct_urls": [
+        "https://aclanthology.org/2026.findings-acl.240.pdf",
+        "https://arxiv.org/html/2602.14281v3"
+      ],
+      "continuation_reads": 4
+    },
+    {
+      "pass": 13,
+      "search_queries": [],
+      "direct_urls": [
+        "https://arxiv.org/html/2512.06556v2"
+      ],
+      "continuation_reads": 2
+    },
+    {
+      "pass": 14,
+      "search_queries": [
+        "site:mdpi.com/2078-2489/17/1/54 Gulyamov Rodionov 2026",
+        "site:mdpi.com/2624-800X/6/3/84 Huang Tran Fard 2026"
+      ],
+      "direct_urls": [
+        "https://openreview.net/forum?id=7XYjeL46co"
+      ],
+      "continuation_reads": 2
+    }
+  ],
+  "access_failures": [
+    "Individual MDPI articles and PDFs returned HTTP 429; publisher-index metadata and author/institutional copies were used where available.",
+    "ACM publisher page returned HTTP 403; primary proceedings contents used for Beyond Detection metadata.",
+    "OpenReview forum required a browser challenge; accessible conference-labelled PDF used.",
+    "IEEE document 11400389 exposed no useful fields; author publication list used for limited metadata.",
+    "Crossref API web requests for six candidate DOIs returned internal errors; terminal fallback DNS failed. Candidate DOI strings from discovery were not promoted without primary confirmation.",
+    "ACL direct .bib link unavailable; official HTML BibTeX/metadata and PDF were accessible."
+  ],
+  "coverage_gaps": [
+    "No exhaustive literature search or absence-of-prior-art claim.",
+    "Original Tables III–VII lack reconstructable logs and remain unverified historical claims.",
+    "Most of original references 1–20 were verified at metadata/abstract level; only explicitly listed method sections were inspected.",
+    "Unresolved final publication pagination/version details for originals 1,3,4,5,9,10,12–20 are omitted when not confirmed.",
+    "WAFBooster preprint and original journal citation have different author lists; final journal metadata remains unverified.",
+    "MCPTox repository was not pinned/downloaded as a study corpus; the original 485 definitions claim is not validated.",
+    "The corpus labels are supplied source taxonomy, not proof that Sentinel-TPD semantically recognizes each family.",
+    "The inspected MCP-Guard and MCPShield methods have broader/different boundaries than the Sentinel-TPD local scanner; their published rates are not comparable head-to-head.",
+    "Pinned fuzzd declares MIT in package/README but lacks a license text/corpus-specific license at pin; no external raw payloads are redistributed."
+  ],
+  "related_manifests": [
+    "vendor/manifest.json",
+    "data/source-manifest.json"
+  ],
+  "reuse_note": "Selected previously verified protocol/binding entries are imported from the immutable prior sentinel-binding-research source dossier with their recorded read scopes, rather than re-researched."
+}

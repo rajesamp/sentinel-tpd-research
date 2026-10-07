@@ -1,0 +1,383 @@
+\title{SENTINEL-TPD: Reproducible Runtime Evaluation of Tool Poisoning, Tool Shadowing, and Metadata Mutation in MCP}
+@@AUTHOR@@
+\maketitle
+\begin{abstract}
+Tool metadata can carry instructions that compete with an agent's task, and a
+registered definition can change before invocation. These concerns motivate
+runtime gates, but a returned metadata verdict does not establish semantic attack
+prevention or safe server behavior. We evaluate SENTINEL-TPD at a fixed source
+revision, retaining poisoning, shadowing, risk decisions, response cost and
+blocking as separate study questions. The implementation combines ten deterministic
+text rules with metadata fingerprints, logical quarantine and a hash-chained audit.
+@@ABSTRACT_RESULTS@@
+The contribution is a source-grounded coverage and lifecycle study with pinned
+inputs, explicit benign controls, observed local enqueues and regenerable results.
+The results characterize an implemented metadata gate; model selection, hidden
+server behavior and process isolation require additional mechanisms and experiments.
+\end{abstract}
+\begin{IEEEkeywords}
+Model Context Protocol, tool poisoning, tool shadowing, runtime metadata gates,
+deterministic detection, reproducibility
+\end{IEEEkeywords}
+
+\section{Model Context Protocol Security and Threat Landscape}
+Agent hosts expose external capabilities through tool names, descriptions and
+argument schemas. In Model Context Protocol (MCP), discovery and invocation are
+separate events: the host consumes a catalogue and later sends a tool call.
+Descriptions enter a model-facing context, while the host determines which
+registration and connection supply the selected tool~\cite{mcp2025tools,mcp2026tools}.
+A malicious instruction embedded in a definition can influence subsequent
+reasoning; a changed definition or competing identity can undermine an earlier
+check. These are different boundaries, so a useful evaluation records which one
+its mechanism actually mediates.
+
+This study examines SENTINEL-TPD, a deterministic tool-metadata gate with registration
+and call-time checks~\cite{sentineltpd}. The fixed revision accepts plain Python
+dictionaries, scans selected text fields, records accepted metadata fingerprints,
+and rejects unknown, quarantined or changed definitions at invocation. Its name
+reflects tool-poisoning detection, but its supplied rule for cross-tool steering is
+not a general detector of name squatting, capability conflict or typographical
+impersonation. We keep all of those patterns in the evaluation so the distinction
+is visible rather than dropping cases the system may miss.
+
+The poisoning patterns motivating the study include unrelated prerequisites, fake
+enabling prerequisites, argument hijacking, XML and system-tag injection, parasitic
+toolchains, cross-tool exfiltration, message hijacking, Unicode obfuscation, response
+injection, forced re-execution and annotation deception. Shadowing includes name
+squatting, capability override and typosquatting. The pinned fuzzd corpus supplies
+24 poisoning templates, three shadowing templates and 20 benign descriptions;
+its own poisoning category labels are more granular than this twelve-pattern
+summary~\cite{fuzzd,fuzzdpoison,fuzzdshadow}. These are authored test definitions,
+not independently demonstrated harmful agent sessions.
+
+\subsection{Research questions and contributions}
+We ask four questions. RQ1: which poisoning and shadowing fixtures produce a rule
+finding, a deny decision and prevention of a local enqueue, and which benign
+fixtures are denied? RQ2: how do these decisions behave at the original five
+workload sizes when unique templates are repeated? RQ3: what does the registration
+plus fingerprint lifecycle check add beyond registration-only or rescanning?
+RQ4: what are its local decision-time and Python-allocation costs under a stated
+measurement boundary?
+
+The contribution is an implemented-system characterization and reproducible
+counterexample set. We preserve the attack taxonomy and architecture questions,
+but replace unspecified weighted risk functions with the rule actually executed.
+We separate unique cases from repetitions, warning signals from enforcement,
+conditional blocking from all-attack blocking, and metadata mutation from hidden
+execution behavior. This study does not claim invention of reference monitors,
+regex classifiers, fingerprints, quarantine or audit chaining.
+
+\section{Existing Security Approaches for Model Context Protocol}
+\subsection{Direct MCP and agent-security studies}
+MCP-Scanner, MCPXkit and MCP-SafetyBench study security analysis, attack simulation
+and agent safety at broader boundaries~\cite{orig1,orig3,orig4}. Threat modeling and
+MCP ecosystem systematization identify poisoned metadata and trust-boundary
+failures~\cite{orig5,orig6}; MCPTox and automatic red teaming study tool poisoning
+with agent and server settings~\cite{orig8,orig9}. Prompt-injection reviews provide
+attack taxonomies and defense context~\cite{orig2,orig13}. Their evaluation units
+are not interchangeable with a local dictionary scan. We use their distinctions
+to specify our boundary rather than comparing headline percentages from different
+models, tasks or datasets.
+
+Layered detection in MCP-Guard, metadata-guided execution analysis in MCPShield,
+and semantic tool attacks are particularly relevant~\cite{mcpguard,mcpshield,semanticattacks}.
+Autonomous remediation studies a further intervention after an anomaly~\cite{orig7}.
+SENTINEL-TPD has neither learned semantic scoring nor attention-based remediation.
+Its explainable fixed rules and fingerprint checks offer a different operational
+cost and scope. We do not reproduce those systems here and therefore make no
+empirical superiority claim over them.
+
+Identity and execution-time authority are also established concerns. ETDI and
+related capability and reference-runtime work bind definitions or authority to
+identities and current policy~\cite{etdi,hcp,attested}. The evaluated Sentinel
+registry is indexed by raw tool name. A multiserver host must provide its own
+namespace and route binding. Our earlier dispatch-conformance artifact examines
+that separate host boundary; its authored-adapter outcomes are not substituted
+for the present content-detection results~\cite{dispatchartifact}.
+
+\subsection{Adjacent studies retained with explicit boundaries}
+The original study also drew on multimodal poisoning, Shadow AI governance,
+mutated web payloads, federated-learning poisoning, DNS parsing, container security
+and medical-image poisoning~\cite{orig10,orig11,orig12,orig14,orig15,orig16,orig17,orig18,orig19,orig20}.
+These works preserve useful methodological context: changing representations can
+alter detector coverage; logging and visualization can expose failures; and input
+validation differs from execution isolation. Their domains and attack objects
+remain distinct. Shadow AI denotes unsanctioned AI use, while tool shadowing here
+concerns competing tool definitions. ShadowCast and federated-learning poisoning
+change training data or representations, rather than an MCP catalogue.
+Appendix~\ref{app:adjacent} records these boundaries so related terminology does
+not become evidence of MCP defense effectiveness.
+
+\section{Runtime Threat Detection and Security Architecture}
+\subsection{Threat model and supported observations}
+The attacker may supply or revise metadata text and schemas, including nested
+strings. A source case may additionally describe an agent-selection or tool-result
+attack; if that surface is absent from the metadata API, it is explicitly marked
+as a projection or out-of-scope observation. The trusted local host invokes the
+gate and enqueues only allowed calls to an inert recording sink. The implementation,
+its rule configuration, the host's enforcement decision and the sink are trusted.
+No adversary is allowed to modify Python code, the audit process or the measurement
+runner during a scored replay.
+
+The protected local property is admission and invocation under the declared
+metadata policy. A missed fixture may reach the local sink, but this does not show
+that a language model followed its instruction or that a remote tool performed
+harmful work. Conversely, an unchanged harmful implementation behind a clean
+metadata definition is not observable to this gate. No live model, credentials,
+network tool effect or third-party target is exercised.
+
+\begin{figure}[t]\centering\small
+\begin{tabular}{c}
+\fbox{Untrusted tool catalogue / metadata}\\ $\downarrow$ \\
+\fbox{Field traversal + ten frozen text rules}\\ $\downarrow$ \\
+\fbox{M0--M4 verdict + registration decision}\\ $\downarrow$ \\
+\fbox{Accepted fingerprint in tool registry}\\ $\downarrow$ \\
+\fbox{Call-time identity / quarantine / mutation check}\\ $\downarrow$ \\
+\fbox{Trusted host decision $\rightarrow$ local sink}
+\end{tabular}
+\caption{Implemented Sentinel architecture. Audit events accompany registration
+and invocation. The sink records an enqueue; it does not execute a remote tool.}
+\label{fig:architecture}\end{figure}
+
+\subsection{Metadata analysis and poisoning risk}
+The full input is a tool dictionary, but the fingerprint representation is a
+three-field projection:
+\begin{equation}
+ F(M_i)=\{\mathrm{name},\mathrm{description},\mathrm{inputSchema}\}.
+\end{equation}
+The implementation also accepts an \texttt{input\_schema} alias. Scanning visits
+string-valued top-level name and description, and recursively visits descriptions
+and titles inside the input schema. Top-level title and arbitrary annotations
+are not automatically traversed or fingerprinted. An input tree and a model's
+actual displayed definition therefore need not have the same coverage.
+
+Let $\mathcal{C}(M)$ be the strings traversed by the scanner; each signal $j$ has a
+fixed regex $p_j$ and severity $s_j$. The executed risk rule is
+\begin{equation}
+ R_{\mathrm{TPD}}(M)=\max\bigl(\{s_j:p_j\text{ matches }\mathcal{C}(M)\}\cup\{0\}\bigr).
+\end{equation}
+The default threshold is $\tau=3$:
+\begin{equation}
+ \operatorname{admit}(M)=\operatorname{validName}(M)\land R_{\mathrm{TPD}}(M)<\tau.
+\end{equation}
+Invalid non-dictionary inputs and invalid names are denied. The scanner documentation
+also describes malformed-schema denial; our source-contract probe checks the
+implemented behavior rather than assuming that documentation proves validation.
+Multiple low-severity findings do not add into a higher risk score.
+
+@@RULE_TABLE@@
+
+This operational definition replaces the earlier unspecified weighted poisoning,
+shadowing and behavior equations. It retains risk assessment as a study component,
+while identifying the actual M0--M4 mechanism. M1 urgency and M2 encoded-blob findings
+can remain allowed at the default threshold. Finding an indicator and denying its
+tool are therefore recorded separately.
+
+\subsection{Shadowing, identity and scope}
+The cross-tool steering rule matches instructions about other tools or future
+calls. It does not compare two tools' edit distance or evaluate whether their
+claimed capabilities conflict. Names that resemble a trusted tool can be accepted
+when their metadata lacks a matched high-severity indicator. Conversely, an
+unknown name is denied at invocation because it was not registered, not because
+a similarity detector identified typosquatting. We preserve the three original
+shadowing families and test their actual observability through this API.
+
+Source corpus records that embed executable setup or an agent-context attack
+require a projection before a plain dictionary scanner can consume them. Each
+projection retains its source file/ID and content hashes, and its applicability
+label. Projected descriptor decisions are reported separately from native
+metadata records. They do not establish execution of the original exploit.
+
+\subsection{Call-time monitoring, policy and quarantine}
+For an admitted definition, the registry stores
+\begin{equation}
+ h_i=\operatorname{SHA256}(\operatorname{canonicalJSON}(F(M_i))).
+\end{equation}
+Sorted keys make dictionary insertion order irrelevant. At invocation, the registry
+requires a valid name, a matching stored fingerprint and absence from quarantine.
+A covered mutation removes the registration and adds the name to quarantine.
+Restoring old bytes does not immediately clear that state. A clean catalogue
+refresh rescans definitions and can lift quarantine; direct registration and
+refresh are not identical recovery operations.
+
+\begin{figure}[t]\centering\small
+\begin{tabular}{cc}
+\multicolumn{2}{c}{\fbox{Proposed local invocation}}\\
+\multicolumn{2}{c}{$\downarrow$}\\
+\multicolumn{2}{c}{\fbox{Known name + fingerprint + quarantine checks}}\\
+Allowed $\swarrow$ & $\searrow$ Denied\\
+\fbox{Enqueue to recording sink} & \fbox{No enqueue; record denial}\\
+\multicolumn{2}{c}{$\downarrow$}\\
+\multicolumn{2}{c}{\fbox{Audit decision and lifecycle evidence}}
+\end{tabular}
+\caption{Decision flow. The allowed branch goes directly to its sink; the denied
+branch never joins the allowed execution path. Quarantine is registry state.}
+\label{fig:decision}\end{figure}
+
+Logical quarantine prevents subsequent use through the enforcing registry. It is
+not an operating-system sandbox or process isolation. Call-time monitoring here
+means checking metadata and registration state at invocation hooks; it does not
+observe a running tool's internal instructions, network actions or return values.
+The audit stores hash-linked events in memory, with optional file mirroring.
+Verification detects inconsistent retained links, but an actor who can rewrite
+an entire log can recompute a chain. The study makes no WORM or remote-attestation
+claim.
+
+\begin{figure}[t]\centering\small
+\begin{tabular}{c}
+\fbox{Register / refresh catalogue}\\ $\downarrow$ \\
+\fbox{Invoke $\rightarrow$ check $\rightarrow$ allow or deny}\\ $\downarrow$ \\
+\fbox{Record decision and observed local receipt}\\ $\downarrow$ \\
+\fbox{Mutation: quarantine $\rightarrow$ clean refresh: recover}
+\end{tabular}
+\caption{Implemented monitoring and response cycle. Recovery requires the stated
+refresh path; continuous remote behavior monitoring is outside this cycle.}
+\label{fig:cycle}\end{figure}
+
+@@ARCHITECTURE_TABLE@@
+
+\section{Security Evaluation and Performance Analysis}
+\subsection{Inputs, provenance and experimental units}
+The source corpus is pinned to fuzzd commit
+{\footnotesize\texttt{f739e120cd7dc253fead2a1f13668f9535e4d8a5}}. It comprises 24 poisoning
+IDs, three shadowing IDs and 20 benign entries. The benchmark repository's
+MCPTox-derived definitions are a different artifact from the MCPTox paper's
+agent-evaluation units~\cite{orig8,mcptoxrepo}. We do not pool either larger count
+into the present 47-case experiment.
+
+@@CORPUS_PROTOCOL@@
+
+The Sentinel source is pinned to
+{\footnotesize\texttt{5ce5d56e57a0acd092435fca5d89b78d0b39ee7b}}. All twelve vendored files
+retain their MIT notice and exact source identities. Rules and threshold are
+unchanged throughout scoring. The cases were visible during development and the
+authored challenges are specification-aware. There is no learned model, calibration
+fit, blind holdout or public preregistration. This study shares human authorship
+with Sentinel, so public code is not evidence of independent third-party validation.
+
+\subsection{Comparison arms and observed enqueues}
+An allow-all control exposes the workload denominator and sink behavior. A
+registration-only arm scans the initial definition and reuses admission without
+checking current metadata. The pinned Sentinel arm executes registration and
+call-time checks. A rescan-per-call arm applies the same scanner to each current
+definition but has no fingerprint or quarantine history. These are local host
+adapters around the same fixed rules, not reproductions of MCP-Guard, MCPShield
+or another published defense.
+
+Each source and challenge template is evaluated once per arm with fresh state.
+The host then records whether it actually enqueued a fixed benign call to the
+local sink. A denied fixture should have no receipt; a false-positive benign
+fixture also has no receipt, which is a utility loss. Errors are retained as
+errors and never treated as successful prevention. The complete dataset remains
+separate from the per-kind repeated workloads.
+
+\subsection{Metrics and five workload levels}
+For attack-labeled cases, let $N_a$ be the number tested, $N_d$ those with any rule
+finding, $N_b$ those denied with no receipt, and $N_{b,d}$ the blocked subset with a
+finding. We preserve detection and blocking as distinct metrics:
+\begin{align}
+ \operatorname{SignalRate}&=N_d/N_a,\\
+ \operatorname{BlockingAll}&=N_b/N_a,\\
+ \operatorname{BlockingDetected}&=N_{b,d}/N_d.
+\end{align}
+A zero denominator is reported as undefined. The last fraction is conditional
+on detection and cannot be interpreted as all-attack prevention. Confusion matrices
+count true/false positive and negative outcomes separately for any-rule findings
+and for denial. Benign completion is the fraction of benign-labeled cases with
+one expected local receipt. Attack labels express the fixture author's intended
+attack, not a proven harmful effect in a real agent.
+
+The original workload levels of 100, 150, 200, 250 and 300 calls are retained
+separately for poisoning, shadowing and benign source templates. Within a kind,
+a deterministic round-robin schedule repeats the same templates. We publish unique
+IDs and repetition counts for each row. A static detector does not learn from
+these repetitions; small percentage changes can arise from integer composition,
+not increasing capability with load. No repeated call becomes a new attack family.
+
+@@METRICS_TABLE@@
+
+\subsection{Decision timing and allocation boundary}
+@@TIMING_PROTOCOL@@
+
+Response time here is the measured local decision interval. It is not elapsed
+time from a remote tool's harmful behavior to containment, and blocked and allowed
+paths are summarized explicitly. The paired valid-call benchmark includes
+call-time registry verification, audit events and local receipt storage. Cold
+registration is outside that timer. Python allocation is measured separately
+using \texttt{tracemalloc}; neither peak allocation nor its incremental difference
+is process RSS or whole-system memory overhead.
+
+@@RESULTS@@
+
+\subsection{Interpretation and preservation of the original studies}
+The study retains each original question: poisoning detection, shadowing detection,
+response time, conditional attack blocking, runtime overhead and memory cost.
+Their operational definitions now match the code. The generated tables expose both
+source and challenge false positives, complete counts and workload composition.
+The figures use a single percentage scale for rates and keep counts in tables.
+Raw timing and allocation records are retained for reanalysis rather than
+reconstructing measurements from rounded cells.
+
+Metadata mutation results explain why call-time checks and rescanning are not
+interchangeable. Fingerprints capture changes in the declared projection; rescanning
+may accept a clean but changed definition, while quarantine preserves mutation
+history until explicit refresh. Neither mechanism extends automatically to fields
+outside its projection or an unchanged remote implementation. Those boundaries
+are reusable test obligations for an integrating host.
+
+\subsection{Limitations and threats to validity}
+The source set is small, particularly its three shadowing templates. Authored
+challenge variants expand coverage but do not create a sample of deployed attacks.
+Intent labels have not received independent human adjudication. Template projection
+can change the observable attack; subgroup results and source lineage expose that
+choice. Known fixed rules, shared authorship and specification-aware cases create
+selection bias. There is no estimate of malicious prevalence, cross-model attack
+success or population recall.
+
+The local sink proves enqueue occurrence and absence within this harness. It
+cannot certify remote side effects, model instruction following or route correctness
+in an arbitrary MCP host. Runtime results use one host and are descriptive.
+Audit logging and copying contribute to cost, so a percentage relative to a tiny
+allow-all baseline is not a universal production overhead. Finite lifecycle cases
+and ordered local calls do not prove all concurrent schedules.
+
+\subsection{Ethics, harm and data availability}
+All calls end at an inert local sink. No credentials, remote victims or live attack
+payload execution are involved. Source-case descriptions may contain adversarial
+instructions, but they are treated as data. Public evidence avoids redistributing
+external payload text where corpus reuse terms remain uncertain. Publishing a
+source-contract discrepancy without its preconditions can mischaracterize a
+library; we pair such observations with controls and their actual field boundary.
+
+@@AVAILABILITY@@
+
+\section{Conclusion}
+SENTINEL-TPD offers an implemented, auditable registration and invocation policy
+for selected tool metadata. This study evaluates the original poisoning and
+shadowing patterns, local denial and benign completion, five repeated workload
+sizes, metadata lifecycle behavior and measured runtime costs. Its contribution is
+the recorded coverage and boundary evidence under a fixed source and input pin.
+Further work should investigate independent agent integrations, adjudicated and
+adaptive attack datasets, model selection, result inspection and actual isolation
+before making broader runtime-security claims.
+
+\section*{Acknowledgments and AI Assistance}
+OpenAI Codex assisted with source retrieval and checking, implementation of the
+study harness, authored fixtures, analysis and drafting of the Abstract,
+Sections I--V, appendices and accompanying artifact. Exact API model snapshots
+were not recorded. The human author is responsible for reviewing the sources,
+code, results, originality and all submission declarations. No AI system is
+listed as an author and no independent human peer review is claimed.
+
+@@BIBLIOGRAPHY@@
+
+\appendices
+\section{Original Pattern and Study Coverage}\label{app:patterns}
+@@PATTERN_TABLE@@
+The original twelve-pattern summary is preserved. The source corpus's more granular
+category labels and all three shadowing families remain in the recorded per-family
+results. Unsupported semantic or runtime claims are retained as explicit research
+questions and limitations rather than counted as implemented defenses.
+
+\section{Adjacent Research Boundaries}\label{app:adjacent}
+@@ADJACENT_TABLE@@

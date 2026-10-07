@@ -1,0 +1,797 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/ksek87/fuzzd",
+  "commit": "f739e120cd7dc253fead2a1f13668f9535e4d8a5",
+  "tree_listing_sha256": "1a979f07ab4ea6a23f69c77efbc061be76edcf1785f21ba4e7e9545819f7b905",
+  "source_counts": {
+    "poisoning": 24,
+    "shadowing": 3,
+    "benign": 20
+  },
+  "source_family_counts": {
+    "annotation_deception": 1,
+    "argument_hijacking": 1,
+    "capability_override": 1,
+    "cross_tool_exfiltration": 1,
+    "explicit_trigger_hijacking": 4,
+    "fake_enabling_prerequisite": 1,
+    "fake_system_tag_injection": 1,
+    "forced_reexecution_loop": 1,
+    "implicit_trigger_background_hijacking": 4,
+    "message_hijacking": 1,
+    "name_squatting": 1,
+    "parasitic_toolchain": 1,
+    "persistent_instruction_injection": 4,
+    "response_context_invalidation": 1,
+    "typosquatting": 1,
+    "unicode_obfuscation": 1,
+    "unrelated_prerequisite_injection": 1,
+    "xml_tag_injection": 1
+  },
+  "licensing": {
+    "package_spdx_declaration": "MIT",
+    "package_declaration_path": "Cargo.toml",
+    "readme_mit_declaration": true,
+    "license_text_paths": [],
+    "dataset_specific_license_found": false,
+    "redistribution_decision": "Do not redistribute external raw records or normalized payloads; provide pinned acquisition and local validation only. MIT intent is recorded without inventing an absent license notice."
+  },
+  "files": [
+    {
+      "path": "Cargo.toml",
+      "bytes": 1431,
+      "sha256": "1e68943273cf4775d79dfd4bd76d9a2961493104264c16bd5a0ae17eb65f4266",
+      "git_blob_sha1": "aa93d14e7bd697b3ef1fc21e241e211a69803097",
+      "url": "https://raw.githubusercontent.com/ksek87/fuzzd/f739e120cd7dc253fead2a1f13668f9535e4d8a5/Cargo.toml"
+    },
+    {
+      "path": "README.md",
+      "bytes": 35621,
+      "sha256": "eb31a3839fd29e9833f17e72126d9e3cb07336e98e13f65edc5a38ce70a39a73",
+      "git_blob_sha1": "104bdf162fe59709aeda1af316e1803eee86db5e",
+      "url": "https://raw.githubusercontent.com/ksek87/fuzzd/f739e120cd7dc253fead2a1f13668f9535e4d8a5/README.md"
+    },
+    {
+      "path": "bench/clean_tools.json",
+      "bytes": 6158,
+      "sha256": "38b8fbf265e49147a6865836d1eff3796278625599ee47f3ffb2eb7b5f037348",
+      "git_blob_sha1": "47af1478608843f842723141d1b71efb3e793d62",
+      "url": "https://raw.githubusercontent.com/ksek87/fuzzd/f739e120cd7dc253fead2a1f13668f9535e4d8a5/bench/clean_tools.json"
+    },
+    {
+      "path": "corpus/tool_poisoning/TPA-001.json",
+      "bytes": 1096,
+      "sha256": "46eaa7c1b63ad1bd22c5680c23e6bc0eac3be504f37e24a2e521a8761cf105d9",
+      "git_blob_sha1": "8ab4351a1258fefc967ecb946e67f1f89e58e52e",
+      "url": "https://raw.githubusercontent.com/ksek87/fuzzd/f739e120cd7dc253fead2a1f13668f9535e4d8a5/corpus/tool_poisoning/TPA-001.json"
+    },
+    {
+      "path": "corpus/tool_poisoning/TPA-002.json",
+      "bytes": 1066,
+      "sha256": "5deb33722e4da6e9cd7dbefe0a45a0143f690aff0d77b57edd0271f82d8fd0d9",
+      "git_blob_sha1": "afcaf3eb4c7f3db116e61b00954a5a723085b3d1",
+      "url": "https://raw.githubusercontent.com/ksek87/fuzzd/f739e120cd7dc253fead2a1f13668f9535e4d8a5/corpus/tool_poisoning/TPA-002.json"
+    },
+    {
+      "path": "corpus/tool_poisoning/TPA-003.json",
+      "bytes": 1066,
+      "sha256": "b516ce72390acc4c9bf6d39a12e9d27439e90965c0cc58a0606fb0d254a095e9",
+      "git_blob_sha1": "03adc0885906d9c276a381744c6d328ecba49669",
+      "url": "https://raw.githubusercontent.com/ksek87/fuzzd/f739e120cd7dc253fead2a1f13668f9535e4d8a5/corpus/tool_poisoning/TPA-003.json"
+    },
+    {
+      "path": "corpus/tool_poisoning/TPA-004.json",
+      "bytes": 1081,
+      "sha256": "9693a8765deed4ebb0b2b34a7805726648511807bd4066c84af86e58db7943ea",
+      "git_blob_sha1": "2b969845ae756e3f97d5737e9761b083b4170b01",
+      "url": "https://raw.githubusercontent.com/ksek87/fuzzd/f739e120cd7dc253fead2a1f13668f9535e4d8a5/corpus/tool_poisoning/TPA-004.json"
+    },
+    {
+      "path": "corpus/tool_poisoning/TPA-005.json",
+      "bytes": 1195,
+      "sha256": "1849d74b77227009da1659dd797b541077c4a89dd7786796ec884907e2005a71",
+      "git_blob_sha1": "c3b6fec758db4a313cc8318c4596a35dc05d6a7e",
+      "url": "https://raw.githubusercontent.com/ksek87/fuzzd/f739e120cd7dc253fead2a1f13668f9535e4d8a5/corpus/tool_poisoning/TPA-005.json"
+    },
+    {
+      "path": "corpus/tool_poisoning/TPA-006.json",
+      "bytes": 1196,
+      "sha256": "3648e6f50adf2b38e317e2e01c754d74c660c33560168787ff49ff4c51996d3c",
+      "git_blob_sha1": "26e2e5a67494c6542cddb7faeed2f7531733e656",
+      "url": "https://raw.githubusercontent.com/ksek87/fuzzd/f739e120cd7dc253fead2a1f13668f9535e4d8a5/corpus/tool_poisoning/TPA-006.json"
+    },
+    {
+      "path": "corpus/tool_poisoning/TPA-007.json",
+      "bytes": 1246,
+      "sha256": "2e1c39f8f01dd9c80d7b42644921afecd750d29d09095ec17975733d1f9fea72",
+      "git_blob_sha1": "cd18680c21fa696fa00a9c4ef24711f9844497ef",
+      "url": "https://raw.githubusercontent.com/ksek87/fuzzd/f739e120cd7dc253fead2a1f13668f9535e4d8a5/corpus/tool_poisoning/TPA-007.json"
+    },
+    {
+      "path": "corpus/tool_poisoning/TPA-008.json",
+      "bytes": 1275,
+      "sha256": "199d314b580de13903df19d89db6c36a9ac0827211b5e9f4e9d08772543da009",
+      "git_blob_sha1": "0ff5894a547868cc57deb7a22fcb5fe2c202f579",
+      "url": "https://raw.githubusercontent.com/ksek87/fuzzd/f739e120cd7dc253fead2a1f13668f9535e4d8a5/corpus/tool_poisoning/TPA-008.json"
+    },
+    {
+      "path": "corpus/tool_poisoning/TPA-009.json",
+      "bytes": 1202,
+      "sha256": "4002c9a058bca834c4a6e5e29412af31d61eeb4cd182a335a872ca4b94b42e99",
+      "git_blob_sha1": "d64b463636d79e754350499887ae20d65e872616",
+      "url": "https://raw.githubusercontent.com/ksek87/fuzzd/f739e120cd7dc253fead2a1f13668f9535e4d8a5/corpus/tool_poisoning/TPA-009.json"
+    },
+    {
+      "path": "corpus/tool_poisoning/TPA-010.json",
+      "bytes": 1203,
+      "sha256": "559d2cafe568d9876342333bea2e02a837fe5c96ef096188f94c2b88f309faa8",
+      "git_blob_sha1": "474d931af8ad8b5712ab7a0d82886f4aeb21ef63",
+      "url": "https://raw.githubusercontent.com/ksek87/fuzzd/f739e120cd7dc253fead2a1f13668f9535e4d8a5/corpus/tool_poisoning/TPA-010.json"
+    },
+    {
+      "path": "corpus/tool_poisoning/TPA-011.json",
+      "bytes": 1263,
+      "sha256": "ad32e8a6bedaee2b7c35c4eaf1bd426e82d21c8dc77dc9e99febb9994aed4b9e",
+      "git_blob_sha1": "d00158f50826dec57479048f7b1acbe45d66ca46",
+      "url": "https://raw.githubusercontent.com/ksek87/fuzzd/f739e120cd7dc253fead2a1f13668f9535e4d8a5/corpus/tool_poisoning/TPA-011.json"
+    },
+    {
+      "path": "corpus/tool_poisoning/TPA-012.json",
+      "bytes": 1267,
+      "sha256": "6d7f327130fea973eb8844e33581e3665f55668a3c2880641e908bf61d67dc1c",
+      "git_blob_sha1": "775ff746a0cbf2420477600bbc5fe3361ef389b7",
+      "url": "https://raw.githubusercontent.com/ksek87/fuzzd/f739e120cd7dc253fead2a1f13668f9535e4d8a5/corpus/tool_poisoning/TPA-012.json"
+    },
+    {
+      "path": "corpus/tool_poisoning/TPA-013.json",
+      "bytes": 1313,
+      "sha256": "cdd6f7824571ae0ad99993fbba5aa5d736051ec975de4e33ac59307f8f59235e",
+      "git_blob_sha1": "2fc8ab9ba92499ae23e98c3e1f80485e987e70cb",
+      "url": "https://raw.githubusercontent.com/ksek87/fuzzd/f739e120cd7dc253fead2a1f13668f9535e4d8a5/corpus/tool_poisoning/TPA-013.json"
+    },
+    {
+      "path": "corpus/tool_poisoning/TPA-014.json",
+      "bytes": 1201,
+      "sha256": "e3ff6918228463979fbeb537084ae42e1e49c772fed8b3cf6012f4574e38bc94",
+      "git_blob_sha1": "2df423177de85504752528039b70743864cf9234",
+      "url": "https://raw.githubusercontent.com/ksek87/fuzzd/f739e120cd7dc253fead2a1f13668f9535e4d8a5/corpus/tool_poisoning/TPA-014.json"
+    },
+    {
+      "path": "corpus/tool_poisoning/TPA-015.json",
+      "bytes": 1267,
+      "sha256": "c9f1dba575f9b69ea96f0b78131a14f3f8c070b696c7aab98481b0ce2ff1753e",
+      "git_blob_sha1": "8e31bbb8e562f07b2cadc8afa6ba81e0b3efd44b",
+      "url": "https://raw.githubusercontent.com/ksek87/fuzzd/f739e120cd7dc253fead2a1f13668f9535e4d8a5/corpus/tool_poisoning/TPA-015.json"
+    },
+    {
+      "path": "corpus/tool_poisoning/TPA-016.json",
+      "bytes": 1286,
+      "sha256": "6816696385baa061ed4b064f88f6ac92cd3b282f6e92c4505f0c2cccd70b15c2",
+      "git_blob_sha1": "756d30dc68eec9d6578996c3dbfcf2aeaa211801",
+      "url": "https://raw.githubusercontent.com/ksek87/fuzzd/f739e120cd7dc253fead2a1f13668f9535e4d8a5/corpus/tool_poisoning/TPA-016.json"
+    },
+    {
+      "path": "corpus/tool_poisoning/TPA-017.json",
+      "bytes": 1390,
+      "sha256": "7b5c38ac87f5a88071091e132727c1580d909b2cb7414cc81b2107702db305d6",
+      "git_blob_sha1": "b1927ca85b82d1c98208a9433ba2bd65f3e57afa",
+      "url": "https://raw.githubusercontent.com/ksek87/fuzzd/f739e120cd7dc253fead2a1f13668f9535e4d8a5/corpus/tool_poisoning/TPA-017.json"
+    },
+    {
+      "path": "corpus/tool_poisoning/TPA-018.json",
+      "bytes": 1167,
+      "sha256": "e085c1606107937724a0f614541db69158c57f251bd16c8f65e097aba8ed1758",
+      "git_blob_sha1": "29fddd07e69214346899fe2093d1c224c5d8f9b0",
+      "url": "https://raw.githubusercontent.com/ksek87/fuzzd/f739e120cd7dc253fead2a1f13668f9535e4d8a5/corpus/tool_poisoning/TPA-018.json"
+    },
+    {
+      "path": "corpus/tool_poisoning/TPA-019.json",
+      "bytes": 1177,
+      "sha256": "0408ee1ca9eed71df6249dbfde1871083262cf240c72a89bc0c7a66ad0a7d6f6",
+      "git_blob_sha1": "918e7bd3197c2d2f8d0defe616e7f22193c33e68",
+      "url": "https://raw.githubusercontent.com/ksek87/fuzzd/f739e120cd7dc253fead2a1f13668f9535e4d8a5/corpus/tool_poisoning/TPA-019.json"
+    },
+    {
+      "path": "corpus/tool_poisoning/TPA-020.json",
+      "bytes": 1263,
+      "sha256": "30d7a8a71215c43f5d4fda1b7593ae4adb9cdb0a241a8633fabe1092422e3602",
+      "git_blob_sha1": "3f60d709b87200260988fa0b813bc6b777fca07c",
+      "url": "https://raw.githubusercontent.com/ksek87/fuzzd/f739e120cd7dc253fead2a1f13668f9535e4d8a5/corpus/tool_poisoning/TPA-020.json"
+    },
+    {
+      "path": "corpus/tool_poisoning/TPA-021.json",
+      "bytes": 1272,
+      "sha256": "d44a63f0e76fa700360461dce2e586051efdfde5875d897198cdfdf1e242b812",
+      "git_blob_sha1": "94e4072eea58d5c766cb4ba3282877c28adebc62",
+      "url": "https://raw.githubusercontent.com/ksek87/fuzzd/f739e120cd7dc253fead2a1f13668f9535e4d8a5/corpus/tool_poisoning/TPA-021.json"
+    },
+    {
+      "path": "corpus/tool_poisoning/TPA-022.json",
+      "bytes": 1920,
+      "sha256": "25f6cc061eb34c6d623696af617b43f626130312165a2abcbffa2a147370d4a7",
+      "git_blob_sha1": "bff55cbc5391e98af9e8b308450f380a9640132c",
+      "url": "https://raw.githubusercontent.com/ksek87/fuzzd/f739e120cd7dc253fead2a1f13668f9535e4d8a5/corpus/tool_poisoning/TPA-022.json"
+    },
+    {
+      "path": "corpus/tool_poisoning/TPA-023.json",
+      "bytes": 1687,
+      "sha256": "2e6ca3a1b07e3f18580e09beec17bdd19da57bd8401e659d511f7046624effa3",
+      "git_blob_sha1": "a8f67b7f9af7e8a6faad9136385334a3db7e8108",
+      "url": "https://raw.githubusercontent.com/ksek87/fuzzd/f739e120cd7dc253fead2a1f13668f9535e4d8a5/corpus/tool_poisoning/TPA-023.json"
+    },
+    {
+      "path": "corpus/tool_poisoning/TPA-024.json",
+      "bytes": 1619,
+      "sha256": "d6c7a56a04d65041693068f65a5b2e7e33c0c086abeb08f395e73774680f0a5a",
+      "git_blob_sha1": "848878af6830efad9705abcfd75b4980ad4c68ad",
+      "url": "https://raw.githubusercontent.com/ksek87/fuzzd/f739e120cd7dc253fead2a1f13668f9535e4d8a5/corpus/tool_poisoning/TPA-024.json"
+    },
+    {
+      "path": "corpus/tool_shadowing/TS-001.json",
+      "bytes": 1174,
+      "sha256": "555554caeb312ac71f4075fc57bd83a144d1ca4b10778789276c8833cea5d7fd",
+      "git_blob_sha1": "800a2c299d283546386d8805e1ccdbcd03db7a57",
+      "url": "https://raw.githubusercontent.com/ksek87/fuzzd/f739e120cd7dc253fead2a1f13668f9535e4d8a5/corpus/tool_shadowing/TS-001.json"
+    },
+    {
+      "path": "corpus/tool_shadowing/TS-002.json",
+      "bytes": 1192,
+      "sha256": "a2d685967d45d6148147ba7e6512fb3561d2ce01b3332793ee381cb47be3b54c",
+      "git_blob_sha1": "ceb0ff63c036b83e3abc2d1d4f01264fb3eee427",
+      "url": "https://raw.githubusercontent.com/ksek87/fuzzd/f739e120cd7dc253fead2a1f13668f9535e4d8a5/corpus/tool_shadowing/TS-002.json"
+    },
+    {
+      "path": "corpus/tool_shadowing/TS-003.json",
+      "bytes": 1171,
+      "sha256": "9b45c169bed1569d9c1dfafbc5e03b204de7108e2dc1db8a3f75c2e88554634b",
+      "git_blob_sha1": "20bad5a0cb6559c4a811784684fb6b882e168de9",
+      "url": "https://raw.githubusercontent.com/ksek87/fuzzd/f739e120cd7dc253fead2a1f13668f9535e4d8a5/corpus/tool_shadowing/TS-003.json"
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "BENIGN-001",
+      "family": "source_clean_tools",
+      "kind": "benign",
+      "label": "benign",
+      "source_file": "bench/clean_tools.json",
+      "source_index": 0,
+      "source_record_sha256": "ae9b5071df43856bce023c5e934788c3ef572255f2247d10b1ae623cfcbee0f5",
+      "tool_name": "read_file",
+      "source_ids_note": "Benchmark entries have no case IDs; BENIGN-nnn is a study-assigned stable 1-based index."
+    },
+    {
+      "case_id": "BENIGN-002",
+      "family": "source_clean_tools",
+      "kind": "benign",
+      "label": "benign",
+      "source_file": "bench/clean_tools.json",
+      "source_index": 1,
+      "source_record_sha256": "c1b51054e55a3e594562ca39f730f29fdd6c0a8515c13b18605d706329908002",
+      "tool_name": "write_file",
+      "source_ids_note": "Benchmark entries have no case IDs; BENIGN-nnn is a study-assigned stable 1-based index."
+    },
+    {
+      "case_id": "BENIGN-003",
+      "family": "source_clean_tools",
+      "kind": "benign",
+      "label": "benign",
+      "source_file": "bench/clean_tools.json",
+      "source_index": 2,
+      "source_record_sha256": "acdad3c5679bb91964c942c815ddd600b67b013b7dbcaa8c493e6aa7205e6d8c",
+      "tool_name": "list_directory",
+      "source_ids_note": "Benchmark entries have no case IDs; BENIGN-nnn is a study-assigned stable 1-based index."
+    },
+    {
+      "case_id": "BENIGN-004",
+      "family": "source_clean_tools",
+      "kind": "benign",
+      "label": "benign",
+      "source_file": "bench/clean_tools.json",
+      "source_index": 3,
+      "source_record_sha256": "9cff8b642744adcae02df0b268c238dcb3c1cf469b256dda67282928bfe778c6",
+      "tool_name": "search_files",
+      "source_ids_note": "Benchmark entries have no case IDs; BENIGN-nnn is a study-assigned stable 1-based index."
+    },
+    {
+      "case_id": "BENIGN-005",
+      "family": "source_clean_tools",
+      "kind": "benign",
+      "label": "benign",
+      "source_file": "bench/clean_tools.json",
+      "source_index": 4,
+      "source_record_sha256": "a2692ed02859ca4ddfe3d0c6b105892fc9e6525ae061fa0ac84849777387103d",
+      "tool_name": "send_slack_message",
+      "source_ids_note": "Benchmark entries have no case IDs; BENIGN-nnn is a study-assigned stable 1-based index."
+    },
+    {
+      "case_id": "BENIGN-006",
+      "family": "source_clean_tools",
+      "kind": "benign",
+      "label": "benign",
+      "source_file": "bench/clean_tools.json",
+      "source_index": 5,
+      "source_record_sha256": "2adee66573cfb292da075949bfea679ed9a3b876aa4c3b5388e465e41c43e07c",
+      "tool_name": "list_github_repos",
+      "source_ids_note": "Benchmark entries have no case IDs; BENIGN-nnn is a study-assigned stable 1-based index."
+    },
+    {
+      "case_id": "BENIGN-007",
+      "family": "source_clean_tools",
+      "kind": "benign",
+      "label": "benign",
+      "source_file": "bench/clean_tools.json",
+      "source_index": 6,
+      "source_record_sha256": "6703cc73adebdb5bec4c02a65e612fd1bb180dd56b4fa522643f9d54f59ecc61",
+      "tool_name": "create_github_issue",
+      "source_ids_note": "Benchmark entries have no case IDs; BENIGN-nnn is a study-assigned stable 1-based index."
+    },
+    {
+      "case_id": "BENIGN-008",
+      "family": "source_clean_tools",
+      "kind": "benign",
+      "label": "benign",
+      "source_file": "bench/clean_tools.json",
+      "source_index": 7,
+      "source_record_sha256": "26dc5031157aa068c371b42c8c8b0e82c6c88c4c068bc5a3c35f07075bfcbf91",
+      "tool_name": "execute_sql",
+      "source_ids_note": "Benchmark entries have no case IDs; BENIGN-nnn is a study-assigned stable 1-based index."
+    },
+    {
+      "case_id": "BENIGN-009",
+      "family": "source_clean_tools",
+      "kind": "benign",
+      "label": "benign",
+      "source_file": "bench/clean_tools.json",
+      "source_index": 8,
+      "source_record_sha256": "37179a1f854c4d48f78fdcd19f36e9bd3baf60471920c184b7dd3db4ab8a84aa",
+      "tool_name": "get_weather",
+      "source_ids_note": "Benchmark entries have no case IDs; BENIGN-nnn is a study-assigned stable 1-based index."
+    },
+    {
+      "case_id": "BENIGN-010",
+      "family": "source_clean_tools",
+      "kind": "benign",
+      "label": "benign",
+      "source_file": "bench/clean_tools.json",
+      "source_index": 9,
+      "source_record_sha256": "d497c8658a1ecb2253eac3f5e49eb25d6d959911f512d57fe5e2452fc427e5e2",
+      "tool_name": "run_shell_command",
+      "source_ids_note": "Benchmark entries have no case IDs; BENIGN-nnn is a study-assigned stable 1-based index."
+    },
+    {
+      "case_id": "BENIGN-011",
+      "family": "source_clean_tools",
+      "kind": "benign",
+      "label": "benign",
+      "source_file": "bench/clean_tools.json",
+      "source_index": 10,
+      "source_record_sha256": "28b0455c69c6661ea5e3acd6285ea9081ada29c83635ff3488e5c2762d5afc01",
+      "tool_name": "search_web",
+      "source_ids_note": "Benchmark entries have no case IDs; BENIGN-nnn is a study-assigned stable 1-based index."
+    },
+    {
+      "case_id": "BENIGN-012",
+      "family": "source_clean_tools",
+      "kind": "benign",
+      "label": "benign",
+      "source_file": "bench/clean_tools.json",
+      "source_index": 11,
+      "source_record_sha256": "b2431d655548c27ea45aad2212265021f140ccf754ac49d81c51b7c9f42517b4",
+      "tool_name": "get_calendar_events",
+      "source_ids_note": "Benchmark entries have no case IDs; BENIGN-nnn is a study-assigned stable 1-based index."
+    },
+    {
+      "case_id": "BENIGN-013",
+      "family": "source_clean_tools",
+      "kind": "benign",
+      "label": "benign",
+      "source_file": "bench/clean_tools.json",
+      "source_index": 12,
+      "source_record_sha256": "2ed59ddbe02d7033a2b387a4e59525042b50dfa4e879b34b1c71c9d0b0eb1bdc",
+      "tool_name": "list_drive_files",
+      "source_ids_note": "Benchmark entries have no case IDs; BENIGN-nnn is a study-assigned stable 1-based index."
+    },
+    {
+      "case_id": "BENIGN-014",
+      "family": "source_clean_tools",
+      "kind": "benign",
+      "label": "benign",
+      "source_file": "bench/clean_tools.json",
+      "source_index": 13,
+      "source_record_sha256": "4672f4ad32411dac3d9ab95dbfbfbefda094975dc4db96d1644f3864453b2d97",
+      "tool_name": "send_email",
+      "source_ids_note": "Benchmark entries have no case IDs; BENIGN-nnn is a study-assigned stable 1-based index."
+    },
+    {
+      "case_id": "BENIGN-015",
+      "family": "source_clean_tools",
+      "kind": "benign",
+      "label": "benign",
+      "source_file": "bench/clean_tools.json",
+      "source_index": 14,
+      "source_record_sha256": "be42c8e3ebd8dfd256c02e5c735bf032f771cf03b2be14ddf3cb1ca03d8a4c3f",
+      "tool_name": "create_notion_page",
+      "source_ids_note": "Benchmark entries have no case IDs; BENIGN-nnn is a study-assigned stable 1-based index."
+    },
+    {
+      "case_id": "BENIGN-016",
+      "family": "source_clean_tools",
+      "kind": "benign",
+      "label": "benign",
+      "source_file": "bench/clean_tools.json",
+      "source_index": 15,
+      "source_record_sha256": "878582f84a22cac44be810a268e5ab87156193cbbd42a9e8f272bd5fe8134be4",
+      "tool_name": "add_stripe_customer",
+      "source_ids_note": "Benchmark entries have no case IDs; BENIGN-nnn is a study-assigned stable 1-based index."
+    },
+    {
+      "case_id": "BENIGN-017",
+      "family": "source_clean_tools",
+      "kind": "benign",
+      "label": "benign",
+      "source_file": "bench/clean_tools.json",
+      "source_index": 16,
+      "source_record_sha256": "e3d88589b280c009c305f13f67de97eb80935df4f2cfd032ba84767daec9e974",
+      "tool_name": "resize_image",
+      "source_ids_note": "Benchmark entries have no case IDs; BENIGN-nnn is a study-assigned stable 1-based index."
+    },
+    {
+      "case_id": "BENIGN-018",
+      "family": "source_clean_tools",
+      "kind": "benign",
+      "label": "benign",
+      "source_file": "bench/clean_tools.json",
+      "source_index": 17,
+      "source_record_sha256": "de35a00f1c230ed26d95f29629d73368ad5dc978412a5c97eeed75b6366b01b4",
+      "tool_name": "translate_text",
+      "source_ids_note": "Benchmark entries have no case IDs; BENIGN-nnn is a study-assigned stable 1-based index."
+    },
+    {
+      "case_id": "BENIGN-019",
+      "family": "source_clean_tools",
+      "kind": "benign",
+      "label": "benign",
+      "source_file": "bench/clean_tools.json",
+      "source_index": 18,
+      "source_record_sha256": "939a38e3d8eccefead23d7fca2d328143c8559071929593e2540f0cf284e2fdb",
+      "tool_name": "get_git_log",
+      "source_ids_note": "Benchmark entries have no case IDs; BENIGN-nnn is a study-assigned stable 1-based index."
+    },
+    {
+      "case_id": "BENIGN-020",
+      "family": "source_clean_tools",
+      "kind": "benign",
+      "label": "benign",
+      "source_file": "bench/clean_tools.json",
+      "source_index": 19,
+      "source_record_sha256": "5938bf2dd6f38984b10966bdc70923ca4526de2fe36ef340e1c7f8c32fd2998e",
+      "tool_name": "run_tests",
+      "source_ids_note": "Benchmark entries have no case IDs; BENIGN-nnn is a study-assigned stable 1-based index."
+    },
+    {
+      "case_id": "TPA-001",
+      "family": "explicit_trigger_hijacking",
+      "kind": "poisoning",
+      "label": "attack",
+      "source_file": "corpus/tool_poisoning/TPA-001.json",
+      "source_record_sha256": "46eaa7c1b63ad1bd22c5680c23e6bc0eac3be504f37e24a2e521a8761cf105d9",
+      "source_injection_point": "tool.description",
+      "payload_sha256": "8d44f164927d1b1d77df393631c3dc442011ed37474d27baea57054c57604666",
+      "payload_characters": 235,
+      "payload_utf8_bytes": 235
+    },
+    {
+      "case_id": "TPA-002",
+      "family": "explicit_trigger_hijacking",
+      "kind": "poisoning",
+      "label": "attack",
+      "source_file": "corpus/tool_poisoning/TPA-002.json",
+      "source_record_sha256": "5deb33722e4da6e9cd7dbefe0a45a0143f690aff0d77b57edd0271f82d8fd0d9",
+      "source_injection_point": "tool.description",
+      "payload_sha256": "b8be50aad7bc002b2553e5fe5c9779b76c1d66c5e27f9e067214d49b0d26b6a4",
+      "payload_characters": 220,
+      "payload_utf8_bytes": 220
+    },
+    {
+      "case_id": "TPA-003",
+      "family": "explicit_trigger_hijacking",
+      "kind": "poisoning",
+      "label": "attack",
+      "source_file": "corpus/tool_poisoning/TPA-003.json",
+      "source_record_sha256": "b516ce72390acc4c9bf6d39a12e9d27439e90965c0cc58a0606fb0d254a095e9",
+      "source_injection_point": "tool.description",
+      "payload_sha256": "c5dd31958fedf9cc221d73a046e36a05f12d4237abdcfe447affdeea2e83d4c4",
+      "payload_characters": 219,
+      "payload_utf8_bytes": 219
+    },
+    {
+      "case_id": "TPA-004",
+      "family": "explicit_trigger_hijacking",
+      "kind": "poisoning",
+      "label": "attack",
+      "source_file": "corpus/tool_poisoning/TPA-004.json",
+      "source_record_sha256": "9693a8765deed4ebb0b2b34a7805726648511807bd4066c84af86e58db7943ea",
+      "source_injection_point": "tool.description",
+      "payload_sha256": "7276c915cf592bb68b6daeb38e6a2c1fe1b6601512af3f702193ef707f9115c1",
+      "payload_characters": 233,
+      "payload_utf8_bytes": 233
+    },
+    {
+      "case_id": "TPA-005",
+      "family": "implicit_trigger_background_hijacking",
+      "kind": "poisoning",
+      "label": "attack",
+      "source_file": "corpus/tool_poisoning/TPA-005.json",
+      "source_record_sha256": "1849d74b77227009da1659dd797b541077c4a89dd7786796ec884907e2005a71",
+      "source_injection_point": "tool.description",
+      "payload_sha256": "8ab511122dd72124699f55efc53adc3ac36375bd41d5430f04b5b8e875ac931f",
+      "payload_characters": 289,
+      "payload_utf8_bytes": 293
+    },
+    {
+      "case_id": "TPA-006",
+      "family": "implicit_trigger_background_hijacking",
+      "kind": "poisoning",
+      "label": "attack",
+      "source_file": "corpus/tool_poisoning/TPA-006.json",
+      "source_record_sha256": "3648e6f50adf2b38e317e2e01c754d74c660c33560168787ff49ff4c51996d3c",
+      "source_injection_point": "tool.description",
+      "payload_sha256": "78f069a4f42d740b056f81152e8a8001f2ce7c81203a727d39c0e34eec70a9c5",
+      "payload_characters": 286,
+      "payload_utf8_bytes": 286
+    },
+    {
+      "case_id": "TPA-007",
+      "family": "implicit_trigger_background_hijacking",
+      "kind": "poisoning",
+      "label": "attack",
+      "source_file": "corpus/tool_poisoning/TPA-007.json",
+      "source_record_sha256": "2e1c39f8f01dd9c80d7b42644921afecd750d29d09095ec17975733d1f9fea72",
+      "source_injection_point": "tool.description",
+      "payload_sha256": "1b30530ebdb04361edf0e1bab472f39242855aa1e9e15caa563a73439432fb13",
+      "payload_characters": 329,
+      "payload_utf8_bytes": 329
+    },
+    {
+      "case_id": "TPA-008",
+      "family": "implicit_trigger_background_hijacking",
+      "kind": "poisoning",
+      "label": "attack",
+      "source_file": "corpus/tool_poisoning/TPA-008.json",
+      "source_record_sha256": "199d314b580de13903df19d89db6c36a9ac0827211b5e9f4e9d08772543da009",
+      "source_injection_point": "tool.description",
+      "payload_sha256": "96fdfbad4abb43f811489148cebd433c7e52d8c71e16ae5a531f622a189d740f",
+      "payload_characters": 324,
+      "payload_utf8_bytes": 324
+    },
+    {
+      "case_id": "TPA-009",
+      "family": "persistent_instruction_injection",
+      "kind": "poisoning",
+      "label": "attack",
+      "source_file": "corpus/tool_poisoning/TPA-009.json",
+      "source_record_sha256": "4002c9a058bca834c4a6e5e29412af31d61eeb4cd182a335a872ca4b94b42e99",
+      "source_injection_point": "tool.description",
+      "payload_sha256": "a4807598c419c06dcfc643ecbd982ce6da685260dae8dcc3dde224e7cf073166",
+      "payload_characters": 287,
+      "payload_utf8_bytes": 289
+    },
+    {
+      "case_id": "TPA-010",
+      "family": "persistent_instruction_injection",
+      "kind": "poisoning",
+      "label": "attack",
+      "source_file": "corpus/tool_poisoning/TPA-010.json",
+      "source_record_sha256": "559d2cafe568d9876342333bea2e02a837fe5c96ef096188f94c2b88f309faa8",
+      "source_injection_point": "tool.description",
+      "payload_sha256": "f6a875880bebed7249ade2f96398b1a0ef71a53b8c597fad795a6ed2885d6bf9",
+      "payload_characters": 315,
+      "payload_utf8_bytes": 315
+    },
+    {
+      "case_id": "TPA-011",
+      "family": "persistent_instruction_injection",
+      "kind": "poisoning",
+      "label": "attack",
+      "source_file": "corpus/tool_poisoning/TPA-011.json",
+      "source_record_sha256": "ad32e8a6bedaee2b7c35c4eaf1bd426e82d21c8dc77dc9e99febb9994aed4b9e",
+      "source_injection_point": "tool.description",
+      "payload_sha256": "50c2fe2094902ff7b0e6d51d3ebcb101e1731e73031ac016b0f49ee77b89663e",
+      "payload_characters": 305,
+      "payload_utf8_bytes": 305
+    },
+    {
+      "case_id": "TPA-012",
+      "family": "persistent_instruction_injection",
+      "kind": "poisoning",
+      "label": "attack",
+      "source_file": "corpus/tool_poisoning/TPA-012.json",
+      "source_record_sha256": "6d7f327130fea973eb8844e33581e3665f55668a3c2880641e908bf61d67dc1c",
+      "source_injection_point": "tool.description",
+      "payload_sha256": "a210ff64eec82a40f8131de22e57e6fc5bcf4020d3412f3ee36f4598143021e5",
+      "payload_characters": 319,
+      "payload_utf8_bytes": 319
+    },
+    {
+      "case_id": "TPA-013",
+      "family": "unrelated_prerequisite_injection",
+      "kind": "poisoning",
+      "label": "attack",
+      "source_file": "corpus/tool_poisoning/TPA-013.json",
+      "source_record_sha256": "cdd6f7824571ae0ad99993fbba5aa5d736051ec975de4e33ac59307f8f59235e",
+      "source_injection_point": "tool.description",
+      "payload_sha256": "1d9a442ba85adb462103a29a4a029315f1e00eadd889ee7fe81eefc5f661d9b0",
+      "payload_characters": 338,
+      "payload_utf8_bytes": 338
+    },
+    {
+      "case_id": "TPA-014",
+      "family": "fake_enabling_prerequisite",
+      "kind": "poisoning",
+      "label": "attack",
+      "source_file": "corpus/tool_poisoning/TPA-014.json",
+      "source_record_sha256": "e3ff6918228463979fbeb537084ae42e1e49c772fed8b3cf6012f4574e38bc94",
+      "source_injection_point": "tool.description",
+      "payload_sha256": "185f2a57d25f705e10d290425108ce077dccacdb45f189f8549ce9128237efa0",
+      "payload_characters": 278,
+      "payload_utf8_bytes": 278
+    },
+    {
+      "case_id": "TPA-015",
+      "family": "argument_hijacking",
+      "kind": "poisoning",
+      "label": "attack",
+      "source_file": "corpus/tool_poisoning/TPA-015.json",
+      "source_record_sha256": "c9f1dba575f9b69ea96f0b78131a14f3f8c070b696c7aab98481b0ce2ff1753e",
+      "source_injection_point": "tool.description",
+      "payload_sha256": "16aa4725ae76a97ef4685735c212b5ff8e025f7bd2e2eaace0b8f4583295a694",
+      "payload_characters": 313,
+      "payload_utf8_bytes": 313
+    },
+    {
+      "case_id": "TPA-016",
+      "family": "xml_tag_injection",
+      "kind": "poisoning",
+      "label": "attack",
+      "source_file": "corpus/tool_poisoning/TPA-016.json",
+      "source_record_sha256": "6816696385baa061ed4b064f88f6ac92cd3b282f6e92c4505f0c2cccd70b15c2",
+      "source_injection_point": "tool.description",
+      "payload_sha256": "467c7d8b35745fb0e5295be6034629c3ac48e69ab7c1eb6990325effabafc5d8",
+      "payload_characters": 260,
+      "payload_utf8_bytes": 260
+    },
+    {
+      "case_id": "TPA-017",
+      "family": "fake_system_tag_injection",
+      "kind": "poisoning",
+      "label": "attack",
+      "source_file": "corpus/tool_poisoning/TPA-017.json",
+      "source_record_sha256": "7b5c38ac87f5a88071091e132727c1580d909b2cb7414cc81b2107702db305d6",
+      "source_injection_point": "tool.description",
+      "payload_sha256": "a5d97a5fe96b3064f09ea2b484b49f0d8ab5c6b7d71df07dd954043158de2108",
+      "payload_characters": 379,
+      "payload_utf8_bytes": 379
+    },
+    {
+      "case_id": "TPA-018",
+      "family": "parasitic_toolchain",
+      "kind": "poisoning",
+      "label": "attack",
+      "source_file": "corpus/tool_poisoning/TPA-018.json",
+      "source_record_sha256": "e085c1606107937724a0f614541db69158c57f251bd16c8f65e097aba8ed1758",
+      "source_injection_point": "tool.description",
+      "payload_sha256": "7414efed440ebca96372fee566e4e7bbfc72fb6c0445e5f45aa2b6a766c8b171",
+      "payload_characters": 144,
+      "payload_utf8_bytes": 144
+    },
+    {
+      "case_id": "TPA-019",
+      "family": "cross_tool_exfiltration",
+      "kind": "poisoning",
+      "label": "attack",
+      "source_file": "corpus/tool_poisoning/TPA-019.json",
+      "source_record_sha256": "0408ee1ca9eed71df6249dbfde1871083262cf240c72a89bc0c7a66ad0a7d6f6",
+      "source_injection_point": "tool.description",
+      "payload_sha256": "49f728825906be70e0021f6ac022c7caf355982c171c8ca08e21f496b19ad7bb",
+      "payload_characters": 173,
+      "payload_utf8_bytes": 173
+    },
+    {
+      "case_id": "TPA-020",
+      "family": "message_hijacking",
+      "kind": "poisoning",
+      "label": "attack",
+      "source_file": "corpus/tool_poisoning/TPA-020.json",
+      "source_record_sha256": "30d7a8a71215c43f5d4fda1b7593ae4adb9cdb0a241a8633fabe1092422e3602",
+      "source_injection_point": "tool.description",
+      "payload_sha256": "c8442f2c2f110032bfe7a584965f466bf7f82e864e6c184451eabc20a0fa4eee",
+      "payload_characters": 239,
+      "payload_utf8_bytes": 239
+    },
+    {
+      "case_id": "TPA-021",
+      "family": "unicode_obfuscation",
+      "kind": "poisoning",
+      "label": "attack",
+      "source_file": "corpus/tool_poisoning/TPA-021.json",
+      "source_record_sha256": "d44a63f0e76fa700360461dce2e586051efdfde5875d897198cdfdf1e242b812",
+      "source_injection_point": "tool.description",
+      "payload_sha256": "a11e249549764a01e649e2da735a29013b7152117778106c525698f607a79d62",
+      "payload_characters": 87,
+      "payload_utf8_bytes": 111
+    },
+    {
+      "case_id": "TPA-022",
+      "family": "response_context_invalidation",
+      "kind": "poisoning",
+      "label": "attack",
+      "source_file": "corpus/tool_poisoning/TPA-022.json",
+      "source_record_sha256": "25f6cc061eb34c6d623696af617b43f626130312165a2abcbffa2a147370d4a7",
+      "source_injection_point": "tool.response",
+      "payload_sha256": "ad8424d33e63793e4ed6dfb6aea4e7e7295030faf1489c04ec79dbedefaa6d9b",
+      "payload_characters": 145,
+      "payload_utf8_bytes": 145
+    },
+    {
+      "case_id": "TPA-023",
+      "family": "forced_reexecution_loop",
+      "kind": "poisoning",
+      "label": "attack",
+      "source_file": "corpus/tool_poisoning/TPA-023.json",
+      "source_record_sha256": "2e6ca3a1b07e3f18580e09beec17bdd19da57bd8401e659d511f7046624effa3",
+      "source_injection_point": "tool.response",
+      "payload_sha256": "e39395e8e80ee47daae4e5609a00d2901cad9709755d0820bdfd31a4656d32bb",
+      "payload_characters": 107,
+      "payload_utf8_bytes": 109
+    },
+    {
+      "case_id": "TPA-024",
+      "family": "annotation_deception",
+      "kind": "poisoning",
+      "label": "attack",
+      "source_file": "corpus/tool_poisoning/TPA-024.json",
+      "source_record_sha256": "d6c7a56a04d65041693068f65a5b2e7e33c0c086abeb08f395e73774680f0a5a",
+      "source_injection_point": "tool.annotations",
+      "payload_sha256": "e8924fa8165f3f62f6af1ddd6438d816639b13582dfb13e9d55d548503f12e96",
+      "payload_characters": 48,
+      "payload_utf8_bytes": 48
+    },
+    {
+      "case_id": "TS-001",
+      "family": "name_squatting",
+      "kind": "shadowing",
+      "label": "attack",
+      "source_file": "corpus/tool_shadowing/TS-001.json",
+      "source_record_sha256": "555554caeb312ac71f4075fc57bd83a144d1ca4b10778789276c8833cea5d7fd",
+      "source_injection_point": "tool.name",
+      "payload_sha256": "674571587ffc53d0d6d5f83c5942b3a1e7a330ef388958a83c350b648fc10181",
+      "payload_characters": 204,
+      "payload_utf8_bytes": 204
+    },
+    {
+      "case_id": "TS-002",
+      "family": "capability_override",
+      "kind": "shadowing",
+      "label": "attack",
+      "source_file": "corpus/tool_shadowing/TS-002.json",
+      "source_record_sha256": "a2d685967d45d6148147ba7e6512fb3561d2ce01b3332793ee381cb47be3b54c",
+      "source_injection_point": "tool.description",
+      "payload_sha256": "f008988dfc9a3265aab265aa8bb9894230453d01db18c7475cf80658e8225bad",
+      "payload_characters": 251,
+      "payload_utf8_bytes": 251
+    },
+    {
+      "case_id": "TS-003",
+      "family": "typosquatting",
+      "kind": "shadowing",
+      "label": "attack",
+      "source_file": "corpus/tool_shadowing/TS-003.json",
+      "source_record_sha256": "9b45c169bed1569d9c1dfafbc5e03b204de7108e2dc1db8a3f75c2e88554634b",
+      "source_injection_point": "tool.name",
+      "payload_sha256": "8b244327e0f0ca12696de83f9b6f6df485844586ae9dc1902a557883935c1bea",
+      "payload_characters": 169,
+      "payload_utf8_bytes": 171
+    }
+  ]
+}

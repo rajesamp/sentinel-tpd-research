@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.DS_Store
+*.log
+*.aux
+*.out
+!results/**/*.log
+output/qa/
+output/packages/
+data/cache/
+data/source-cache/
+*.local.json

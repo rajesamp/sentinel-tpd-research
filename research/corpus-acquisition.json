@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "acquisition_date": "2026-10-06",
+  "repository": "https://github.com/ksek87/fuzzd",
+  "commit": "f739e120cd7dc253fead2a1f13668f9535e4d8a5",
+  "commit_timestamp": "2026-06-15T22:29:22-04:00",
+  "git_tree": "ffa7b991501835028ef8d0fbc8ce82a684c2f52e",
+  "tree_listing_sha256": "1a979f07ab4ea6a23f69c77efbc061be76edcf1785f21ba4e7e9545819f7b905",
+  "source_file_manifest": "data/source-manifest.json",
+  "source_files": 30,
+  "source_counts": {
+    "poisoning": 24,
+    "shadowing": 3,
+    "benign": 20
+  },
+  "source_family_counts": {
+    "annotation_deception": 1,
+    "argument_hijacking": 1,
+    "capability_override": 1,
+    "cross_tool_exfiltration": 1,
+    "explicit_trigger_hijacking": 4,
+    "fake_enabling_prerequisite": 1,
+    "fake_system_tag_injection": 1,
+    "forced_reexecution_loop": 1,
+    "implicit_trigger_background_hijacking": 4,
+    "message_hijacking": 1,
+    "name_squatting": 1,
+    "parasitic_toolchain": 1,
+    "persistent_instruction_injection": 4,
+    "response_context_invalidation": 1,
+    "typosquatting": 1,
+    "unicode_obfuscation": 1,
+    "unrelated_prerequisite_injection": 1,
+    "xml_tag_injection": 1
+  },
+  "challenge_counts": {
+    "benign": 44,
+    "poisoning": 23,
+    "shadowing": 3
+  },
+  "challenge_cases": 70,
+  "combined_cases": 117,
+  "licensing": {
+    "package_spdx_declaration": "MIT",
+    "package_declaration_path": "Cargo.toml",
+    "readme_mit_declaration": true,
+    "license_text_paths": [],
+    "dataset_specific_license_found": false,
+    "redistribution_decision": "Do not redistribute external raw records or normalized payloads; provide pinned acquisition and local validation only. MIT intent is recorded without inventing an absent license notice."
+  },
+  "distribution": {
+    "published": [
+      "data/corpus.json",
+      "data/source-manifest.json",
+      "data/fetch_source.py",
+      "data/build_challenges.py",
+      "data/.gitignore"
+    ],
+    "excluded": [
+      "data/source-cache/**",
+      "data/*.local.json"
+    ],
+    "output_policy": "Retain source IDs, hashes, offsets, and metrics; omit copied external payloads and excerpts."
+  },
+  "frozen_sha256": {
+    "data/source-manifest.json": "e7a0ff35222a5639584c6acdbec492ceb5762a199b098c905a00a2387b0b5f74",
+    "data/corpus.json": "a26ac0771ea329ec2f7aaf265336afbe318a67e39aef99d97ee8af3ff38dc128",
+    "data/corpus-source.local.json": "d4f37648cc9d16b785e1a6d0164b825057f448f0cfbe181aa1ed8e5b45e9f063",
+    "data/corpus-combined.local.json": "41438f7a9960bae5a3dd8709a27c57df955328ac3d8f689b3f73d2e5ffdab3e1"
+  },
+  "provisioning_code_sha256": {
+    "data/fetch_source.py": "27a2626f71b5ca5dc16e9a8878c749b355a8f5fac4ed37570b35aa9b28fede43",
+    "data/build_challenges.py": "01b8e5466a8fd1a1e58144a17bda573868a97715a5c143f7df3a6c70695becd8"
+  },
+  "source_id_policy": "Original TPA and TS IDs retained; BENIGN-001 through BENIGN-020 assigned by one-based source array index.",
+  "normalization": {
+    "TPA-001..TPA-021": "Exact payload in tool.description with authored name and empty object schema.",
+    "TPA-022..TPA-023": "Source response payload projected into description for static text assay; native_metadata_applicable=false; no runtime-response coverage claim.",
+    "TPA-024": "Original parsed annotations plus explicitly authored destructive-operation description; original complete descriptor unavailable.",
+    "TS-001,TS-003": "Original payload plus authored/inferred name and explicit trusted-peer/host context; no server authentication claim.",
+    "TS-002": "Original description payload plus authored envelope and peer/host context.",
+    "BENIGN-001..BENIGN-020": "Complete original tool objects unchanged, including fixture metadata; detector must not consume labels as answers."
+  },
+  "labels": "Source and challenge authors intended fixture semantics, not an oracle of live agent harm.",
+  "challenge_design": {
+    "families": 18,
+    "base_cases": 54,
+    "fixed_variant_pairs": 8,
+    "variant_cases": 16,
+    "benign_controls": "Per-family training quotation and administrative prevention mention; one quoted control per fixed variant.",
+    "independence": "Specification-aware authored fixtures; author had prior related Sentinel code knowledge; no blind holdout or public preregistration; no detector outcomes used for corpus revision."
+  },
+  "validation": {
+    "git_acquisition": "Fetched public repository; read exact pinned objects with git show. No repository code executed.",
+    "fresh_http_acquisition": {
+      "completed": true,
+      "files_downloaded": 30,
+      "fixed_raw_urls_verified": true,
+      "checks": [
+        "byte length",
+        "SHA-256",
+        "Git blob SHA-1"
+      ],
+      "source_and_combined_byte_identical": true
+    },
+    "cached_reporting_checks": [
+      {
+        "mode": "online-capable",
+        "source_cases": 47,
+        "challenge_cases": 70,
+        "combined_cases": 117,
+        "source_sha256": "d4f37648cc9d16b785e1a6d0164b825057f448f0cfbe181aa1ed8e5b45e9f063",
+        "combined_sha256": "41438f7a9960bae5a3dd8709a27c57df955328ac3d8f689b3f73d2e5ffdab3e1",
+        "network_allowed": true,
+        "network_files_fetched": 0,
+        "network_used": false
+      },
+      {
+        "mode": "offline",
+        "source_cases": 47,
+        "challenge_cases": 70,
+        "combined_cases": 117,
+        "source_sha256": "d4f37648cc9d16b785e1a6d0164b825057f448f0cfbe181aa1ed8e5b45e9f063",
+        "combined_sha256": "41438f7a9960bae5a3dd8709a27c57df955328ac3d8f689b3f73d2e5ffdab3e1",
+        "network_allowed": false,
+        "network_files_fetched": 0,
+        "network_used": false
+      }
+    ],
+    "tampered_cache_rejected": true,
+    "corpus_schema_counts_unique_ids_checked": true,
+    "attack_instructions_executed": false,
+    "detector_measurements_executed_by_corpus_task": false,
+    "download_counter_mock_check": {
+      "download_then_cache_hit": [
+        true,
+        false
+      ],
+      "http_requests": 1,
+      "real_network_used": false
+    }
+  },
+  "commands": {
+    "acquire": "python3 data/fetch_source.py",
+    "source_study": "python3 -m evaluation.run --corpus data/corpus-combined.local.json --lifecycle data/lifecycle.json --output results/source-study-001 --label frozen-source-and-authored",
+    "regenerate_report": "python3 -m evaluation.report results/source-study-001 --output results/source-study-001-regenerated",
+    "authored_smoke": "python3 -m evaluation.run --corpus data/corpus.json --lifecycle data/lifecycle.json --output results/authored-smoke-001 --label authored-offline-smoke --no-workloads --no-performance"
+  },
+  "coverage_gaps": [
+    "MCPTox benchmark not acquired by this task.",
+    "Original attack records are not complete tool descriptors; declared projections are required.",
+    "MIT declarations lack located license text or corpus-specific grant at the pinned revision.",
+    "Source reachability is required to reconstruct omitted external payloads."
+  ]
+}
