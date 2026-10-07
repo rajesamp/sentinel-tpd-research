@@ -1,0 +1,10 @@
+{
+  "source_cases": 47,
+  "challenge_cases": 70,
+  "combined_cases": 117,
+  "source_sha256": "d4f37648cc9d16b785e1a6d0164b825057f448f0cfbe181aa1ed8e5b45e9f063",
+  "combined_sha256": "41438f7a9960bae5a3dd8709a27c57df955328ac3d8f689b3f73d2e5ffdab3e1",
+  "network_allowed": false,
+  "network_files_fetched": 0,
+  "network_used": false
+}

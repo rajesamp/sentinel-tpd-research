@@ -1,0 +1,40 @@
+name: Reproduce research evidence
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.11', '3.12', '3.14']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Reproduce authored challenges without networking
+        run: python reproduce.py --offline --quick --output results/ci-offline
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: offline-python-${{ matrix.python }}
+          path: results/ci-offline
+  pinned-source:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Acquire verified pins and reproduce full deterministic outcomes
+        run: python reproduce.py --quick --output results/ci-source
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pinned-source-python312
+          path: |
+            results/ci-source/assay
+            results/ci-source/regenerated
+            results/ci-source/reproduction.json
+            results/ci-source/*.log
+          # External *.local.json payload inputs are deliberately excluded.

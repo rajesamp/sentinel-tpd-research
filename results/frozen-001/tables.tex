@@ -1,0 +1,48 @@
+% Generated exclusively from saved raw records.
+\begin{tabular}{llrrrr}
+Split & Method & Hit attacks & Blocked attacks & Benign calls & Warnings \\
+\hline
+challenge & allow\_all & 0/26 & 0/26 & 44/44 & 0 \\
+challenge & registration\_only & 4/26 & 4/26 & 37/44 & 0 \\
+challenge & sentinel\_tpd & 4/26 & 4/26 & 37/44 & 0 \\
+challenge & rescan\_each\_call & 4/26 & 4/26 & 37/44 & 0 \\
+source & allow\_all & 0/27 & 0/27 & 20/20 & 0 \\
+source & registration\_only & 17/27 & 17/27 & 20/20 & 0 \\
+source & sentinel\_tpd & 17/27 & 17/27 & 20/20 & 0 \\
+source & rescan\_each\_call & 17/27 & 17/27 & 20/20 & 0 \\
+\end{tabular}
+
+\begin{tabular}{lrrrrr}
+Kind & Calls & Hit attacks & Blocked/hit & Benign calls & Mean decision ns \\
+\hline
+poisoning & 100 & 70/100 & 70/70 & 0/0 & 17818.800 \\
+poisoning & 150 & 105/150 & 105/105 & 0/0 & 18053.767 \\
+poisoning & 200 & 139/200 & 139/139 & 0/0 & 20380.325 \\
+poisoning & 250 & 175/250 & 175/175 & 0/0 & 17787.396 \\
+poisoning & 300 & 211/300 & 211/211 & 0/0 & 18007.920 \\
+shadowing & 100 & 0/100 & 0/0 & 0/0 & 23130.410 \\
+shadowing & 150 & 0/150 & 0/0 & 0/0 & 23701.460 \\
+shadowing & 200 & 0/200 & 0/0 & 0/0 & 23972.295 \\
+shadowing & 250 & 0/250 & 0/0 & 0/0 & 23519.664 \\
+shadowing & 300 & 0/300 & 0/0 & 0/0 & 23371.267 \\
+benign & 100 & 0/0 & 0/0 & 100/100 & 25557.340 \\
+benign & 150 & 0/0 & 0/0 & 150/150 & 25720.260 \\
+benign & 200 & 0/0 & 0/0 & 200/200 & 25435.805 \\
+benign & 250 & 0/0 & 0/0 & 250/250 & 26174.900 \\
+benign & 300 & 0/0 & 0/0 & 300/300 & 25354.950 \\
+\end{tabular}
+
+\begin{tabular}{llrrr}
+Calls & Method & Mean ns/call & p95 ns/call & Peak Python bytes \\
+\hline
+100 & allow\_all & 200.065 & 215.290 & 19360.0 \\
+100 & sentinel\_tpd & 17423.659 & 20634.460 & 73170.0 \\
+150 & allow\_all & 197.317 & 205.380 & 29072.0 \\
+150 & sentinel\_tpd & 17735.838 & 18644.613 & 108644.0 \\
+200 & allow\_all & 192.798 & 205.415 & 38496.0 \\
+200 & sentinel\_tpd & 18085.771 & 22142.320 & 143542.0 \\
+250 & allow\_all & 186.570 & 235.436 & 48240.0 \\
+250 & sentinel\_tpd & 17864.258 & 18485.884 & 179080.0 \\
+300 & allow\_all & 179.571 & 186.707 & 57792.0 \\
+300 & sentinel\_tpd & 17352.211 & 18018.030 & 215434.0 \\
+\end{tabular}

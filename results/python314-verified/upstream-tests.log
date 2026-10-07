@@ -1,0 +1,22 @@
+test_chain_verifies_when_untouched (vendor.sentinel-tpd.tests.test_sentinel_tpd.TestAuditChain.test_chain_verifies_when_untouched) ... ok
+test_jsonl_roundtrip (vendor.sentinel-tpd.tests.test_sentinel_tpd.TestAuditChain.test_jsonl_roundtrip) ... ok
+test_tampering_breaks_chain (vendor.sentinel-tpd.tests.test_sentinel_tpd.TestAuditChain.test_tampering_breaks_chain) ... ok
+test_clean_tool_registers_and_invokes (vendor.sentinel-tpd.tests.test_sentinel_tpd.TestRegistry.test_clean_tool_registers_and_invokes) ... ok
+test_fingerprint_stable_under_key_order (vendor.sentinel-tpd.tests.test_sentinel_tpd.TestRegistry.test_fingerprint_stable_under_key_order) ... ok
+test_poisoned_tool_never_registers (vendor.sentinel-tpd.tests.test_sentinel_tpd.TestRegistry.test_poisoned_tool_never_registers) ... ok
+test_refresh_rescans_and_lifts_quarantine_on_clean_scan (vendor.sentinel-tpd.tests.test_sentinel_tpd.TestRegistry.test_refresh_rescans_and_lifts_quarantine_on_clean_scan) ... ok
+test_registry_writes_audit_events (vendor.sentinel-tpd.tests.test_sentinel_tpd.TestRegistry.test_registry_writes_audit_events) ... ok
+test_rug_pull_detected_and_quarantined (vendor.sentinel-tpd.tests.test_sentinel_tpd.TestRegistry.test_rug_pull_detected_and_quarantined) ... ok
+test_unregistered_tool_default_denied (vendor.sentinel-tpd.tests.test_sentinel_tpd.TestRegistry.test_unregistered_tool_default_denied) ... ok
+test_benign_tools_allowed (vendor.sentinel-tpd.tests.test_sentinel_tpd.TestScanner.test_benign_tools_allowed) ... ok
+test_every_poisoned_fixture_denied (vendor.sentinel-tpd.tests.test_sentinel_tpd.TestScanner.test_every_poisoned_fixture_denied) ... ok
+test_exfil_destination_is_m4 (vendor.sentinel-tpd.tests.test_sentinel_tpd.TestScanner.test_exfil_destination_is_m4) ... ok
+test_fail_closed_on_malformed_metadata (vendor.sentinel-tpd.tests.test_sentinel_tpd.TestScanner.test_fail_closed_on_malformed_metadata) ... ok
+test_imperative_tag_is_m4 (vendor.sentinel-tpd.tests.test_sentinel_tpd.TestScanner.test_imperative_tag_is_m4) ... ok
+test_nested_parameter_description_is_scanned (vendor.sentinel-tpd.tests.test_sentinel_tpd.TestScanner.test_nested_parameter_description_is_scanned) ... ok
+test_verdict_serializes (vendor.sentinel-tpd.tests.test_sentinel_tpd.TestScanner.test_verdict_serializes) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.007s
+
+OK

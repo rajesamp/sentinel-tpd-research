@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: Cite this versioned software/data artifact; the manuscript is a conference draft.
+title: 'Sentinel-TPD Research: Reproducible Metadata Coverage and Lifecycle Study'
+type: software
+version: 0.1.0
+date-released: 2026-10-06
+license: MIT
+authors:
+  - family-names: Sampathrajan
+    given-names: Rajeshkumar
+    affiliation: Independent Researcher
+repository-code: https://github.com/rajesamp/sentinel-tpd-research
+url: https://github.com/rajesamp/sentinel-tpd-research/releases/tag/v0.1.0

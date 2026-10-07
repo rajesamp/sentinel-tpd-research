@@ -1,0 +1,14 @@
+test_all_four_methods_and_source_denominators (test_evaluation.EvaluationTests.test_all_four_methods_and_source_denominators) ... ok
+test_bad_labels_and_duplicate_cases_fail (test_evaluation.EvaluationTests.test_bad_labels_and_duplicate_cases_fail) ... ok
+test_confusion_counts_and_receipt_truth (test_evaluation.EvaluationTests.test_confusion_counts_and_receipt_truth) ... ok
+test_native_quarantine_direct_register_and_refresh_are_distinct (test_evaluation.EvaluationTests.test_native_quarantine_direct_register_and_refresh_are_distinct) ... ok
+test_paired_timing_and_allocation_have_separate_records (test_evaluation.EvaluationTests.test_paired_timing_and_allocation_have_separate_records) ... ok
+test_pinned_source_is_verified (test_evaluation.EvaluationTests.test_pinned_source_is_verified) ... ok
+test_raw_reports_regenerate_identically_and_refuse_overwrite (test_evaluation.EvaluationTests.test_raw_reports_regenerate_identically_and_refuse_overwrite) ... ok
+test_warning_is_not_deny (test_evaluation.EvaluationTests.test_warning_is_not_deny) ... ok
+test_workloads_are_balanced_repeats_not_new_templates (test_evaluation.EvaluationTests.test_workloads_are_balanced_repeats_not_new_templates) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.163s
+
+OK

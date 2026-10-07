@@ -1,0 +1,5510 @@
+{
+  "schema_version": 1,
+  "run_id": "assay",
+  "label": "reproduction-visible-fixtures",
+  "status": "completed",
+  "provenance": {
+    "input_sha256": "f1ca186146560eab45446f132a30be9039aa0936343ab8471ec3e06bc5e9399b",
+    "fixture_manifest_sha256": "0924447a65094e9ca3a51ee1e87d55bb7844e4106f57c503e653752e2a329563",
+    "code_sha256": "84bc982cfb7ab7b0f5f5e387e44ad8b8f7c29959d1c363e8e7e2bf32341c3a47",
+    "environment_sha256": "9cfa9c0d70cbef9ddf69bdcedd20367f2a62960671dbc377fb82095a2428877a"
+  },
+  "process_session": "python314-offline",
+  "record_counts": {
+    "unique_case": 280,
+    "lifecycle": 60
+  },
+  "fixture_counts": {
+    "challenge:poisoning": 23,
+    "challenge:benign": 44,
+    "challenge:shadowing": 3
+  },
+  "by_split": {
+    "challenge": {
+      "allow_all": {
+        "scheduled_records": 70,
+        "evaluated_records": 70,
+        "execution_errors": 0,
+        "unique_templates": 70,
+        "actual_receipts": 70,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 26,
+          "false_positive": 0,
+          "true_negative": 44,
+          "evaluated": 70
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 26,
+          "false_positive": 0,
+          "true_negative": 44,
+          "evaluated": 70
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 26,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 26,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 44,
+          "denominator": 44,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 44,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "registration_only": {
+        "scheduled_records": 70,
+        "evaluated_records": 70,
+        "execution_errors": 0,
+        "unique_templates": 70,
+        "actual_receipts": 59,
+        "rule_signal_confusion": {
+          "true_positive": 4,
+          "false_negative": 22,
+          "false_positive": 7,
+          "true_negative": 37,
+          "evaluated": 70
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 4,
+          "false_negative": 22,
+          "false_positive": 7,
+          "true_negative": 37,
+          "evaluated": 70
+        },
+        "attack_rule_detection": {
+          "numerator": 4,
+          "denominator": 26,
+          "rate": 0.15384615384615385
+        },
+        "attack_prevention": {
+          "numerator": 4,
+          "denominator": 26,
+          "rate": 0.15384615384615385
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 4,
+          "denominator": 4,
+          "rate": 1.0
+        },
+        "benign_completion": {
+          "numerator": 37,
+          "denominator": 44,
+          "rate": 0.8409090909090909
+        },
+        "benign_false_block": {
+          "numerator": 7,
+          "denominator": 44,
+          "rate": 0.1590909090909091
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 11,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "sentinel_tpd": {
+        "scheduled_records": 70,
+        "evaluated_records": 70,
+        "execution_errors": 0,
+        "unique_templates": 70,
+        "actual_receipts": 59,
+        "rule_signal_confusion": {
+          "true_positive": 4,
+          "false_negative": 22,
+          "false_positive": 7,
+          "true_negative": 37,
+          "evaluated": 70
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 4,
+          "false_negative": 22,
+          "false_positive": 7,
+          "true_negative": 37,
+          "evaluated": 70
+        },
+        "attack_rule_detection": {
+          "numerator": 4,
+          "denominator": 26,
+          "rate": 0.15384615384615385
+        },
+        "attack_prevention": {
+          "numerator": 4,
+          "denominator": 26,
+          "rate": 0.15384615384615385
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 4,
+          "denominator": 4,
+          "rate": 1.0
+        },
+        "benign_completion": {
+          "numerator": 37,
+          "denominator": 44,
+          "rate": 0.8409090909090909
+        },
+        "benign_false_block": {
+          "numerator": 7,
+          "denominator": 44,
+          "rate": 0.1590909090909091
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 11,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "rescan_each_call": {
+        "scheduled_records": 70,
+        "evaluated_records": 70,
+        "execution_errors": 0,
+        "unique_templates": 70,
+        "actual_receipts": 59,
+        "rule_signal_confusion": {
+          "true_positive": 4,
+          "false_negative": 22,
+          "false_positive": 7,
+          "true_negative": 37,
+          "evaluated": 70
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 4,
+          "false_negative": 22,
+          "false_positive": 7,
+          "true_negative": 37,
+          "evaluated": 70
+        },
+        "attack_rule_detection": {
+          "numerator": 4,
+          "denominator": 26,
+          "rate": 0.15384615384615385
+        },
+        "attack_prevention": {
+          "numerator": 4,
+          "denominator": 26,
+          "rate": 0.15384615384615385
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 4,
+          "denominator": 4,
+          "rate": 1.0
+        },
+        "benign_completion": {
+          "numerator": 37,
+          "denominator": 44,
+          "rate": 0.8409090909090909
+        },
+        "benign_false_block": {
+          "numerator": 7,
+          "denominator": 44,
+          "rate": 0.1590909090909091
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 11,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      }
+    }
+  },
+  "by_family": {
+    "challenge:annotation_deception": {
+      "allow_all": {
+        "scheduled_records": 5,
+        "evaluated_records": 5,
+        "execution_errors": 0,
+        "unique_templates": 5,
+        "actual_receipts": 5,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 2,
+          "false_positive": 0,
+          "true_negative": 3,
+          "evaluated": 5
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 2,
+          "false_positive": 0,
+          "true_negative": 3,
+          "evaluated": 5
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 3,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "registration_only": {
+        "scheduled_records": 5,
+        "evaluated_records": 5,
+        "execution_errors": 0,
+        "unique_templates": 5,
+        "actual_receipts": 5,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 2,
+          "false_positive": 0,
+          "true_negative": 3,
+          "evaluated": 5
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 2,
+          "false_positive": 0,
+          "true_negative": 3,
+          "evaluated": 5
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 3,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "sentinel_tpd": {
+        "scheduled_records": 5,
+        "evaluated_records": 5,
+        "execution_errors": 0,
+        "unique_templates": 5,
+        "actual_receipts": 5,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 2,
+          "false_positive": 0,
+          "true_negative": 3,
+          "evaluated": 5
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 2,
+          "false_positive": 0,
+          "true_negative": 3,
+          "evaluated": 5
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 3,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "rescan_each_call": {
+        "scheduled_records": 5,
+        "evaluated_records": 5,
+        "execution_errors": 0,
+        "unique_templates": 5,
+        "actual_receipts": 5,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 2,
+          "false_positive": 0,
+          "true_negative": 3,
+          "evaluated": 5
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 2,
+          "false_positive": 0,
+          "true_negative": 3,
+          "evaluated": 5
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 3,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      }
+    },
+    "challenge:argument_hijacking": {
+      "allow_all": {
+        "scheduled_records": 7,
+        "evaluated_records": 7,
+        "execution_errors": 0,
+        "unique_templates": 7,
+        "actual_receipts": 7,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 3,
+          "false_positive": 0,
+          "true_negative": 4,
+          "evaluated": 7
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 3,
+          "false_positive": 0,
+          "true_negative": 4,
+          "evaluated": 7
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 3,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 3,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 4,
+          "denominator": 4,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 4,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "registration_only": {
+        "scheduled_records": 7,
+        "evaluated_records": 7,
+        "execution_errors": 0,
+        "unique_templates": 7,
+        "actual_receipts": 7,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 3,
+          "false_positive": 0,
+          "true_negative": 4,
+          "evaluated": 7
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 3,
+          "false_positive": 0,
+          "true_negative": 4,
+          "evaluated": 7
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 3,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 3,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 4,
+          "denominator": 4,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 4,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "sentinel_tpd": {
+        "scheduled_records": 7,
+        "evaluated_records": 7,
+        "execution_errors": 0,
+        "unique_templates": 7,
+        "actual_receipts": 7,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 3,
+          "false_positive": 0,
+          "true_negative": 4,
+          "evaluated": 7
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 3,
+          "false_positive": 0,
+          "true_negative": 4,
+          "evaluated": 7
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 3,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 3,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 4,
+          "denominator": 4,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 4,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "rescan_each_call": {
+        "scheduled_records": 7,
+        "evaluated_records": 7,
+        "execution_errors": 0,
+        "unique_templates": 7,
+        "actual_receipts": 7,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 3,
+          "false_positive": 0,
+          "true_negative": 4,
+          "evaluated": 7
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 3,
+          "false_positive": 0,
+          "true_negative": 4,
+          "evaluated": 7
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 3,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 3,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 4,
+          "denominator": 4,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 4,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      }
+    },
+    "challenge:capability_override": {
+      "allow_all": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "registration_only": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "sentinel_tpd": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "rescan_each_call": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      }
+    },
+    "challenge:cross_tool_exfiltration": {
+      "allow_all": {
+        "scheduled_records": 5,
+        "evaluated_records": 5,
+        "execution_errors": 0,
+        "unique_templates": 5,
+        "actual_receipts": 5,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 2,
+          "false_positive": 0,
+          "true_negative": 3,
+          "evaluated": 5
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 2,
+          "false_positive": 0,
+          "true_negative": 3,
+          "evaluated": 5
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 3,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "registration_only": {
+        "scheduled_records": 5,
+        "evaluated_records": 5,
+        "execution_errors": 0,
+        "unique_templates": 5,
+        "actual_receipts": 5,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 2,
+          "false_positive": 0,
+          "true_negative": 3,
+          "evaluated": 5
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 2,
+          "false_positive": 0,
+          "true_negative": 3,
+          "evaluated": 5
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 3,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "sentinel_tpd": {
+        "scheduled_records": 5,
+        "evaluated_records": 5,
+        "execution_errors": 0,
+        "unique_templates": 5,
+        "actual_receipts": 5,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 2,
+          "false_positive": 0,
+          "true_negative": 3,
+          "evaluated": 5
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 2,
+          "false_positive": 0,
+          "true_negative": 3,
+          "evaluated": 5
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 3,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "rescan_each_call": {
+        "scheduled_records": 5,
+        "evaluated_records": 5,
+        "execution_errors": 0,
+        "unique_templates": 5,
+        "actual_receipts": 5,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 2,
+          "false_positive": 0,
+          "true_negative": 3,
+          "evaluated": 5
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 2,
+          "false_positive": 0,
+          "true_negative": 3,
+          "evaluated": 5
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 3,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      }
+    },
+    "challenge:explicit_trigger_hijacking": {
+      "allow_all": {
+        "scheduled_records": 5,
+        "evaluated_records": 5,
+        "execution_errors": 0,
+        "unique_templates": 5,
+        "actual_receipts": 5,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 2,
+          "false_positive": 0,
+          "true_negative": 3,
+          "evaluated": 5
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 2,
+          "false_positive": 0,
+          "true_negative": 3,
+          "evaluated": 5
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 3,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "registration_only": {
+        "scheduled_records": 5,
+        "evaluated_records": 5,
+        "execution_errors": 0,
+        "unique_templates": 5,
+        "actual_receipts": 2,
+        "rule_signal_confusion": {
+          "true_positive": 1,
+          "false_negative": 1,
+          "false_positive": 2,
+          "true_negative": 1,
+          "evaluated": 5
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 1,
+          "false_negative": 1,
+          "false_positive": 2,
+          "true_negative": 1,
+          "evaluated": 5
+        },
+        "attack_rule_detection": {
+          "numerator": 1,
+          "denominator": 2,
+          "rate": 0.5
+        },
+        "attack_prevention": {
+          "numerator": 1,
+          "denominator": 2,
+          "rate": 0.5
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "benign_completion": {
+          "numerator": 1,
+          "denominator": 3,
+          "rate": 0.3333333333333333
+        },
+        "benign_false_block": {
+          "numerator": 2,
+          "denominator": 3,
+          "rate": 0.6666666666666666
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 3,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "sentinel_tpd": {
+        "scheduled_records": 5,
+        "evaluated_records": 5,
+        "execution_errors": 0,
+        "unique_templates": 5,
+        "actual_receipts": 2,
+        "rule_signal_confusion": {
+          "true_positive": 1,
+          "false_negative": 1,
+          "false_positive": 2,
+          "true_negative": 1,
+          "evaluated": 5
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 1,
+          "false_negative": 1,
+          "false_positive": 2,
+          "true_negative": 1,
+          "evaluated": 5
+        },
+        "attack_rule_detection": {
+          "numerator": 1,
+          "denominator": 2,
+          "rate": 0.5
+        },
+        "attack_prevention": {
+          "numerator": 1,
+          "denominator": 2,
+          "rate": 0.5
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "benign_completion": {
+          "numerator": 1,
+          "denominator": 3,
+          "rate": 0.3333333333333333
+        },
+        "benign_false_block": {
+          "numerator": 2,
+          "denominator": 3,
+          "rate": 0.6666666666666666
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 3,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "rescan_each_call": {
+        "scheduled_records": 5,
+        "evaluated_records": 5,
+        "execution_errors": 0,
+        "unique_templates": 5,
+        "actual_receipts": 2,
+        "rule_signal_confusion": {
+          "true_positive": 1,
+          "false_negative": 1,
+          "false_positive": 2,
+          "true_negative": 1,
+          "evaluated": 5
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 1,
+          "false_negative": 1,
+          "false_positive": 2,
+          "true_negative": 1,
+          "evaluated": 5
+        },
+        "attack_rule_detection": {
+          "numerator": 1,
+          "denominator": 2,
+          "rate": 0.5
+        },
+        "attack_prevention": {
+          "numerator": 1,
+          "denominator": 2,
+          "rate": 0.5
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "benign_completion": {
+          "numerator": 1,
+          "denominator": 3,
+          "rate": 0.3333333333333333
+        },
+        "benign_false_block": {
+          "numerator": 2,
+          "denominator": 3,
+          "rate": 0.6666666666666666
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 3,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      }
+    },
+    "challenge:fake_enabling_prerequisite": {
+      "allow_all": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "registration_only": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "sentinel_tpd": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "rescan_each_call": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      }
+    },
+    "challenge:fake_system_tag_injection": {
+      "allow_all": {
+        "scheduled_records": 5,
+        "evaluated_records": 5,
+        "execution_errors": 0,
+        "unique_templates": 5,
+        "actual_receipts": 5,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 2,
+          "false_positive": 0,
+          "true_negative": 3,
+          "evaluated": 5
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 2,
+          "false_positive": 0,
+          "true_negative": 3,
+          "evaluated": 5
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 3,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "registration_only": {
+        "scheduled_records": 5,
+        "evaluated_records": 5,
+        "execution_errors": 0,
+        "unique_templates": 5,
+        "actual_receipts": 2,
+        "rule_signal_confusion": {
+          "true_positive": 1,
+          "false_negative": 1,
+          "false_positive": 2,
+          "true_negative": 1,
+          "evaluated": 5
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 1,
+          "false_negative": 1,
+          "false_positive": 2,
+          "true_negative": 1,
+          "evaluated": 5
+        },
+        "attack_rule_detection": {
+          "numerator": 1,
+          "denominator": 2,
+          "rate": 0.5
+        },
+        "attack_prevention": {
+          "numerator": 1,
+          "denominator": 2,
+          "rate": 0.5
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "benign_completion": {
+          "numerator": 1,
+          "denominator": 3,
+          "rate": 0.3333333333333333
+        },
+        "benign_false_block": {
+          "numerator": 2,
+          "denominator": 3,
+          "rate": 0.6666666666666666
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 3,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "sentinel_tpd": {
+        "scheduled_records": 5,
+        "evaluated_records": 5,
+        "execution_errors": 0,
+        "unique_templates": 5,
+        "actual_receipts": 2,
+        "rule_signal_confusion": {
+          "true_positive": 1,
+          "false_negative": 1,
+          "false_positive": 2,
+          "true_negative": 1,
+          "evaluated": 5
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 1,
+          "false_negative": 1,
+          "false_positive": 2,
+          "true_negative": 1,
+          "evaluated": 5
+        },
+        "attack_rule_detection": {
+          "numerator": 1,
+          "denominator": 2,
+          "rate": 0.5
+        },
+        "attack_prevention": {
+          "numerator": 1,
+          "denominator": 2,
+          "rate": 0.5
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "benign_completion": {
+          "numerator": 1,
+          "denominator": 3,
+          "rate": 0.3333333333333333
+        },
+        "benign_false_block": {
+          "numerator": 2,
+          "denominator": 3,
+          "rate": 0.6666666666666666
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 3,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "rescan_each_call": {
+        "scheduled_records": 5,
+        "evaluated_records": 5,
+        "execution_errors": 0,
+        "unique_templates": 5,
+        "actual_receipts": 2,
+        "rule_signal_confusion": {
+          "true_positive": 1,
+          "false_negative": 1,
+          "false_positive": 2,
+          "true_negative": 1,
+          "evaluated": 5
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 1,
+          "false_negative": 1,
+          "false_positive": 2,
+          "true_negative": 1,
+          "evaluated": 5
+        },
+        "attack_rule_detection": {
+          "numerator": 1,
+          "denominator": 2,
+          "rate": 0.5
+        },
+        "attack_prevention": {
+          "numerator": 1,
+          "denominator": 2,
+          "rate": 0.5
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "benign_completion": {
+          "numerator": 1,
+          "denominator": 3,
+          "rate": 0.3333333333333333
+        },
+        "benign_false_block": {
+          "numerator": 2,
+          "denominator": 3,
+          "rate": 0.6666666666666666
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 3,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      }
+    },
+    "challenge:forced_reexecution_loop": {
+      "allow_all": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "registration_only": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "sentinel_tpd": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "rescan_each_call": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      }
+    },
+    "challenge:implicit_trigger_background_hijacking": {
+      "allow_all": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "registration_only": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "sentinel_tpd": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "rescan_each_call": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      }
+    },
+    "challenge:message_hijacking": {
+      "allow_all": {
+        "scheduled_records": 5,
+        "evaluated_records": 5,
+        "execution_errors": 0,
+        "unique_templates": 5,
+        "actual_receipts": 5,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 2,
+          "false_positive": 0,
+          "true_negative": 3,
+          "evaluated": 5
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 2,
+          "false_positive": 0,
+          "true_negative": 3,
+          "evaluated": 5
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 3,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "registration_only": {
+        "scheduled_records": 5,
+        "evaluated_records": 5,
+        "execution_errors": 0,
+        "unique_templates": 5,
+        "actual_receipts": 5,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 2,
+          "false_positive": 0,
+          "true_negative": 3,
+          "evaluated": 5
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 2,
+          "false_positive": 0,
+          "true_negative": 3,
+          "evaluated": 5
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 3,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "sentinel_tpd": {
+        "scheduled_records": 5,
+        "evaluated_records": 5,
+        "execution_errors": 0,
+        "unique_templates": 5,
+        "actual_receipts": 5,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 2,
+          "false_positive": 0,
+          "true_negative": 3,
+          "evaluated": 5
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 2,
+          "false_positive": 0,
+          "true_negative": 3,
+          "evaluated": 5
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 3,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "rescan_each_call": {
+        "scheduled_records": 5,
+        "evaluated_records": 5,
+        "execution_errors": 0,
+        "unique_templates": 5,
+        "actual_receipts": 5,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 2,
+          "false_positive": 0,
+          "true_negative": 3,
+          "evaluated": 5
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 2,
+          "false_positive": 0,
+          "true_negative": 3,
+          "evaluated": 5
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 3,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      }
+    },
+    "challenge:name_squatting": {
+      "allow_all": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "registration_only": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "sentinel_tpd": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "rescan_each_call": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      }
+    },
+    "challenge:parasitic_toolchain": {
+      "allow_all": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "registration_only": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "sentinel_tpd": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "rescan_each_call": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      }
+    },
+    "challenge:persistent_instruction_injection": {
+      "allow_all": {
+        "scheduled_records": 5,
+        "evaluated_records": 5,
+        "execution_errors": 0,
+        "unique_templates": 5,
+        "actual_receipts": 5,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 2,
+          "false_positive": 0,
+          "true_negative": 3,
+          "evaluated": 5
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 2,
+          "false_positive": 0,
+          "true_negative": 3,
+          "evaluated": 5
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 3,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "registration_only": {
+        "scheduled_records": 5,
+        "evaluated_records": 5,
+        "execution_errors": 0,
+        "unique_templates": 5,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 1,
+          "false_negative": 1,
+          "false_positive": 1,
+          "true_negative": 2,
+          "evaluated": 5
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 1,
+          "false_negative": 1,
+          "false_positive": 1,
+          "true_negative": 2,
+          "evaluated": 5
+        },
+        "attack_rule_detection": {
+          "numerator": 1,
+          "denominator": 2,
+          "rate": 0.5
+        },
+        "attack_prevention": {
+          "numerator": 1,
+          "denominator": 2,
+          "rate": 0.5
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 3,
+          "rate": 0.6666666666666666
+        },
+        "benign_false_block": {
+          "numerator": 1,
+          "denominator": 3,
+          "rate": 0.3333333333333333
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 2,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "sentinel_tpd": {
+        "scheduled_records": 5,
+        "evaluated_records": 5,
+        "execution_errors": 0,
+        "unique_templates": 5,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 1,
+          "false_negative": 1,
+          "false_positive": 1,
+          "true_negative": 2,
+          "evaluated": 5
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 1,
+          "false_negative": 1,
+          "false_positive": 1,
+          "true_negative": 2,
+          "evaluated": 5
+        },
+        "attack_rule_detection": {
+          "numerator": 1,
+          "denominator": 2,
+          "rate": 0.5
+        },
+        "attack_prevention": {
+          "numerator": 1,
+          "denominator": 2,
+          "rate": 0.5
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 3,
+          "rate": 0.6666666666666666
+        },
+        "benign_false_block": {
+          "numerator": 1,
+          "denominator": 3,
+          "rate": 0.3333333333333333
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 2,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "rescan_each_call": {
+        "scheduled_records": 5,
+        "evaluated_records": 5,
+        "execution_errors": 0,
+        "unique_templates": 5,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 1,
+          "false_negative": 1,
+          "false_positive": 1,
+          "true_negative": 2,
+          "evaluated": 5
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 1,
+          "false_negative": 1,
+          "false_positive": 1,
+          "true_negative": 2,
+          "evaluated": 5
+        },
+        "attack_rule_detection": {
+          "numerator": 1,
+          "denominator": 2,
+          "rate": 0.5
+        },
+        "attack_prevention": {
+          "numerator": 1,
+          "denominator": 2,
+          "rate": 0.5
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 3,
+          "rate": 0.6666666666666666
+        },
+        "benign_false_block": {
+          "numerator": 1,
+          "denominator": 3,
+          "rate": 0.3333333333333333
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 2,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      }
+    },
+    "challenge:response_context_invalidation": {
+      "allow_all": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "registration_only": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "sentinel_tpd": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "rescan_each_call": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      }
+    },
+    "challenge:typosquatting": {
+      "allow_all": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "registration_only": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "sentinel_tpd": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "rescan_each_call": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      }
+    },
+    "challenge:unicode_obfuscation": {
+      "allow_all": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "registration_only": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "sentinel_tpd": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "rescan_each_call": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      }
+    },
+    "challenge:unrelated_prerequisite_injection": {
+      "allow_all": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "registration_only": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "sentinel_tpd": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "rescan_each_call": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      }
+    },
+    "challenge:xml_tag_injection": {
+      "allow_all": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 3,
+        "rule_signal_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 0,
+          "false_negative": 1,
+          "false_positive": 0,
+          "true_negative": 2,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "attack_prevention": {
+          "numerator": 0,
+          "denominator": 1,
+          "rate": 0.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "benign_completion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "benign_false_block": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 0,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "registration_only": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 0,
+        "rule_signal_confusion": {
+          "true_positive": 1,
+          "false_negative": 0,
+          "false_positive": 2,
+          "true_negative": 0,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 1,
+          "false_negative": 0,
+          "false_positive": 2,
+          "true_negative": 0,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "attack_prevention": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "benign_completion": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "benign_false_block": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 3,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "sentinel_tpd": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 0,
+        "rule_signal_confusion": {
+          "true_positive": 1,
+          "false_negative": 0,
+          "false_positive": 2,
+          "true_negative": 0,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 1,
+          "false_negative": 0,
+          "false_positive": 2,
+          "true_negative": 0,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "attack_prevention": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "benign_completion": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "benign_false_block": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 3,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      },
+      "rescan_each_call": {
+        "scheduled_records": 3,
+        "evaluated_records": 3,
+        "execution_errors": 0,
+        "unique_templates": 3,
+        "actual_receipts": 0,
+        "rule_signal_confusion": {
+          "true_positive": 1,
+          "false_negative": 0,
+          "false_positive": 2,
+          "true_negative": 0,
+          "evaluated": 3
+        },
+        "receipt_prevention_confusion": {
+          "true_positive": 1,
+          "false_negative": 0,
+          "false_positive": 2,
+          "true_negative": 0,
+          "evaluated": 3
+        },
+        "attack_rule_detection": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "attack_prevention": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "blocking_among_rule_hit_attacks": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "benign_completion": {
+          "numerator": 0,
+          "denominator": 2,
+          "rate": 0.0
+        },
+        "benign_false_block": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "allowed_rule_warnings": 0,
+        "allowed_attack_rule_warnings": 0,
+        "scanner_denials": 3,
+        "returned_deny_with_receipt": 0,
+        "returned_allow_without_receipt": 0
+      }
+    }
+  },
+  "source_native_metadata_subset": {
+    "allow_all": {
+      "scheduled_records": 0,
+      "evaluated_records": 0,
+      "execution_errors": 0,
+      "unique_templates": 0,
+      "actual_receipts": 0,
+      "rule_signal_confusion": {
+        "true_positive": 0,
+        "false_negative": 0,
+        "false_positive": 0,
+        "true_negative": 0,
+        "evaluated": 0
+      },
+      "receipt_prevention_confusion": {
+        "true_positive": 0,
+        "false_negative": 0,
+        "false_positive": 0,
+        "true_negative": 0,
+        "evaluated": 0
+      },
+      "attack_rule_detection": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "attack_prevention": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "blocking_among_rule_hit_attacks": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "benign_completion": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "benign_false_block": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "allowed_rule_warnings": 0,
+      "allowed_attack_rule_warnings": 0,
+      "scanner_denials": 0,
+      "returned_deny_with_receipt": 0,
+      "returned_allow_without_receipt": 0
+    },
+    "registration_only": {
+      "scheduled_records": 0,
+      "evaluated_records": 0,
+      "execution_errors": 0,
+      "unique_templates": 0,
+      "actual_receipts": 0,
+      "rule_signal_confusion": {
+        "true_positive": 0,
+        "false_negative": 0,
+        "false_positive": 0,
+        "true_negative": 0,
+        "evaluated": 0
+      },
+      "receipt_prevention_confusion": {
+        "true_positive": 0,
+        "false_negative": 0,
+        "false_positive": 0,
+        "true_negative": 0,
+        "evaluated": 0
+      },
+      "attack_rule_detection": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "attack_prevention": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "blocking_among_rule_hit_attacks": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "benign_completion": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "benign_false_block": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "allowed_rule_warnings": 0,
+      "allowed_attack_rule_warnings": 0,
+      "scanner_denials": 0,
+      "returned_deny_with_receipt": 0,
+      "returned_allow_without_receipt": 0
+    },
+    "sentinel_tpd": {
+      "scheduled_records": 0,
+      "evaluated_records": 0,
+      "execution_errors": 0,
+      "unique_templates": 0,
+      "actual_receipts": 0,
+      "rule_signal_confusion": {
+        "true_positive": 0,
+        "false_negative": 0,
+        "false_positive": 0,
+        "true_negative": 0,
+        "evaluated": 0
+      },
+      "receipt_prevention_confusion": {
+        "true_positive": 0,
+        "false_negative": 0,
+        "false_positive": 0,
+        "true_negative": 0,
+        "evaluated": 0
+      },
+      "attack_rule_detection": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "attack_prevention": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "blocking_among_rule_hit_attacks": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "benign_completion": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "benign_false_block": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "allowed_rule_warnings": 0,
+      "allowed_attack_rule_warnings": 0,
+      "scanner_denials": 0,
+      "returned_deny_with_receipt": 0,
+      "returned_allow_without_receipt": 0
+    },
+    "rescan_each_call": {
+      "scheduled_records": 0,
+      "evaluated_records": 0,
+      "execution_errors": 0,
+      "unique_templates": 0,
+      "actual_receipts": 0,
+      "rule_signal_confusion": {
+        "true_positive": 0,
+        "false_negative": 0,
+        "false_positive": 0,
+        "true_negative": 0,
+        "evaluated": 0
+      },
+      "receipt_prevention_confusion": {
+        "true_positive": 0,
+        "false_negative": 0,
+        "false_positive": 0,
+        "true_negative": 0,
+        "evaluated": 0
+      },
+      "attack_rule_detection": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "attack_prevention": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "blocking_among_rule_hit_attacks": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "benign_completion": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "benign_false_block": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "allowed_rule_warnings": 0,
+      "allowed_attack_rule_warnings": 0,
+      "scanner_denials": 0,
+      "returned_deny_with_receipt": 0,
+      "returned_allow_without_receipt": 0
+    }
+  },
+  "workloads": [],
+  "performance": {},
+  "lifecycle": [
+    {
+      "case_id": "LC-01",
+      "family": "unchanged",
+      "method": "allow_all",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": true,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": true,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-01",
+      "family": "unchanged",
+      "method": "registration_only",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": true,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": true,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-01",
+      "family": "unchanged",
+      "method": "sentinel_tpd",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": true,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": true,
+          "state": {
+            "audit_entries": 2,
+            "audit_head": "b66fbc2829f0cc232cf90185cf290389da6b3afd93e7ea514b7e1e5ed4c6133f",
+            "audit_verification": true,
+            "native_registry": true,
+            "quarantined": false,
+            "registered": true
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-01",
+      "family": "unchanged",
+      "method": "rescan_each_call",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": true,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": true,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-02",
+      "family": "key_reordering",
+      "method": "allow_all",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": true,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": true,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-02",
+      "family": "key_reordering",
+      "method": "registration_only",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": true,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": true,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-02",
+      "family": "key_reordering",
+      "method": "sentinel_tpd",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": true,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": true,
+          "state": {
+            "audit_entries": 2,
+            "audit_head": "6f8444448f545c57cd9bc9789c3566012599c9362f0ce29f6e24eec8821b1ef2",
+            "audit_verification": true,
+            "native_registry": true,
+            "quarantined": false,
+            "registered": true
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-02",
+      "family": "key_reordering",
+      "method": "rescan_each_call",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": true,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": true,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-03",
+      "family": "benign_covered_refresh_without_reapproval",
+      "method": "allow_all",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-03",
+      "family": "benign_covered_refresh_without_reapproval",
+      "method": "registration_only",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-03",
+      "family": "benign_covered_refresh_without_reapproval",
+      "method": "sentinel_tpd",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": false,
+          "receipt_count": 0,
+          "policy_satisfied": true,
+          "state": {
+            "audit_entries": 3,
+            "audit_head": "4910c7b84db6fa21e905c39cddd6e62215730a951f6ab2d4aef044f183a53841",
+            "audit_verification": true,
+            "native_registry": true,
+            "quarantined": true,
+            "registered": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-03",
+      "family": "benign_covered_refresh_without_reapproval",
+      "method": "rescan_each_call",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-04",
+      "family": "poisoned_covered_mutation",
+      "method": "allow_all",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-04",
+      "family": "poisoned_covered_mutation",
+      "method": "registration_only",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-04",
+      "family": "poisoned_covered_mutation",
+      "method": "sentinel_tpd",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": false,
+          "receipt_count": 0,
+          "policy_satisfied": true,
+          "state": {
+            "audit_entries": 3,
+            "audit_head": "894349ce865f7515e81895f37a2c0ac5e0c537d6d98363d9d481874bf498f19d",
+            "audit_verification": true,
+            "native_registry": true,
+            "quarantined": true,
+            "registered": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-04",
+      "family": "poisoned_covered_mutation",
+      "method": "rescan_each_call",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": false,
+          "receipt_count": 0,
+          "policy_satisfied": true,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-05",
+      "family": "quarantine_persists_after_restore",
+      "method": "allow_all",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        },
+        {
+          "step_index": 1,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-05",
+      "family": "quarantine_persists_after_restore",
+      "method": "registration_only",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        },
+        {
+          "step_index": 1,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-05",
+      "family": "quarantine_persists_after_restore",
+      "method": "sentinel_tpd",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": false,
+          "receipt_count": 0,
+          "policy_satisfied": true,
+          "state": {
+            "audit_entries": 3,
+            "audit_head": "5b0bfb8400eac3794e9162a38135b5f3ed64b6dfe6bc343f1d92b47eef81d2ee",
+            "audit_verification": true,
+            "native_registry": true,
+            "quarantined": true,
+            "registered": false
+          }
+        },
+        {
+          "step_index": 1,
+          "expected_allowed": false,
+          "decision_allowed": false,
+          "receipt_count": 0,
+          "policy_satisfied": true,
+          "state": {
+            "audit_entries": 4,
+            "audit_head": "1760388ec43d96bfe62fb5a689ad020fefb973060ae264b27ebd62d3912a4fb4",
+            "audit_verification": true,
+            "native_registry": true,
+            "quarantined": true,
+            "registered": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-05",
+      "family": "quarantine_persists_after_restore",
+      "method": "rescan_each_call",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": false,
+          "receipt_count": 0,
+          "policy_satisfied": true,
+          "state": {
+            "native_registry": false
+          }
+        },
+        {
+          "step_index": 1,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-06",
+      "family": "clean_refresh_recovery",
+      "method": "allow_all",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        },
+        {
+          "step_index": 2,
+          "expected_allowed": true,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": true,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-06",
+      "family": "clean_refresh_recovery",
+      "method": "registration_only",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        },
+        {
+          "step_index": 2,
+          "expected_allowed": true,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": true,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-06",
+      "family": "clean_refresh_recovery",
+      "method": "sentinel_tpd",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": false,
+          "receipt_count": 0,
+          "policy_satisfied": true,
+          "state": {
+            "audit_entries": 3,
+            "audit_head": "0312921d64a0d6d17cc99ad5fcbd90183cf0eda45aa4a980930ce514d144847d",
+            "audit_verification": true,
+            "native_registry": true,
+            "quarantined": true,
+            "registered": false
+          }
+        },
+        {
+          "step_index": 2,
+          "expected_allowed": true,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": true,
+          "state": {
+            "audit_entries": 7,
+            "audit_head": "8e40aba93461d93894bae744f745bf7df4ddbe179da08034ff015758379c70a7",
+            "audit_verification": true,
+            "native_registry": true,
+            "quarantined": false,
+            "registered": true
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-06",
+      "family": "clean_refresh_recovery",
+      "method": "rescan_each_call",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": false,
+          "receipt_count": 0,
+          "policy_satisfied": true,
+          "state": {
+            "native_registry": false
+          }
+        },
+        {
+          "step_index": 2,
+          "expected_allowed": true,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": true,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-07",
+      "family": "poisoned_refresh",
+      "method": "allow_all",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 1,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-07",
+      "family": "poisoned_refresh",
+      "method": "registration_only",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 1,
+          "expected_allowed": false,
+          "decision_allowed": false,
+          "receipt_count": 0,
+          "policy_satisfied": true,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-07",
+      "family": "poisoned_refresh",
+      "method": "sentinel_tpd",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 1,
+          "expected_allowed": false,
+          "decision_allowed": false,
+          "receipt_count": 0,
+          "policy_satisfied": true,
+          "state": {
+            "audit_entries": 4,
+            "audit_head": "039344e39012bf64f0dc14628643e4698193c5cd34e1ab4465eb38e4d641327e",
+            "audit_verification": true,
+            "native_registry": true,
+            "quarantined": false,
+            "registered": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-07",
+      "family": "poisoned_refresh",
+      "method": "rescan_each_call",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 1,
+          "expected_allowed": false,
+          "decision_allowed": false,
+          "receipt_count": 0,
+          "policy_satisfied": true,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-08",
+      "family": "withdrawal",
+      "method": "allow_all",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 1,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-08",
+      "family": "withdrawal",
+      "method": "registration_only",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 1,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-08",
+      "family": "withdrawal",
+      "method": "sentinel_tpd",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 1,
+          "expected_allowed": false,
+          "decision_allowed": false,
+          "receipt_count": 0,
+          "policy_satisfied": true,
+          "state": {
+            "audit_entries": 3,
+            "audit_head": "40653e26b002e00ac3318485ffc85b95a7a93b887398a394184857ba852094ed",
+            "audit_verification": true,
+            "native_registry": true,
+            "quarantined": false,
+            "registered": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-08",
+      "family": "withdrawal",
+      "method": "rescan_each_call",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 1,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-09",
+      "family": "nested_schema_mutation",
+      "method": "allow_all",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-09",
+      "family": "nested_schema_mutation",
+      "method": "registration_only",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-09",
+      "family": "nested_schema_mutation",
+      "method": "sentinel_tpd",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": false,
+          "receipt_count": 0,
+          "policy_satisfied": true,
+          "state": {
+            "audit_entries": 3,
+            "audit_head": "daaf4da4b6c947dd7b2e940962f024483a01b5ebf5c3ec57c14533600dff96f2",
+            "audit_verification": true,
+            "native_registry": true,
+            "quarantined": true,
+            "registered": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-09",
+      "family": "nested_schema_mutation",
+      "method": "rescan_each_call",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": false,
+          "receipt_count": 0,
+          "policy_satisfied": true,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-10",
+      "family": "unregistered_name",
+      "method": "allow_all",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-10",
+      "family": "unregistered_name",
+      "method": "registration_only",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-10",
+      "family": "unregistered_name",
+      "method": "sentinel_tpd",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": false,
+          "receipt_count": 0,
+          "policy_satisfied": true,
+          "state": {
+            "audit_entries": 2,
+            "audit_head": "a9ab2c08436a965950ed5eaf2bc80f5a9cb234b409747e8b7beb2fea12cf03a4",
+            "audit_verification": true,
+            "native_registry": true,
+            "quarantined": false,
+            "registered": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-10",
+      "family": "unregistered_name",
+      "method": "rescan_each_call",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-11",
+      "family": "typosquatted_name_after_registration",
+      "method": "allow_all",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-11",
+      "family": "typosquatted_name_after_registration",
+      "method": "registration_only",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-11",
+      "family": "typosquatted_name_after_registration",
+      "method": "sentinel_tpd",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": false,
+          "receipt_count": 0,
+          "policy_satisfied": true,
+          "state": {
+            "audit_entries": 2,
+            "audit_head": "972136a1858978ebb2afddb8b9eb6ab1a375050942d55e23f3f2c5b44f202883",
+            "audit_verification": true,
+            "native_registry": true,
+            "quarantined": false,
+            "registered": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-11",
+      "family": "typosquatted_name_after_registration",
+      "method": "rescan_each_call",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-12",
+      "family": "top_level_title_gap",
+      "method": "allow_all",
+      "policy_reference": "stronger host full-displayed-metadata policy; not a promised upstream field",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-12",
+      "family": "top_level_title_gap",
+      "method": "registration_only",
+      "policy_reference": "stronger host full-displayed-metadata policy; not a promised upstream field",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-12",
+      "family": "top_level_title_gap",
+      "method": "sentinel_tpd",
+      "policy_reference": "stronger host full-displayed-metadata policy; not a promised upstream field",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "audit_entries": 2,
+            "audit_head": "5c098d18d60a121f95535b7554f798fe6c6642427da257a805ebb8e0fb512c08",
+            "audit_verification": true,
+            "native_registry": true,
+            "quarantined": false,
+            "registered": true
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-12",
+      "family": "top_level_title_gap",
+      "method": "rescan_each_call",
+      "policy_reference": "stronger host full-displayed-metadata policy; not a promised upstream field",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-13",
+      "family": "annotation_field_gap",
+      "method": "allow_all",
+      "policy_reference": "stronger host full-displayed-metadata policy; not a promised upstream field",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-13",
+      "family": "annotation_field_gap",
+      "method": "registration_only",
+      "policy_reference": "stronger host full-displayed-metadata policy; not a promised upstream field",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-13",
+      "family": "annotation_field_gap",
+      "method": "sentinel_tpd",
+      "policy_reference": "stronger host full-displayed-metadata policy; not a promised upstream field",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "audit_entries": 2,
+            "audit_head": "61986495b9c19f240cb64c31fc7ec86e3910073476566583dfdc60a37aa9e06e",
+            "audit_verification": true,
+            "native_registry": true,
+            "quarantined": false,
+            "registered": true
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-13",
+      "family": "annotation_field_gap",
+      "method": "rescan_each_call",
+      "policy_reference": "stronger host full-displayed-metadata policy; not a promised upstream field",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-14",
+      "family": "malformed_schema_admission",
+      "method": "allow_all",
+      "policy_reference": "scanner module fail-closed schema-validation statement; source-contract probe",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-14",
+      "family": "malformed_schema_admission",
+      "method": "registration_only",
+      "policy_reference": "scanner module fail-closed schema-validation statement; source-contract probe",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-14",
+      "family": "malformed_schema_admission",
+      "method": "sentinel_tpd",
+      "policy_reference": "scanner module fail-closed schema-validation statement; source-contract probe",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "audit_entries": 2,
+            "audit_head": "9f200eb0a54f8331a4a61015730dca54c17c03aa7b501b8075ce48267fbb5f8e",
+            "audit_verification": true,
+            "native_registry": true,
+            "quarantined": false,
+            "registered": true
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-14",
+      "family": "malformed_schema_admission",
+      "method": "rescan_each_call",
+      "policy_reference": "scanner module fail-closed schema-validation statement; source-contract probe",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-15",
+      "family": "explicit_register_does_not_lift_quarantine",
+      "method": "allow_all",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        },
+        {
+          "step_index": 2,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-15",
+      "family": "explicit_register_does_not_lift_quarantine",
+      "method": "registration_only",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        },
+        {
+          "step_index": 2,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-15",
+      "family": "explicit_register_does_not_lift_quarantine",
+      "method": "sentinel_tpd",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": false,
+          "receipt_count": 0,
+          "policy_satisfied": true,
+          "state": {
+            "audit_entries": 3,
+            "audit_head": "440d6ea9f2e0e97e7a6fa4ffe02139b49983cfd0e4b57135b1140562d80544b8",
+            "audit_verification": true,
+            "native_registry": true,
+            "quarantined": true,
+            "registered": false
+          }
+        },
+        {
+          "step_index": 2,
+          "expected_allowed": false,
+          "decision_allowed": false,
+          "receipt_count": 0,
+          "policy_satisfied": true,
+          "state": {
+            "audit_entries": 5,
+            "audit_head": "af72f0139e09fcac64368591a9fe0679999d39a9b5660dacb6ccdcf471ca1d8d",
+            "audit_verification": true,
+            "native_registry": true,
+            "quarantined": true,
+            "registered": true
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "LC-15",
+      "family": "explicit_register_does_not_lift_quarantine",
+      "method": "rescan_each_call",
+      "policy_reference": "published fingerprint/quarantine behavior",
+      "status": "completed",
+      "invocations": [
+        {
+          "step_index": 0,
+          "expected_allowed": false,
+          "decision_allowed": false,
+          "receipt_count": 0,
+          "policy_satisfied": true,
+          "state": {
+            "native_registry": false
+          }
+        },
+        {
+          "step_index": 2,
+          "expected_allowed": false,
+          "decision_allowed": true,
+          "receipt_count": 1,
+          "policy_satisfied": false,
+          "state": {
+            "native_registry": false
+          }
+        }
+      ]
+    }
+  ],
+  "interpretation": [
+    "Labels reflect authored fixture intent, not semantic ground truth or live exploit success.",
+    "Any-rule-hit detection, scanner denial and actual local receipt prevention are distinct.",
+    "Repeated source workloads add no unique templates and imply no learning trend.",
+    "The static assay submits one projected tool; supplied peer tools/host context are lineage, not model-selection tests.",
+    "Performance pairs are within one process; p95 is nearest-rank over batch-per-call averages.",
+    "tracemalloc measures incremental Python allocation peaks, not RSS or memory overhead percent.",
+    "Lifecycle expectations name a policy reference; failures are not automatically upstream vulnerabilities.",
+    "No external MCP tool, live agent, model selection or remote side effect is tested."
+  ]
+}

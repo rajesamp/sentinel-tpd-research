@@ -1,0 +1,14 @@
+{
+  "recorded_date": "2026-10-06",
+  "verification": "Current read-only sysctl observations; timing conditions not controlled",
+  "model": "MacBookPro16,1",
+  "processor": "Intel Core i9-9880H CPU at 2.30 GHz",
+  "installed_memory_bytes": 17179869184,
+  "installed_memory_gib": 16,
+  "primary_interpreter": "CPython 3.12.14",
+  "cross_version_replay": "CPython 3.14.8",
+  "scored_process_sessions": 2,
+  "affinity": "not controlled",
+  "power_state": "not measured",
+  "background_load": "not controlled"
+}

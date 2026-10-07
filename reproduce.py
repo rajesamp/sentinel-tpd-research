@@ -18,8 +18,15 @@ ROOT = Path(__file__).resolve().parent
 
 
 def deterministic_view(summary):
-    lifecycle = [{k: row[k] for k in ("case_id", "method", "policy_reference", "status", "invocations")}
-                 for row in summary["lifecycle"]]
+    # Audit-head bytes incorporate wall-clock timestamps. Their within-run
+    # integrity is verified separately; equality across processes is not expected.
+    lifecycle = []
+    for row in summary["lifecycle"]:
+        entry = {k: row[k] for k in ("case_id", "method", "policy_reference", "status")}
+        entry["invocations"] = [{**item, "state": {k: v for k, v in item["state"].items()
+                                                    if k != "audit_head"}}
+                                for item in row["invocations"]]
+        lifecycle.append(entry)
     return {"fixture_counts": summary["fixture_counts"], "by_split": summary["by_split"],
             "by_family": summary["by_family"],
             "workloads": [{k: row[k] for k in ("kind", "size", "unique_case_ids", "outcomes")}

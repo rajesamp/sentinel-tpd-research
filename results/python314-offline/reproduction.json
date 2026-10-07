@@ -1,0 +1,73 @@
+{
+  "python": "3.14.8 (main, Sep 30 2026, 17:55:09) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "vendor": {
+    "revision": "5ce5d56e57a0acd092435fca5d89b78d0b39ee7b",
+    "manifest_sha256": "f7c4caf910883ec11a130705b61516fc58203b0dd713749ab2229b87a3d51aaf",
+    "verified_files": 12,
+    "import_path": "vendor/sentinel-tpd/sentinel_tpd"
+  },
+  "commands": [
+    {
+      "argv": [
+        "python3.14",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "log": "authored-tests.log",
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "python3.14",
+        "-m",
+        "unittest",
+        "vendor/sentinel-tpd/tests/test_sentinel_tpd.py",
+        "-v"
+      ],
+      "log": "upstream-tests.log",
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "python3.14",
+        "-m",
+        "evaluation.run",
+        "--corpus",
+        "<package>/data/corpus.json",
+        "--lifecycle",
+        "data/lifecycle.json",
+        "--output",
+        "<package>/results/python314-offline/assay",
+        "--label",
+        "reproduction-visible-fixtures",
+        "--process-session",
+        "python314-offline",
+        "--no-performance",
+        "--no-workloads"
+      ],
+      "log": "assay.log",
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "python3.14",
+        "-m",
+        "evaluation.report",
+        "<package>/results/python314-offline/assay",
+        "--output",
+        "<package>/results/python314-offline/regenerated"
+      ],
+      "log": "report.log",
+      "returncode": 0
+    }
+  ],
+  "input_mode": "authored-only",
+  "network_permitted": false,
+  "report_regeneration_identical": true,
+  "deterministic_outcomes_match_reference": true,
+  "status": "completed"
+}

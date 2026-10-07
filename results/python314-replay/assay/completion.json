@@ -1,0 +1,18 @@
+{
+  "status": "completed",
+  "finished_at": "2026-10-07T03:01:09.372439+00:00",
+  "record_counts": {
+    "unique_case": 468,
+    "workload_call": 3000,
+    "lifecycle": 60
+  },
+  "execution_errors": 0,
+  "fatal_error": null,
+  "source_unchanged": true,
+  "input_unchanged": true,
+  "output_sha256": {
+    "metadata.json": "272c159d3204de694b8c954bc0ae58f6f4ae0f039f32000ec3a99144d3a3c8da",
+    "records.jsonl": "191a50da561a31f07dcccbc70f101a88f6ac73b1926a2c7604c7f2bb26d0647b",
+    "fixture-manifest.json": "24961b1b8a8f172e567210e8149247c513cafeb362fe732fb3b70a6f6e03b0b4"
+  }
+}
