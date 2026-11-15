@@ -34,7 +34,7 @@ jobs:
         run: python tools/audit_traceability.py --output results/ci-offline/traceability.json
       - name: Upload offline artifacts
         # actions/upload-artifact v7.0.2
-        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f46cd9
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
         if: always()
         with:
           name: offline-python-${{ matrix.python }}
@@ -55,7 +55,7 @@ jobs:
         run: python reproduce.py --quick --output results/ci-source
       - name: Upload pinned-source artifacts
         # actions/upload-artifact v7.0.2
-        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f46cd9
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
         if: always()
         with:
           name: pinned-source-python312
@@ -81,7 +81,7 @@ jobs:
           output-file: sbom.spdx.json
       - name: Upload SBOM artifact
         # actions/upload-artifact v7.0.2
-        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f46cd9
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
         with:
           name: sbom-spdx
           path: sbom.spdx.json
